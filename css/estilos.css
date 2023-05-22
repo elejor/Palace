@@ -1,0 +1,8293 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+:root{
+    --merlot: #95172c;
+--cararra: #f5f4f2;
+--muddy-waters: #b6924f;
+--petite-orchid: #daaa8b;
+--cameo: #d9bb97;
+--pale-oyster: #9a8b7f;
+--beauty-bush: #efc4c2;
+--charm: #ce748c;
+--cotton-seed: #c2bdb6;
+}
+body{
+    background-color:#f7f6f2;
+
+}
+h2{
+    font-family: 'Josefin Sans';
+}
+
+.imagen-header{ 
+    height: 200px;   
+}
+
+
+
+.boton-menu{
+    margin-left: 1rem;
+    align-items: flex-start;
+    height: 50px;
+    width: 100px;
+    border-color:#f7f6f2;
+    
+}
+.boton-menu:hover{
+    cursor: pointer;
+
+}
+.logo{
+  margin-left:27rem;
+  margin-right: 2rem;
+}
+
+
+  /* Movil - Movil grande */
+@media screen and (max-width:600px) {
+    /* Restaurantes */
+    body{
+        overflow-x: hidden;
+    }
+    .menu{
+        max-height: 62px;
+    }
+    .logo{
+        margin: 0rem;
+        width: 186px;
+        margin-left: 1rem;
+    }
+    .imagen-menu{
+        width: 41px;
+        margin-top: 0.25rem;
+    }
+    #reservasnav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        margin-left: -2rem;
+    }
+    .Reservas-titulo{
+        margin-left:-2rem;
+        margin: 0rem;
+        width:188px;
+    }
+    .idiomas-selector{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 50%; 
+    }
+    .menu-cerrar{
+        width: 32px;
+    }
+    .restaurante-menu{ 
+        margin-top: 1rem !important;
+    margin-left: 5rem !important;
+    margin-right: 0rem !important;
+   
+     }
+    
+    .menu-responsive{
+      overflow-x: scroll !important;
+      padding-bottom: 3rem;
+    }
+    
+    .total-tresimagenes{
+        margin-bottom: 0rem !important;
+    }
+    .tres-imagenes{
+        overflow-x: scroll;
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+    .tres-imagenes{
+        justify-content:flex-start !important;
+    }
+    .tres-imagenes::-webkit-scrollbar{
+        width: 0px;   
+     }
+     .texto-festivales p{
+        max-width: 180px;
+        font-size: 16px !important;
+     }
+    .tres-imagenes-2{
+        overflow-x: scroll;
+        padding-left: 1rem;
+        padding-right: 2rem;
+    }
+    .tres-imagenes-2{
+        justify-content:flex-start !important;
+    }
+    .tres-imagenes-2::-webkit-scrollbar{
+       width: 0px;
+       
+    }
+    .imagentresimagenes{
+        max-width:192px;
+        max-height: 215px;
+    }
+    .Evento-festivales{
+margin: 1.25rem !important;
+    }
+    .texto-festivales{
+        padding-left:2rem !important;
+        padding-bottom:2rem !important;
+        padding-top:11rem !important;
+        padding-right: 0rem !important;
+    }
+    .imagen-evento{
+        position: absolute;
+        
+    }
+    .imagen-evento img{
+        width: calc(100% * 12/12) !important;
+    }
+    .texto-festivales h5{
+        font-size: 17px !important;
+        padding-bottom: 1rem !important;
+    }
+    .texto-festivales h2{
+        font-size: 38px !important;
+       
+    }
+    .final-info{
+    padding-bottom: 7.5rem !important;
+    padding-top: 2rem !important;
+    }
+    .final-info h6{
+        padding-top: 1.5rem !important;
+    }
+    .final-texto{
+ display: block !important;
+ text-align: center;
+    }
+    .slider-container{
+        padding: 0rem !important;
+        padding-top: 0rem !important;
+        height: 560px !important;
+    }
+    .Palace-inicio{
+         max-height: 560px;
+    }
+    .descubremas{
+        max-width: 500px;
+        max-height: 560px;
+    }
+     .top-70{
+      top:37% !important;
+     }
+     .start-39{
+       left: 7.5% !important;
+     }
+     #tit-slider-2{
+        margin-left: 0rem !important;
+     }
+     .titulo-slider{
+        font-size: 36px !important;
+     }
+     .info-restaurante{
+        padding-top: 34rem;
+     }
+     .horario{
+        max-width: 350px;
+        padding: 2rem !important;
+        padding-top: 18rem !important;
+     }
+     .restaurante-caracteristicas{
+        position: absolute;
+        max-width: 385px;
+     }
+     .caracteristicas{
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+        padding-top: 4rem !important;
+       font-size: 1rem;
+     }
+     .menus-reservas{
+        display: block !important;
+     }
+     .menu-dia-boton{
+        width: 170px;
+     }
+     .menu-cenas{
+        margin-bottom: 1.5rem;
+     }
+     .reservas-info{
+        max-height: 60px;
+        max-width:139px ;
+     }
+     .total-tresimagenes{
+        height: revert !important;
+     }
+     .dobleimagen{
+        display: block !important;
+        padding: 0rem !important;
+     }
+     .contenedor-dobleimagen{
+        margin: 0rem !important;
+         padding: 1.5rem; 
+         height: 1100px !important;       
+        
+     }
+     .contenedor-dobleimagen img{
+        width: calc(100% * 12/12) !important;
+        height: calc(72vw - ((1.5rem * 2))) !important;
+     }
+     .tres-imagenes{
+        padding-top: 2rem !important;
+     }
+     .imagen1 {
+        margin-right: 0rem !important;
+     }
+    .reserva-evento{
+        margin: 0rem 6rem !important;
+        margin-bottom: 4rem !important;
+        max-width:inherit !important ;
+    }
+    .texto-tresimagenes{
+        font-size: 25px !important;
+        padding-left: 1rem !important;
+        
+    }
+    .evento{
+        font-size: 32px !important;
+    }
+    .eventos-horario{
+        font-size: 15px !important;
+    }
+    /* Catering */
+
+     .catering-inicio{
+        margin: 0rem !important;
+        width: calc(100% * 12/12) !important;
+        height: calc(80vw - ((1.5rem * 2))) !important;
+     }
+     .catering-inicio2{
+        margin: 0rem !important;
+        width: calc(100% * 12/12) !important;
+        height: calc(135vw - ((1.5rem * 2))) !important;
+     }
+  .contenedorhero{
+    min-height: 256px !important;
+    width: calc(100% - (2.3rem * 1.4));
+    padding-right: 1rem !important;
+    margin-right: 1.5rem !important;
+    margin-top: 8rem !important;
+    padding-top:0rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .contenedorhero2{
+    min-height: 256px !important;
+    width: calc(100% - (2.3rem * 1.4));
+    padding-right: 1rem !important;
+    margin-right: 1.5rem !important;
+    margin-top: 23rem !important;
+    padding-top:3rem !important;
+    padding-left: 1.5rem !important;
+  }
+  .contenedorhero2 h2{
+    font-size:2rem !important ;
+  }
+  .section-inicio .contenedor-dobleimagen{
+    padding-top: 33rem !important;
+    height: fit-content !important;
+  }
+  .contenedorhero2 .menu-dia-boton{
+    margin-right: 0rem !important;
+    font-size: 17px !important;
+  }
+  .contenedorhero2 .menu-reservas{
+    margin-left: -0.5rem !important;
+  }
+  .contenedorhero2 .menu-comidas{
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+    justify-content: center;
+  }
+  .catering-info{
+    padding-left: 2rem !important;
+    padding-right: 1rem !important;
+  }
+  .Catering{
+    margin-top:16rem !important;
+  }
+  .imagenes-catering{
+    padding-left: 0rem!important;
+    padding-right: 0rem!important;
+  }
+  .imagen-catering1 img{
+    width: calc(100% * 12/12) !important;
+    height: 213px !important;
+  }
+   /* Planealo */
+   .start-38{
+    left:24.5% !important;
+   }
+   .linea-descubremas{
+    margin-left: 5.5rem !important;
+   }
+   .titulo-descubremas{
+    margin-left:0.95rem !important;
+   }
+   .grupos-total{
+    height: fit-content !important;
+   }
+   .comidasgrupos{
+       margin-left: 0rem !important;
+        height: 100%;
+        padding: 1.5rem !important;
+   }
+   
+   .comidasrestaurante1{
+    display: block !important;
+   }
+   .imagen-responsive{
+    width: calc(100% * 12/12) !important;
+    height: calc(72vw - ((1.5rem * 2))) !important;
+   }
+   
+   .texto-comidasgrupos{
+    padding-left: 0rem !important;
+   }
+   .texto-comidasgrupos h3{
+    padding-top: 2.25rem !important;
+    width: 300px !important;
+    font-size: 23px !important;
+   }
+   .texto-comidasgrupos p{
+    
+    font-size: 15px !important;
+   }
+   .texto-comidasgrupos-2{
+    padding-right: 0rem !important;
+   }
+   .texto-comidasgrupos-2 h3{
+    padding-top: 2.25rem !important;
+    width: 300px !important;
+    font-size: 23px !important;
+   }
+   .texto-comidasgrupos-2 p{
+    
+    font-size: 15px !important;
+   }
+   .formulario {
+    width: calc(100% * 10/12) !important;
+     margin:1.5rem !important;
+     margin-top: 15rem !important ;
+     padding:2.5rem !important;
+   }
+   .formulario h3{
+     text-align: center;
+     font-size:26px;
+   }
+   .formulario h5{
+
+    width: 113px !important;
+    font-size:18px;
+  }
+   .formulario_grupos_input{
+    font-size:17px !important ;
+   }
+   .formulario_grupos_input_comentario{
+    width: calc(100% * 11/12) !important;
+   }
+   /* Comidas grupos */
+   #comidasengrupos{
+    padding-top: 0rem !important;
+    margin-top:-19.5rem !important
+   }
+   .contenedorheroGrupos h4{
+    font-size: 17px !important;
+   }
+   .contenedorheroGrupos{
+    background: #fff;
+    width: calc(100% * 10/12) !important;
+ height: fit-content !important;
+    text-align: center !important;
+    margin-left: 0.5rem !important;
+    margin-right: 2.3rem !important;
+    margin-top: 13.5rem !important;
+     position:relative !important;
+-webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2rem 2.3rem !important;
+   }
+   /* Tajin especials */
+   .Evento-festivales{
+    display: block !important;
+    height: fit-content !important;
+    
+   }
+   .texto-festivales{
+    padding-top: 2rem !important;
+   }
+   .imagen-responsive-2{
+    width: calc(100% * 12/12) !important;
+    height: calc(60vw - ((1.5rem * 2))) !important;
+   }
+   /* Sobre los restaurantes */
+   .restaurantes-nosotros{
+    padding-top: 8rem !important;
+   }
+   /* Sobre nuestro ceo */
+   .ceo{
+    margin: 0rem 1rem !important;
+   }
+   .divceo{
+    justify-content: start !important;
+}
+    .textoceo{
+        width: calc(100% * 12/12) !important; 
+    }
+    .restauranteNotop{
+        padding-top: 0rem !important;
+    }
+    /* Trabajos */
+    .contenedor_archivo{
+        width: 94px !important;
+        height: 68px !important;
+    }
+    .Archivo{
+     
+        padding-left: 0.25rem !important;
+        }
+        .input_enviar{
+        position: absolute;
+        padding: 0px;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        }
+        .imagen-archivo{
+          
+             margin-left: 0.3rem !important;
+        }
+        /* Establecimientos */
+        .restaurantes-total{
+            display: flex;
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-box-direction: normal; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0;
+        }
+        .enlaces-establecimientos{
+            display: inline-block !important;
+        }
+        .enlaces-total{
+            display: flex !important;
+    /* -webkit-box-orient: vertical; */
+    /* -webkit-box-direction: normal; */
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 0;
+        }  
+
+        /* Catering-ordenar */
+        .item-image{
+            width:calc(100% * 12/12) !important;
+             height: inherit !important;
+         }
+         .tajin1{
+            font-size: 14px !important;
+         }
+         .item{
+            width:calc(100% * 12/12) !important;
+         }
+         .col-md-6 {
+            width: 100% !important;
+            margin-right: 0.35rem;
+        }
+        .Catering-titulo{
+            display: none !important;
+        }
+        .texto-catering{
+            display: none !important;
+        }
+        
+        .final-info-catering{
+            text-align: center !important;
+            display: flex !important;
+            /* -webkit-box-orient: vertical; */
+            /* -webkit-box-direction: normal; */
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin-bottom: 0;
+        }
+        .final-texto-catering{
+            display: block !important;
+        }
+        .sombracarrito{
+            width: 0px !important;
+        }
+        .Micarrito{
+            width: calc(100% * 12/12) !important;
+        }
+        .productoelegidocarrito{
+            display: none !important;
+        }
+        .shopping-cart-image{
+            width: calc(100% 4.5/12) !important;
+        }
+        .boton-menu{
+            display: none;
+        }
+        .logo{
+            display: none;
+        }
+        .iniciarsesion{
+            margin-left: 0rem !important;
+        }
+        .Limpiarcarrito{
+             margin-left: 0.5rem !important;
+    
+             margin-right: 1rem !important;
+        }
+       
+        .limpiarContainerComprar{
+            margin-left: auto;
+            display: flex;
+        }
+        .input-telefono{
+            width: 100% !important;
+        }
+        .necesitamos{
+            font-size: 0.9em !important;
+        }
+        .Micarrito h2 {
+            font-size: 1.2em !important;
+        }
+        .Eliminar{
+            margin-left: 1rem !important;
+        }
+        .estasSeguro{
+            margin-left: 0rem !important;
+        }
+        .btn-si{
+            width:86px !important;
+        }
+       .btn-no{
+         width: 86px !important;
+       }
+       .iniciarComprar{
+        margin-left:auto !important;
+        display: flex !important;
+        margin-right: 2rem !important;
+    }
+    .iniciarsesion{
+        margin-left: 0rem !important;
+    }
+     /* Merchandaising */
+    .menu-Merch{
+        width: calc(100% * 12/12) !important;
+        margin-right: 0rem !important;
+    }
+    .menu-Merch2{
+        width: calc(100% * 12/12) !important;
+        margin-right: 0rem !important;
+        margin-left: 2rem !important;
+    }
+    .menu-Merch2 .bag-icon{
+        margin-left: 0.5rem !important;
+    }
+    .menu-Merch2 a{
+        margin-left: auto !important;
+        
+        text-align: end !important;
+        margin-right: -2rem !important;
+    }
+    .Palace-merch{
+        font-size:2em !important;
+    }
+    .menu-Merch2 .iconos-derecha{
+        margin-right: 3rem !important;
+    }
+    .slider__img{
+        width: calc(100% * 12/12) !important;
+      height:calc(100% * 12/12) !important ;
+    }
+    .slider__container{
+      
+      height:calc(100% * 12/12) !important ;
+    }
+    .slider{
+    
+      height:calc(100% * 12/12) !important ;
+    }
+    .total-iconos{
+        display: flex;
+    }
+    .iconos-derecha{
+        margin-left: auto;
+        margin-right:5rem !important;
+    }
+    .search-icon{
+      width: 2.1em !important;
+      margin-left:0rem !important;
+    } 
+    .menu-icon{
+        width: 2.1em !important;
+        margin-right: 0rem !important;
+    }
+    .bag-icon{
+        width: 2.1em !important;
+    }
+    .fondo-opciones{
+       width: 300px !important;
+        max-width: 300px !important;
+     }
+     .carrito-compra{
+        width:initial !important;
+     }
+    
+     .container-direc{
+      width: 100% ;
+      height:  100%;
+     }
+     .interior-seleccion img{
+      width: calc(100% * 12/12) !important;
+      height:calc(100% * 12/12) !important;
+      }
+     .camisa-imagen{
+      max-width:calc(100% * 12/12);
+      max-height:calc(100% * 6/12);
+     }
+      .seleción-dirección{
+        width: 100%;
+        
+      }
+      .seleción-dirección .conjunto-camis {
+       background-color: transparent !important;
+        
+      }
+      .seleción-dirección .conjunto-camis img {
+       margin-left: 0rem !important;
+       margin-right: 0rem !important;
+         
+       }
+      .seleción-dirección img{
+        width: calc(100% * 11/12) !important;
+        height: calc(100% * 8.35/12) !important;
+      }
+      .seleción-dirección .camisa2 .Camisas{
+        font-size: 17px !important;
+      }
+      .seleción-dirección .camisa{
+        width: calc(100% * 5/12);
+        height:calc(100% * 4/12);
+      }
+      .seleción-dirección h4{
+        padding-bottom: 0rem;
+      }
+      .titulo-direc{
+        font-size: 1em !important;
+      }
+      .lista-productos img{
+        width: calc(100% * 12/12) !important;
+        height: initial !important;
+      }
+      .fila{
+         display: block !important;
+         margin-left: 1rem !important;
+      }
+      .camisa{
+        margin-right:2rem!important;
+      }
+      .hover-producto{
+        text-align: start !important; 
+      position: relative !important; 
+      margin-top: 0rem !important; 
+     margin-left: 0rem !important;
+      z-index: 2;
+     opacity: 1 !important;
+      padding: 2rem;
+      padding-left: 1.5rem !important;
+       padding-top: 1rem !important;
+     transition: all .4s ease 0s;
+     color: black;
+    cursor: pointer;
+      }
+      .escaparate .d-flex{
+        display: block !important;
+        text-align:  center !important;
+      }
+      .selector-productos{
+        margin-right: 0rem !important;
+      }
+      .filafinal{
+        display: block !important;
+      }
+      .filafinal .col{
+        justify-content: center !important;
+      }
+      .iconos{
+        justify-content: center;
+        margin-left: 0rem !important;
+      }
+      .copyright{
+        margin-top: 2rem !important;
+      }
+      .no-vender{
+        font-size: 15px !important;
+      }
+      .icono-insta2{
+        margin-right: 0rem !important;
+      }
+      .icono-facebook2{
+        margin-right: 0.5rem !important;
+      }
+      /* Merchandaising camisetas-comprar */
+      .img-camisetas{
+        display: block !important;
+      }
+      .imagen-camis{
+        width: calc(100% * 12/12) !important;
+        padding-top: 0rem !important;
+      }
+      .img-camisetas .img-camis:last-child{
+        display: none !important;
+      }
+      .imagen-camis-telefono{
+        display: block !important;
+       
+        background-size: cover;
+        background-position: center;
+
+        width: calc(100% * 12/12) !important;
+       margin-bottom: 3rem !important;
+
+      }
+      .imagen-camis-telefono img{
+        width: calc(100% * 12/12) !important;
+        
+      }
+      .precio-online{
+        padding-left: 0rem !important;
+        margin-left: -0.5rem;
+        width: 100% !important;
+        padding-top: 0rem !important;
+      }
+      .texto-camisetas{
+        display: block !important;
+        height: fit-content !important;
+        width: calc(100% * 12/12) !important;
+        padding: 25px !important;
+      }
+      .p-caracteristicas{
+        width: calc(100%* 12/12) !important;
+      }
+      .descripcion-camisetas p {
+         width: calc(100% *12/12) !important;
+         font-size: 17px !important;
+      }
+      .descripcion-camisetas{
+        padding-top: 2rem !important;
+        width: calc(100% * 12/12) !important;
+      }
+      .talla{
+      width: 293px !important;
+      }
+      .tallas{
+        width: calc(100% *9.6/12) !important;
+      }
+      .imagen-camis{
+        margin-left:0rem !important
+      }
+      .añadir-cesta{
+        width: 293px !important;
+      }
+      .Agotado{
+        width: 293px !important;
+      }
+      .comprar-online{
+        width: 293px !important;
+      }
+      .opciones-pago{
+        width: 293px !important;
+      }
+      .opinion-redes {
+        display: inherit !important;
+      }
+      .opinion-container{
+        display: inline-flex !important;
+        margin-right: 0.5rem !important;
+        margin-bottom: 0.5rem !important;
+        width: inherit !important;
+      }
+      .camisa2{
+        width: calc(100% * 5.9/12)  !important;
+        display: inline-flex !important;
+        margin-bottom: 0rem !important;
+      }
+      .lista-productos img{
+        margin-top: 0rem !important;
+        margin-right:  0rem !important;
+        margin-left : 0rem !important;
+      }
+      
+      .lista-productos .hover-producto2{
+        text-align: start !important; 
+        position: relative !important; 
+        margin-top: 0rem !important; 
+       margin-left: 0rem !important;
+        z-index: 2;
+       opacity: 1 !important;
+        padding: 2rem !important;
+        padding-left: 1.5rem !important;
+         padding-top: 1rem !important;
+       transition: all .4s ease 0s;
+       color: black;
+      cursor: pointer;
+      }
+      .hover-producto2 h4{
+        font-size: 17px !important;
+      }
+      .escaparate-libros .hover-producto2{
+        text-align: start !important; 
+        position: relative !important; 
+        margin-top: 0rem !important; 
+       margin-left: 0rem !important;
+        z-index: 2;
+       opacity: 1 !important;
+        padding: 2rem !important;
+        padding-left: 1.5rem !important;
+         padding-top: 1rem !important;
+       transition: all .4s ease 0s;
+       color: black;
+      cursor: pointer;
+      }
+      .escaparate-libros img{
+         width: calc(100% * 12/12) !important;
+      }
+      .recetas{
+        display: block !important;
+       }
+       .recetas img{
+        width: calc(100% * 6/12) !important;
+       }
+        .política-compra{
+          width: calc(100% * 12/12) !important;
+          padding: 0rem !important;
+        }
+        .política-compra-texto{
+          max-width: 780px;
+          margin: auto;
+          padding: 0rem 1rem  !important;
+        }
+         /* Merchandaising Tienda */
+         .tabla-producto{
+          width: calc(100% * 12/12) !important;
+          margin: 0rem !important;
+           border-bottom: 0px !important;
+         }
+         .especial3{
+          padding: 0rem !important;
+         }
+         .especial4{
+           padding: 0rem !important;
+         }
+         .especial5{
+          padding:0rem !important;
+         }
+         .producto-envio{
+           padding: 0rem !important;
+         }
+         .cantidad-envio{
+           padding: 0rem !important;
+         }
+         th{
+          border-bottom: transparent !important;
+         }
+         .cesta .shopping-cart-item{
+          display: block !important;
+         }
+        /* Merchandaising CARRITO-ENVIO */
+        
+        .Titulos{
+          display: none !important;
+        }
+        .Titulos2{
+          display: block !important;
+        }
+        
+        .Envios td {
+          padding: 1.25rem 1.5rem ;
+        }
+        .Envios .titulo-detalles{
+          margin: 0rem !important;
+          padding:0rem !important ;
+        }
+        .Envios .item-price2{
+          margin-left: auto !important;
+        }
+        .Envios .total-envio{
+          
+            font-family:'Rubik Spray Paint', cursive;
+            font-size:.93333em;
+            font-weight: lighter;
+        }
+        .Envios .row{
+          margin: 6px 0px !important;
+          border-top: 1px solid rgb(226, 226, 226);
+        }
+        .Envios .shopping-cart-image2{
+          width: calc(100% * 12/12) !important;
+          height: inherit !important;
+        }
+        
+        .shoppingCartTotal{
+          padding-top: 0rem !important;
+        }
+        /* Merchandaising Formulario */
+        .palace-carrito{
+          margin-top: 1rem !important;
+        }
+        .divisor{
+          display: block !important;
+        }
+        .Vista-producto {
+          padding: 0rem !important; 
+          
+      }
+      .Vista-producto {
+          border-left: none !important;
+          width:0% !important; 
+          background-color: transparent !important; 
+          height: inherit !important;
+      }
+      .formulario-compra {
+       width: 100% !important;
+        background-color: white !important;
+        padding:0rem !important;
+       text-align: center; 
+        height: unset !important;
+    }
+    
+    .cupón-descuento input{
+      width: fit-content !important;
+    }
+    .subtotal-envio h4{
+      margin-right: 0rem !important;
+    }
+    .contenedor-formulario-carrito{
+      padding:0 16px !important;
+      margin-top: 1.25rem !important;
+    }
+    .nombre-apellido{
+      display: block !important;
+    }
+    
+    .ciudad-estado{
+      display: block !important;
+    }
+    .estado3{
+      width: 100% !important;
+    }
+    .estado{
+      width: 100% !important;
+      margin-left: 0rem !important;
+    }
+    .numpostal{
+      width: 100% !important;
+      margin-left: 0rem !important;
+    }
+    .volver-continuar{
+      -webkit-box-direction: normal !important;
+    flex-direction: column-reverse !important;
+    height: inherit !important;
+    }
+    .continuar-carrito{
+      width: 100% !important;
+    }
+    .continuar-button{
+      width: calc(100% * 12/12) !important;
+      height:  63.44px !important;
+    }
+    .volver-carrito{
+      width: 100% !important;
+      text-align: center !important;
+      padding-top: 19px !important;
+    }
+    .Vista-producto{
+      display: none !important;
+    }
+    .Vista-producto2{
+      display: block !important;
+    }
+    
+    .envio .icono-hover{
+      position: relative !important;
+      padding: 0rem !important;
+      margin-top: 0rem !important;
+      width: 15px !important;
+      height:  15px !important;
+      margin-left: 0.35rem;
+    }
+    .euros{
+      margin-left: auto !important;
+    }
+     .tbody4 .shopping-cart-item{
+      padding-top:0rem !important;
+      padding-right: 0rem !important;
+    }
+    .tbody4 .shopping-cart-price2{
+      margin-left: auto !important;
+    }
+    .tbody4 .shopping-cart-item-title2{
+      font-size: inherit !important;
+    }
+    .tbody4 .item-price2{
+      margin-top: -1.2rem !important;
+      margin-left: 0rem !important;
+      position: relative !important;
+      font-family:'Raleway', sans-serif;
+      font-weight: 600;
+    }
+    .tbody4 .Talla-carrito{
+      text-align: start !important;
+    }
+    .tbody4 .row{
+      margin: 1px !important;
+      padding-right: 0rem !important;
+    }
+    .cupón-descuento{
+      width: 100% !important;
+    }
+    .cupón-descuento input{
+      width: calc(100% * 12/12) !important;
+    }
+    .comprar-online2{
+      width: inherit !important;
+    }
+    /* Merchandaising Envio-envio */
+    .container-envio{
+      max-width: 58.8rem;
+    padding: 0 0.3rem;
+    margin: 0 auto;
+    }
+    .contenido-correo {
+      height: auto !important;
+      width: inherit !important;
+    }
+    .contenido-correo h4{
+      margin-right: 0rem !important;
+    }
+    .opcion-envio h4{
+      margin-left: auto;
+      padding-left: 0rem !important;
+    }
+   .envio-precio{
+    margin-left: auto !important;
+   }
+   .subtotal-precio{
+      margin-left: auto !important;
+   }
+   .envio-container .opcion-envio label:before {
+    content: '';
+    border: 1px solid #d6cece;
+    border-radius: 30px;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    left: 0px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.25px;
+    font-size: 6px;
+    cursor: pointer;
+}
+ .Contacto-Email{
+  display: block;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ .Contacto-Email h4:first-child{
+  padding-bottom: 0.3rem;
+ color: #737373;
+  
+ }
+ .Contacto-Email h4:last-child{
+  padding-bottom: 0.4rem;
+  padding-top: 0rem !important;
+ }
+ /* Merchandaising Pago - Envio */
+    .enlaces{
+      max-width: 590px;
+      margin: auto;
+      padding: 0 16px !important;
+    }
+    .imagenes-tarjeta{
+      margin-left: 0rem !important;
+    }
+    .opcion-envio{
+      height: inherit !important;
+    }
+    .nombre{
+      width: 100% !important;
+    }
+    .apellido{
+      width: 100% !important;
+      margin-left: 0rem !important;
+    }
+    #Envio-title{
+      padding-top: 0rem !important;
+    }
+    .precio-envio2{
+      padding-top: 0rem !important;
+    }
+    .contenedor1{
+      width: inherit !important;
+    }
+    .contenedor2{
+      width: inherit !important;
+      background-color: rgb(250, 250, 250);
+    }
+    .tbody5{
+      max-width: 590px !important;
+    }
+}
+    @media screen and (min-width:350px) {
+        .section-inicio .contenedor-dobleimagen{
+            padding-top: 25rem !important;
+            height: fit-content !important;
+          }
+    }
+    /* Movil grande */
+    @media screen and (width:425px) {
+        
+        .contenedor-dobleimagen img{
+            width: calc(100% * 12/12) !important;
+            height: calc(72vw - ((1.5rem * 2))) !important;
+        }
+        .section-inicio .contenedor-dobleimagen{
+            padding-top: 18rem !important;
+            height: fit-content !important;
+          }
+    }
+    /* Movil */
+    @media screen and (width:320px) {
+        .descubremas{
+            max-width: 325px;
+        }
+        
+    }
+
+@media screen and (min-width:320px) {
+    /* Catering */
+    .container{
+        margin: 0rem !important;
+        padding: 0rem  !important;
+    }
+    .container .row{
+        padding: 0rem !important;
+        margin: 0rem !important;
+    }
+    .menu2{
+        background-color: black;
+width: 100%;
+position: sticky;
+top: 0;
+padding: 5px;
+z-index: 999;
+text-align: center;
+display: flex;
+justify-content: center;
+font-family: 'Quicksand', sans-serif;
+color: white;
+margin-bottom: 20px;
+overflow-x: scroll !important;
+padding-left: 11rem !important;
+
+    }
+    .imagen-catering-inicio{
+        height: 213px !important;
+    }
+    .menu2 a {
+        transition: .3s ease all;
+    }
+    .menu2 a:hover{
+        transform: translateY(3px) !important;
+        background-color: rgb(54, 49, 49) !important;
+    }
+    .menu2::-webkit-scrollbar{
+        width: 0px !important;
+        display: none !important;   
+    }
+    .carritopedidos .col-6{
+        width: inherit !important;
+    }
+    .carritopedidos .col-2{
+        margin-left: 6rem ;
+    }
+    .carritopedidos .shopping-cart-quantity-input {
+margin-left: 3rem  !important;
+    }
+    .Salsas-titulo {
+        font-size: 18px !important;
+    }
+    .total-dinero{
+        top:413px !important;
+    }
+    .shoppingCartTotal{
+        margin-left: auto;
+        padding-left: 0rem !important;
+    }
+    
+}
+@media screen and (min-width:425px) {
+  
+    .menu2{
+        background-color: black;
+width: 100%;
+position: sticky;
+top: 0;
+padding: 5px;
+z-index: 999;
+text-align: center;
+display: flex;
+justify-content: center;
+font-family: 'Quicksand', sans-serif;
+color: white;
+margin-bottom: 20px;
+overflow-x: visible !important;
+ padding-left: 0rem !important;
+    }
+    .menu2 a{
+        padding: 10px 22px !important ;
+    }
+    .carritopedidos .col-6{
+        width: 50% !important;
+    }
+    .carritopedidos .col-2{
+        margin-left: 0rem !important ;
+        width: 22% !important;
+    }
+    .carritopedidos .item-price{
+        margin-left:1rem !important;
+    }
+    .carritopedidos .col-4{
+        width: 22% !important;
+    }
+    .carritopedidos .shopping-cart-quantity-input {
+margin-left: 0rem  !important;
+    }
+    .btn-si{
+        width:130px !important;
+    }
+   .btn-no{
+     width: 130px !important;
+   }
+     /* Merchandaising Formulario */
+     #formulario{
+      max-width: 590px;
+      margin: auto;
+    }
+.palace-carrito{
+margin-top: 1rem !important;
+}
+.divisor{
+display: block !important;
+}
+.Vista-producto {
+padding: 0rem !important; 
+
+}
+.Vista-producto {
+border-left: none !important;
+
+background-color: transparent !important; 
+height: inherit !important;
+}
+.formulario-compra {
+width: 100% !important;
+background-color: white !important;
+padding:0rem !important;
+text-align: center; 
+height: unset !important;
+}
+
+.cupón-descuento input{
+width: fit-content !important;
+}
+.subtotal-envio h4{
+margin-right: 0rem !important;
+}
+.contenedor-formulario-carrito{
+padding:0 16px !important;
+margin-top: 1.25rem !important;
+}
+.nombre-apellido{
+display: block !important;
+}
+.ciudad-estado{
+display: block !important;
+}
+.estado3{
+width: 100% !important;
+}
+.estado{
+width: 100% !important;
+margin-left: 0rem !important;
+}
+.numpostal{
+width: 100% !important;
+margin-left: 0rem !important;
+}
+.volver-continuar{
+-webkit-box-direction: normal !important;
+flex-direction: column-reverse !important;
+height: inherit !important;
+}
+.continuar-carrito{
+width: 100% !important;
+}
+.continuar-button{
+width: calc(100% * 12/12) !important;
+height:  63.44px !important;
+}
+.volver-carrito{
+width: 100% !important;
+text-align: center !important;
+padding-top: 19px !important;
+}
+.Vista-producto{
+display: none !important;
+}
+.Vista-producto2{
+display: block !important;
+}
+
+.envio .icono-hover{
+position: relative !important;
+padding: 0rem !important;
+margin-top: 0rem !important;
+width: 15px !important;
+height:  15px !important;
+margin-left: 0.35rem;
+}
+.euros{
+margin-left: auto !important;
+}
+.tbody4 .shopping-cart-item{
+padding-top:0rem !important;
+padding-right: 0rem !important;
+}
+.tbody4 .shopping-cart-price2{
+margin-left: auto !important;
+}
+.tbody4 .shopping-cart-item-title2{
+font-size: inherit !important;
+}
+.tbody4 .item-price2{
+margin-top: -1.2rem !important;
+margin-left: 0rem !important;
+position: relative !important;
+font-family:'Raleway', sans-serif;
+font-weight: 600;
+}
+.tbody4 .Talla-carrito{
+text-align: start !important;
+}
+.tbody4 .row{
+margin: 1px !important;
+padding-right: 0rem !important;
+}
+.cupón-descuento{
+width: 100% !important;
+}
+.cupón-descuento input{
+width: calc(100% * 12/12) !important;
+} 
+}
+
+
+      /* Tablet */
+
+
+    @media screen and (min-width:700px){   
+        body{
+            overflow-x: hidden !important;
+        }
+        /* Posible error pero puede ser necesitado por  algun elemento */
+        /* body{overflow-y:inherit !important;} */
+        .contenedorhero2{
+            min-height: 256px !important;
+            width: calc(100% - (2.3rem * 1.4));
+            padding-right: 1rem !important;
+            margin-right: 1.5rem !important;
+            margin-top: 23rem !important;
+            padding-top:3rem !important;
+            padding-left: 1.5rem !important;
+          }
+          .contenedorhero2 h2{
+            font-size:2rem !important ;
+          }
+          /* .section-inicio .contenedor-dobleimagen{
+            padding-top: 33rem !important;
+            height: fit-content !important;
+          } */
+          .contenedorhero2 .menu-dia-boton{
+            margin-right: 0rem !important;
+            font-size: 17px !important;
+          }
+          .contenedorhero2 .menu-reservas{
+            margin-left: -0.5rem !important;
+          }
+          .contenedorhero2 .menu-comidas{
+            margin-right: 0rem !important;
+            margin-left: 0rem !important;
+            justify-content: center;
+          }
+        .logo{
+            margin-left: 18rem !important;
+        }
+        .menu{
+            max-height: 62px;
+        }
+        .imagen-menu{
+            width: 41px;
+            margin-top: 0.25rem;
+        }
+        #reservasnav{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            margin-left: -2rem;
+        }
+        .Reservas-titulo{
+            margin-left:-2rem;
+            margin: 0rem;
+            width:188px;
+        }
+        .idiomas-selector{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 50%; 
+        }
+        .menu-cerrar{
+            width: 32px;
+        }
+        .restaurante-menu{ 
+           
+        margin-left: 5rem !important;
+        
+       
+         }
+        
+        .menu-responsive{
+          overflow-x: scroll !important;
+          padding-bottom: 3rem;
+        }
+        .descubremas{
+            width: 720px !important;;
+        }
+        .contenedorparallax{
+           
+            -webkit-box-orient: horizontal !important;
+            -webkit-box-direction: normal !important;
+            flex-direction: row !important;
+            -webkit-box-pack: end !important;
+            justify-content: flex-end !important;
+            background-position:right !important;
+            background-size: cover !important;
+            height: calc(55vw - ((1.5rem * 2))) !important;
+         
+          
+        }
+        .contenedorparallax .fondo{
+           max-width: 100%;
+        }
+        .tres-imagenes{
+            overflow-x: scroll;
+            padding-left: 1rem;
+            padding-right: 2rem;
+            justify-content:flex-start !important;
+            overflow-y: hidden;
+           
+        }
+        .tres-imagenes::-webkit-scrollbar{
+            width: 0px;
+            
+         }.tres-imagenes-2{
+            overflow-x: scroll;
+            padding-left: 1rem;
+            padding-right: 2rem;
+            justify-content:flex-start !important;
+            overflow-y: hidden;
+           
+        }
+        .tres-imagenes-2::-webkit-scrollbar{
+            width: 0px;
+            
+         }
+        .info-restaurante{
+            padding-top: 34rem;
+         }
+         .horario{
+            
+            padding: 2rem !important;
+            padding-top: 0rem !important;
+            padding-left: 9rem !important;
+            display: block !important;
+            width:650px !important;
+            justify-content: center;
+         }
+        .restaurante-caracteristicas{
+            position: absolute;
+            max-width: 656px;
+         }
+         .caracteristicas{
+            padding-left: 6rem !important;
+            padding-right: 0rem !important;
+            padding-top: 4rem !important;
+           font-size: 1rem;
+         }
+        
+         .menus-reservas{
+            display:revert;
+         }
+         .menu-dia-boton{
+            width: 170px;
+            
+         }
+         .menu-cenas{
+            margin-bottom: 1.5rem;
+         }
+         .reservas-info{
+            max-height: 60px;
+            max-width:139px ;
+         }
+         .cena-comida{
+            width: 300px;
+         }
+         .google-telefono{
+            margin-right: 5rem;
+            width: 300px;
+         }
+         .total-tresimagenes{
+            height: revert !important;
+            margin-bottom: 0rem !important;
+         }
+         
+         .dobleimagen{
+            display: block !important;
+            padding: 0rem !important;
+         }
+         .contenedor-dobleimagen{
+            margin: 0rem !important;
+             padding: 1.5rem; 
+             height: 1500px !important;       
+            
+         }
+         .contenedor-dobleimagen img{
+            width: calc(100% * 12/12) !important;
+            height: calc(72vw - ((1.5rem * 2))) !important;
+         }
+         .imagen1 {
+            margin-right: 0rem !important;
+         }
+        .reserva-evento{
+            margin: 0rem 18rem !important;
+            margin-bottom: 4rem !important;
+            max-width:132px !important ;
+        }
+        .texto-tresimagenes{
+            font-size: 25px !important;
+            padding-left: 1rem !important;
+            
+        }
+        .slider-container{
+            padding-right: 1rem !important;
+        }
+        .start-39{
+            left: 34.5% !important;
+        }
+        .imagenes-menu{
+            width: 520px !important;
+        }
+        .imagentresimagenes{
+            width: 520px !important;
+            height: 574px !important;
+        }
+        .final-info{
+            padding-bottom: 7.5rem !important;
+            padding-top: 0rem !important;
+            
+            }
+            .final-info h6{
+                padding-top: 1.5rem !important;
+                font-size: 19px !important;
+            }
+            .final-texto{
+         display: block !important;
+         text-align: center;
+            }
+            /* Catering */
+            .catering-inicio{
+                width: calc(100% * 12/12) !important;
+              margin: 0rem !important;
+              height: 69vw;
+            }
+            .catering-inicio2{
+                width: calc(100% * 12/12) !important;
+              margin: 0rem !important;
+              height: 69vw;
+            }
+            .contenedorhero{
+                min-height: 256px !important;
+                width: calc(100% * 11.4/12) !important;
+                min-width: 94%;
+    padding-right: 1rem !important;
+    margin-right: 1.5rem !important;
+    margin-top: 21rem !important;
+    padding-top:0rem !important;
+    padding-left: 1.5rem !important;
+            }
+            .section-inicio .contenedor-dobleimagen{
+                padding-top: 33rem !important;
+            }
+            .contenedorhero2{
+                min-height: 256px !important;
+                width: calc(100% * 11.4/12) !important;
+                margin-left: 0rem !important;
+    padding-right: 1rem !important;
+    margin-right: 1.5rem !important;
+    margin-top: 21rem !important;
+    padding: 5rem 4rem 7rem !important;
+            }
+            .catering-info{
+                padding: 2rem 0 6rem !important;
+                margin: 0 4rem !important;
+                
+              }
+              .Catering{
+                margin-top:20rem !important;
+              }
+              .imagenes-catering{
+                padding-left: 0rem!important;
+                padding-right: 0rem!important;
+              }
+              .imagen-catering1 img{
+                width: calc(100% * 11/12) !important;
+                height: 458px !important;
+             
+                 margin: 0 2rem;
+              }
+              /* Planealo */
+              .start-38{
+                left:24.5% !important;
+               }
+               .linea-descubremas{
+                margin-left: 5.5rem !important;
+               }
+               .titulo-descubremas{
+                margin-left:0.95rem !important;
+               }
+               .grupos-total{
+                height: fit-content !important;
+               }
+               .comidasgrupos{
+                   margin-left: 0rem !important;
+                    height: 100%;
+                    padding: 1.5rem !important;
+               }
+               #comidasengrupos{
+                padding-top: 12rem !important;
+               }
+               .comidasrestaurante1{
+                display: block !important;
+               }
+               .imagen-responsive{
+                width: calc(100% * 12/12) !important;
+                height: calc(72vw - ((1.5rem * 2))) !important;
+               }
+               
+               .texto-comidasgrupos{
+                padding-left: 0rem !important;
+               }
+               .texto-comidasgrupos h3{
+                padding-top: 2.25rem !important;
+                width: 300px !important;
+                font-size: 23px !important;
+               }
+               .texto-comidasgrupos p{
+                
+                font-size: 15px !important;
+               }
+               .texto-comidasgrupos-2{
+                padding-right: 0rem !important;
+               }
+               .texto-comidasgrupos-2 h3{
+                padding-top: 2.25rem !important;
+                width: 300px !important;
+                font-size: 23px !important;
+               }
+               .texto-comidasgrupos-2 p{
+                
+                font-size: 15px !important;
+               }
+               .formulario {
+                width: calc(100% * 10/12) !important;
+                 margin:4rem !important;
+                 margin-top: 7rem !important ;
+                 padding:6rem !important;
+               }
+               .formulario h3{
+                 padding-bottom: 3rem !important;
+                 font-size:26px;
+               }
+               .formulario h5{
+            
+                
+                font-size:18px;
+              }
+               .formulario_grupos_input{
+                font-size:17px !important ;
+               }
+               .formulario_grupos_input_comentario{
+                width: calc(100% * 11/12) !important;
+               }
+               /* Comidas Grupos */
+               #comidasengrupos{
+                padding-top: 0rem !important;
+                margin-top:-9.5rem !important;
+               }
+               .contenedorheroGrupos h4{
+                font-size: 17px !important;
+               }
+               .contenedorheroGrupos{
+                background: #fff;
+                width: calc(100% * 10/12) !important;
+             height: fit-content !important;
+                text-align: center !important;
+                margin-left: 0.5rem !important;
+                margin-right: 2.3rem !important;
+                margin-top: 7.5rem !important;
+                 position:relative !important;
+            -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                padding: 2rem 2.3rem !important;
+               }
+              /* Tajin Festival */
+              .Evento-festivales{
+                display: block !important;
+                height: fit-content !important;
+                
+               }
+               .texto-festivales{
+                padding-top: 2rem !important;
+               }
+               .imagen-responsive-2{
+                width: calc(100% * 12/12) !important;
+                height: calc(60vw - ((1.5rem * 2))) !important;
+               }
+               /* Sobre nuestro CEO */
+               .divceo{
+                justify-content: center !important;
+            }
+            /* Establecimientos */
+            .Establecimientos-titulo{
+                padding-bottom: 3rem !important;
+            }
+            .grupos-info{
+                padding: 0rem !important;
+            }
+            .establecimientos-restaurantes{
+                margin:0rem !important;
+            }
+            /* Catering - Ordenar */
+            .menu2{
+                background-color: black;
+                width: 100%;
+                position: sticky;
+                top: 0;
+                padding: 5px;
+                z-index: 999;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                font-family: 'Quicksand', sans-serif;
+                color: white;
+                margin-bottom: 20px;
+                overflow-x: visible !important;
+                padding-left: 0rem !important;      
+            }
+            
+            .Catering-titulo{
+                display: none !important;
+            }
+            .item-image{
+                width:calc(100% * 12/12) !important;
+                 height: 283px !important;
+             }
+             .tajin1{
+                font-size: 14px !important;
+             }
+             .item{
+                width:calc(100% * 12/12) !important;
+             }
+            .texto-catering{
+                display: none !important;
+            }
+            .info-catering-total{
+                margin-left: auto !important;
+                width: fit-content !important;
+            }
+
+            .final-info-catering{
+                text-align: center !important;
+                display: flex !important;
+                /* -webkit-box-orient: vertical; */
+                /* -webkit-box-direction: normal; */
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                margin-bottom: 0;
+            }
+            .final-texto-catering{
+                display: block !important;
+            }
+            .iniciarComprar{
+                margin-left:auto !important;
+                display: flex !important;
+                margin-right: 2rem !important;
+            }
+            .iniciarsesion{
+                margin-left: 0rem !important;
+            } 
+            /* Merchandaising */
+            .menu-Merch{
+                width: calc(100% * 12/12) !important;
+                margin-right: 0rem !important;
+            }
+            .menu-Merch2{
+              
+             width: calc(100% * 12/12) !important;
+             margin-right: 0rem !important;
+
+            }
+            .slider__container{
+              
+              height:calc(100% * 12/12) !important ;
+            }
+            .slider{
+            
+              height:calc(100% * 12/12) !important ;
+            }
+            .total-iconos{
+                display: flex;
+            }
+            .iconos-derecha{
+                margin-left: auto;
+               margin-right:5rem !important;
+            }
+            .search-icon{
+              width: 2.1em !important;
+              margin-left:0rem !important;
+            } 
+            .menu-icon{
+                width: 2.1em !important;
+                margin-right: 0rem !important;
+            }
+            .bag-icon{
+                width: 2.1em !important;
+            }
+            .fondo-opciones{
+                width: 300px !important;
+                 max-width: 300px !important;
+              }
+              .carrito-compra{
+                 width:initial !important;
+              }
+              .seleción-dirección img{
+                width: calc(100% * 12/12) !important;
+              }
+              .container-direc{
+                width: 100% ;
+                height:  100%;
+               }
+               .interior-seleccion img{
+                width: calc(100% * 12/12) !important;
+                height:calc(100% * 12/12) !important;
+                }
+               .camisa-imagen{
+                max-width:calc(100% * 12/12);
+                max-height:calc(100% * 6/12);
+               }
+                .seleción-dirección{
+                  width: 100%;
+                  
+                }
+                .seleción-dirección .conjunto-camis {
+                 background-color: transparent !important;
+                  
+                }
+                .seleción-dirección .conjunto-camis img {
+                 margin-left: 0rem !important;
+                 margin-right: 0rem !important;
+                   
+                 }
+                .seleción-dirección img{
+                  width: calc(100% * 11/12) !important;
+                  height: calc(100% * 8.35/12) !important;
+                }
+                .seleción-dirección .camisa2 .Camisas{
+                  font-size: 17px !important;
+                }
+                .seleción-dirección .camisa{
+                  width: calc(100% * 5/12);
+                  height:calc(100% * 4/12);
+                }
+              .titulo-direc{
+                font-size: 1em !important;
+              }
+              .lista-productos img{
+                width: calc(100% * 12/12) !important;
+                height:calc(100% * 7.1/12) !important;
+              }
+              .fila{
+                 display: flex !important;
+                 margin-left: 0.5rem !important;
+                 margin-right: 1.5rem !important;
+              }
+             
+              .camisa{
+                margin-right:1rem!important;
+                width:calc(100% * 1/3) !important;
+                margin-bottom: -7rem;
+              }
+              .hover-producto{
+                text-align: start !important; 
+              position: relative !important; 
+              margin-top: 0rem !important; 
+             margin-left: 0rem !important;
+              z-index: 2;
+             opacity: 1 !important;
+              padding: 2rem;
+              padding-left: 1.5rem !important;
+               padding-top: 1rem !important;
+             transition: all .4s ease 0s;
+             color: black;
+            cursor: pointer;
+              }
+              .hover-producto h4{
+                font-size: 17px;
+              }
+              .filafinal{
+                display: block !important;
+              }
+              .filafinal .col{
+                justify-content: center !important;
+              }
+              .iconos{
+                justify-content: center;
+                margin-left: 0rem !important;
+              }
+              .copyright{
+                margin-top: 2rem !important;
+              }
+              .no-vender{
+                font-size: 15px !important;
+              }
+              .icono-insta2{
+                margin-right: 0rem !important;
+              }
+              .icono-facebook2{
+                margin-right: 0.5rem !important;
+              }
+              .escaparate-libros .hover-producto2{
+                text-align: start !important; 
+                position: relative !important; 
+                margin-top: 0rem !important; 
+               margin-left: 0rem !important;
+                z-index: 2;
+               opacity: 1 !important;
+                padding: 2rem !important;
+                padding-left: 1.5rem !important;
+                 padding-top: 1rem !important;
+               transition: all .4s ease 0s;
+               color: black;
+              cursor: pointer;
+              }
+              .escaparate-libros img{
+                 width: calc(100% * 12/12) !important;
+              }  
+              .Agotado{
+                width: calc(100% * 6.2/12)!important;
+                
+              }
+              #libro-container{
+                display: block !important;
+              }
+              .política-compra-texto{
+                max-width: 780px;
+                margin: auto;
+                padding: 0rem 1rem  !important;
+              }
+              /* Merchandaising CARRITO-ENVIO */
+        
+        .Titulos{
+          display: none !important;
+        }
+        .Titulos2{
+          display: block !important;
+        }
+        .Envios{
+          width: calc(100% * 12/12) !important;
+        }
+        .Envios tr{
+             padding: 1.5rem ;
+        }
+        .Envios td {
+          padding:  20px 0px ;
+        }
+        .Envios .titulo-detalles{
+          margin: 0rem !important;
+          padding:0rem !important ;
+        }
+        .Envios .item-price2{
+          margin-left: auto !important;
+        }
+        .Envios .total-envio{
+          
+            font-family:'Rubik Spray Paint', cursive;
+            font-size:.93333em;
+            font-weight: lighter;
+        }
+        .Envios .row{
+          margin: 6px 0px !important;
+          border-top: 1px solid rgb(226, 226, 226);
+        }
+        .Envios td{
+          width: calc(100% * 12/12);
+        }
+        .Envios .shopping-cart-image2{
+          width: calc(100% * 12/12) !important;
+          height: inherit !important;
+        }
+        
+        .shoppingCartTotal{
+          padding-top: 0rem !important;
+        }
+        .tabla-producto{   
+          margin-left: 0rem !important;
+          width: calc(100% * 12/12) !important;
+        }
+        .Envios td{
+          padding: 1.25rem 1.5rem ;
+          width: calc(100% * 12/12) !important;
+        }
+        
+        .Envios tr {
+          width: calc(100% * 12/12) !important;
+          padding: 0rem !important;
+        }    
+              /* Merchandaising Formulario */
+              #formulario{
+                max-width: 590px;
+              }
+              .contenedor-formulario-carrito{
+                max-width: 590px;
+                margin: auto;
+              }
+        .palace-carrito{
+          margin-top: 1rem !important;
+        }
+        .divisor{
+          display: block !important;
+        }
+        .Vista-producto {
+          padding: 0rem !important; 
+          
+      }
+      .Vista-producto {
+          border-left: none !important;
+           
+          background-color: transparent !important; 
+          height: inherit !important;
+      }
+      .formulario-compra {
+       width: 100% !important;
+        background-color: white !important;
+        padding:0rem !important;
+       text-align: center; 
+        height: unset !important;
+    }
+    
+    .cupón-descuento input{
+      width: fit-content !important;
+    }
+    .subtotal-envio h4{
+      margin-right: 0rem !important;
+    }
+    .contenedor-formulario-carrito{
+      padding:0 16px !important;
+      margin-top: 1.25rem !important;
+    }
+    .nombre-apellido{
+      display: block !important;
+    }
+    
+    .ciudad-estado{
+      display: block !important;
+    }
+    .estado3{
+      width: 100% !important;
+    }
+    .estado{
+      width: 100% !important;
+      margin-left: 0rem !important;
+    }
+    .numpostal{
+      width: 100% !important;
+      margin-left: 0rem !important;
+    }
+    .volver-continuar{
+      -webkit-box-direction: normal !important;
+    flex-direction: column-reverse !important;
+    height: inherit !important;
+    }
+    .continuar-carrito{
+      width: 100% !important;
+    }
+    .continuar-button{
+      width: calc(100% * 12/12) !important;
+      height:  63.44px !important;
+    }
+    .volver-carrito{
+      width: 100% !important;
+      text-align: center !important;
+      padding-top: 19px !important;
+    }
+    .Vista-producto{
+      display: none !important;
+    }
+    .Vista-producto2{
+      display: block !important;
+    }
+    
+    .envio .icono-hover{
+      position: relative !important;
+      padding: 0rem !important;
+      margin-top: 0rem !important;
+      width: 15px !important;
+      height:  15px !important;
+      margin-left: 0.35rem;
+    }
+    .euros{
+      margin-left: auto !important;
+    }
+     .tbody4 .shopping-cart-item{
+      padding-top:0rem !important;
+      padding-right: 0rem !important;
+    }
+    .tbody4 .shopping-cart-price2{
+      margin-left: auto !important;
+    }
+    .tbody4 .shopping-cart-item-title2{
+      font-size: inherit !important;
+    }
+    .tbody4 .item-price2{
+      margin-top: -1.2rem !important;
+      margin-left: 0rem !important;
+      position: relative !important;
+      font-family:'Raleway', sans-serif;
+      font-weight: 600;
+    }
+    .tbody4 .Talla-carrito{
+      text-align: start !important;
+    }
+    .tbody4 .row{
+      margin: 1px !important;
+      padding-right: 0rem !important;
+    }
+    .cupón-descuento{
+      width: 100% !important;
+    }
+    .cupón-descuento input{
+      width: calc(100% * 12/12) !important;
+    } 
+    .comprar-online2{
+      width: inherit !important;
+    }
+    /* Merchandaising Envio-envio */
+    .container-envio{
+      max-width: 58.8rem;
+    padding: 0 0.3rem;
+    margin: 0 auto;
+    }
+    .contenido-correo {
+      height: auto !important;
+      width: inherit !important;
+    }
+    .contenido-correo h4{
+      margin-right: 0rem !important;
+    }
+    .opcion-envio h4{
+      margin-left: auto;
+      padding-left: 0rem !important;
+    }
+   .envio-precio{
+    margin-left: auto !important;
+   }
+   .subtotal-precio{
+      margin-left: auto !important;
+   }
+   .envio-container .opcion-envio label:before {
+    content: '';
+    border: 1px solid #d6cece;
+    border-radius: 30px;
+    width: 1.25rem;
+    height: 1.25rem;
+    position: absolute;
+    left: 0px;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.25px;
+    font-size: 6px;
+    cursor: pointer;
+}
+ .Contacto-Email{
+  display: block;
+  flex-grow: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
+ .Contacto-Email h4:first-child{
+  padding-bottom: 0.3rem;
+ color: #737373;
+  
+ }
+ .Contacto-Email h4:last-child{
+  padding-bottom: 0.4rem;
+  padding-top: 0rem !important;
+ }
+ /* Merchandaising Pago - Envio */
+ .enlaces{
+  max-width: 590px;
+  margin: auto;
+  padding: 0 16px !important;
+}
+.tbody5{
+  max-width: 590px !important;
+ margin: auto;
+}
+#Envio-title{
+  padding-top: 0rem !important;
+}
+.precio-envio2{
+  padding-top: 0rem !important;
+}
+.nombre{
+  width: 100% !important;
+}
+.apellido{
+  width: 100% !important;
+  margin-left: 0rem !important;
+}
+.contenedor1{
+  width: inherit !important;
+}
+.contenedor2{
+  width: inherit !important;
+  background-color: rgb(250, 250, 250);
+}
+    }
+    @media screen and (min-width:750px) {
+      .volver-continuar{
+        -webkit-box-direction: normal !important;
+      flex-direction: inherit !important;
+      height: inherit !important;
+      }
+      .continuar-carrito{
+        width: 100% !important;
+      }
+      .continuar-button{
+        width: 200px !important;
+        height:  63.44px !important;
+      }
+      .volver-carrito{
+        width: 100% !important;
+        text-align: start !important;
+        padding-top: 19px !important;
+      }
+       /* Merchandaising Envio-envio */
+      .Contacto-Email{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+       
+       }
+       .Contacto-Email h4:first-child{
+        padding-bottom: 0.3rem;
+       color: #737373;
+        
+       }
+       .Contacto-Email h4:last-child{
+        padding-bottom: unset !important;
+        padding-top: 0.9rem !important;
+       }
+        /* Merchandaising Pago-envio */
+        .envio-info .nombre-apellido{
+          display: flex !important;
+        }
+        .nombre-apellido .estado2:last-child{
+          margin-left: 1rem ;
+        }
+        .apellido{
+          margin-left: 1rem !important;
+        }
+        #Envio-title{
+          padding-top: 0.75rem !important;
+        }
+        .precio-envio2{
+          padding-top: 0.75rem !important;
+        }
+    }
+    
+    @media screen and (min-width:768px) {
+        /* Merchandaising-comprar */
+        .menu-Merch2 a{
+          margin-left: auto !important;
+    text-align: end !important;
+    margin-right: -2rem !important;
+        }
+        .img-camisetas{
+            display: flex !important;
+            width: calc(100% *12/12);
+          }
+          .imagen-camis{
+            width: calc(100% * 12/12) !important;
+            padding-top: 0rem !important;
+            margin-left: 2rem !important;
+          }
+          .img-camisetas .img-camis:last-child{
+            display: block !important;
+          }
+          .imagen-camis-telefono{
+            display: none !important;
+           
+            background-size: cover;
+            background-position: center;
+    
+            width: calc(100% * 12/12) !important;
+           margin-bottom: 3rem !important;
+    
+          }
+          .imagen-camis-telefono img{
+            width: calc(100% * 12/12) !important;
+            
+          }
+          .precio-online{
+            padding-left: 0rem !important;
+            margin-left: -3.5rem;
+            width: 100% !important;
+            align-items: center !important;
+            display: grid !important;
+             padding-top: 1.5rem !important;
+          }
+          .precio-online h4{
+            margin: auto !important;
+            margin-bottom: 1.5rem !important;
+            margin-left: calc(100% * 2.55/12) !important;
+            
+          }
+          .preciocamisa2{
+            margin-left: calc(100% * 2.65/12) !important;
+          }
+          .politica-compra{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+            margin-bottom: 2rem !important;
+          }
+         
+          .texto-camisetas{
+            display: flex !important;
+            height: fit-content !important;
+            width: calc(100% * 12/12) !important;
+            padding: 25px !important;
+            margin-bottom: 6rem !important;
+          }
+          .p-caracteristicas{
+            width: calc(100%* 12/12) !important;
+          }
+          .descripcion-camisetas p {
+             width: calc(100% *12/12) !important;
+             font-size: 15px !important;
+          }
+          .descripcion-camisetas{
+            padding-top: 2rem !important;
+            width: calc(100% * 12/12) !important;
+            margin-left: calc(100% * -1/12);
+          }
+          .talla{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+          }
+          .tallas{
+            width: calc(100% *8/12) !important;
+        
+          }
+          
+          .añadir-cesta{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+            margin-bottom: 0.85rem !important;
+          }
+          .Agotado{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+            margin-bottom: 0.85rem !important;
+          }
+          .comprar-online{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+          }
+          .opciones-pago{
+            width:calc(100% * 6.2/12)!important;
+            margin: auto !important;
+            margin-top: 1rem !important;
+          }
+          .opinion-redes {
+            display: inherit !important;
+            
+          }
+          .opinion-container{
+            display: inline-flex !important;
+            margin-right: 0.5rem !important;
+            margin-bottom: 0.5rem !important;
+            width: inherit !important;
+          }
+          .camisa2{
+            width: calc(100% * 6/12)  !important;
+            display: block !important;
+            margin-bottom: 0rem !important;
+          }
+          .lista-productos img{
+            margin-top: 0rem !important;
+            margin-right:  0rem !important;
+            margin-left : 0rem !important;
+          }
+          
+          .lista-productos .hover-producto2{
+            text-align: start !important; 
+            position: relative !important; 
+            margin-top: 0rem !important; 
+           margin-left: 0rem !important;
+            z-index: 2;
+           opacity: 1 !important;
+            padding: 2rem !important;
+            padding-left: 1.5rem !important;
+             padding-top: 1rem !important;
+           transition: all .4s ease 0s;
+           color: black;
+          cursor: pointer;
+          }
+          .hover-producto2 h4{
+            font-size: 17px !important;
+          }
+          
+          .lista-productos .fila{
+            overflow:hidden !important;
+      }
+          .boton-camisetas{
+            padding-top: 0rem !important;
+          }
+          .escaparate-libros img{
+            width: calc(100% * 4/12) !important;
+         } 
+         .recetas{
+          display: flex !important;
+         }
+         .recetas img{
+          width: calc(100% * 6/12) !important;
+         }
+         .receta1{
+          width: calc(100% * 6/12) !important;
+         }
+         /* Merchandaising - Envio */
+         .Titulos{
+          display: table-row !important;
+         }
+         .Envios{
+          display:table-row-group!important;
+         }
+         .tabla-producto{   
+          margin-left: 0rem !important;
+          width: calc(100% * 12/12) !important;
+        }
+        .Envios td{
+          display: table-cell !important;
+         background-color: transparent !important;
+         width: unset !important;
+        }
+        .Envios .shopping-cart-image2{
+          width: unset !important;
+          height: 90px !important;
+        }
+        .fondo-envio{
+          width: unset !important;
+
+        }
+        .conjuntoimagen-talla{
+          display: flex !important;
+        }
+        .conjuntotalla{
+          padding-left: 4rem !important;
+          padding-top: 0.5rem !important;
+        }
+        .total-envio{
+           padding-left: 1rem !important;
+        }
+        .talla-envio{
+          padding-left: 1rem !important;
+        }
+        .producto-envio{
+          padding: 0rem !important;
+          padding-bottom: 10px !important;
+        }
+        .cantidad-envio{
+          padding: 0rem !important;
+          padding-bottom:10px !important;
+          padding-left: 3rem !important;
+        }
+        .Envios .textos{
+          display: none !important;
+        }
+        
+    }
+    @media screen and (min-width:769px) {
+        .info-catering-total{
+            margin: auto !important;
+            width: max-content !important;
+        }
+        .final-texto-catering{
+            display: flex !important;
+        }
+        .texto-catering{
+            display: block !important;
+        }
+        
+    }
+
+    @media screen and (min-width:990px) {
+       
+        #reservasnav{
+            position: inherit;
+            bottom: inherit;
+            left: inherit;
+            width: 50%;
+            margin-left: -2rem;
+        }
+        .Reservas-titulo{
+            margin-left:-2rem;
+            margin: 0rem;
+            width:188px;
+            padding-left: 3.25rem;
+        }
+        .idiomas-selector{
+            position: inherit;
+            bottom: inherit;
+            left: inherit;
+            width: 50%; 
+        }
+       .slider-container{
+        max-width: 1000px;
+       } 
+       #slide{
+        width: 900px !important;
+       }
+       .descubremas{
+        min-width: 901px !important;
+       }
+       .start-39{
+        left: 37.5% !important;
+    }
+       .info-restaurante{
+        padding-top: 0rem;
+     }
+     .horario{
+        padding-top: 4rem!important;
+        padding-left: 7rem !important;
+        display:block !important;
+        width:650px !important;
+        justify-content: center;
+     }
+    .restaurante-caracteristicas{
+        position:inherit !important;
+        max-width: 656px;
+     }
+     .caracteristicas{
+        padding-left: 0rem !important;
+        padding-right: -4rem !important;
+        padding-top: 4rem !important;
+       font-size: 1rem;
+       
+       width: 450px;
+     }
+    
+     .menus-reservas{
+        display:revert;
+     }
+     .menu-dia-boton{
+        width: 170px;
+     }
+     .menu-cenas{
+        margin-bottom: 1.5rem;
+     }
+     .reservas-info{
+        max-height: 60px;
+        max-width:139px ;
+     }
+     .google-telefono{
+        width: 167px;
+     }
+     .cena-comida{
+        width: 167px;
+     }
+     .contenedor-dobleimagen{
+  padding: 6.5rem !important;
+        height:700px !important;
+        background-color: white;
+        margin:3rem !important;
+       }
+       .contenedor-dobleimagen img{
+        width: calc(100% * 12/12) !important;
+        height: inherit !important;
+       }
+       .justify-content-center{
+        justify-content: initial !important;
+       }
+       .imagen1{
+        width: calc(50% - 20px) !important;
+        margin-right: 2rem!important;
+        
+       }
+       .imagen2{
+        width: calc(50% - 20px) !important;
+       }
+       .contenedor-dobleimagen p{
+           color:black;
+       }
+       .dobleimagen{
+           height: 100%;
+           width: 100%;
+           padding: 4rem;
+           display: flex !important;
+          
+       }
+  
+       .imagen1 img{
+           cursor: pointer;
+       }
+       .reserva-evento{
+        margin:10rem !important;
+        margin-top: 0rem !important;
+       }
+       .eventos-horario{
+        font-size: 15px !important;
+       }
+       .imagentresimagenes{
+        width: 480px !important;
+        height: 480px !important;
+       }
+       .final-texto{
+        display: flex !important;
+       }
+       .final-info{
+        padding-bottom:0.75rem !important ;
+       }
+     /* Catering */
+     .Catering{
+        margin-top: 8rem !important;
+     }
+      .catering-info{
+        padding-left: 17rem !important;
+        padding-right: 13rem !important;
+      }
+       /* Planealo */
+       #comidasengrupos{
+        padding-top: 0rem !important;
+        margin-top:-9.5rem !important;
+       }
+       .contenedorheroGrupos h4{
+        font-size: 17px !important;
+       }
+       .contenedorheroGrupos{
+        background: #fff;
+        width: calc(100% * 8/12) !important;  
+         max-width: 87.5rem !important;
+     height: fit-content !important;
+        text-align: center !important;
+        margin-left: 0.5rem !important;
+        margin-right: 2.3rem !important;
+        margin-top: 7.5rem !important;
+         position:relative !important;
+    -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 5rem 7rem !important;
+       }
+       /* Tajin Festival */
+       .Evento-festivales{
+        display: flex !important;
+        height: fit-content !important;
+        margin: 2rem !important;
+       }
+       .texto-festivales{
+        padding-top: 2rem !important;
+        padding: 4rem 3.5rem !important;
+       }
+       .imagen-responsive-2{
+        width: calc(100% * 12/12) !important;
+        height: 100% !important;
+        
+       }
+       /* Sobre nuestro CEO */
+       .divceo{
+        justify-content: center !important;  
+         }
+     /* Merchandaising */
+        
+     .menu-Merch2 a{
+        margin-left: auto !important;
+        
+        text-align: end !important;
+        margin-right: -2rem !important;
+    }
+      .lista-productos img{
+        width: calc(100% * 12/12) !important;
+        height: calc(100% * 9.528/12) !important;
+      }
+      .fila{
+         display: flex !important;
+         margin: auto !important;
+      }
+     
+      .camisa{
+        margin-right:1rem!important;
+        width:calc(100% * 1/3) !important;
+        margin-bottom: 0rem !important;
+      }
+      .hover-producto{
+        text-align: center !important;
+        position: absolute !important;
+        width: calc(100% *3.902/12);
+        margin-left:auto;
+      z-index: 2;
+     opacity: 0 !important;
+     margin-top: calc(100% * -2.3/12) !important;
+     transition: all .4s ease 0s;
+     color: black;
+    cursor: pointer;
+      }
+      .hover-producto h4{
+        font-size: calc(1.275rem + .3vw);
+      }
+      .camisa:hover .hover-producto{
+        opacity: 1 !important;
+       }
+       .hover-producto h4{
+        font-size: 1.33333em !important;
+      }
+      .seleción-dirección .camisa2 .Camisas {
+      
+        font-size: 1.33333em !important;
+    }
+      .filafinal{
+        display: flex !important;
+        margin-top: 0rem !important;
+      }
+      .filafinal .col{
+        justify-content: center !important;
+      }
+      .iconos{
+        justify-content: center;
+        margin-left: 0rem !important;
+      }
+      .copyright{
+        margin-top: 2rem !important;
+      }
+      .no-vender{
+        font-size: 15px !important;
+      }
+      .icono-insta2{
+        margin-right: 0rem !important;
+      }
+      .icono-facebook2{
+        margin-right: 0.5rem !important;
+      }
+      .iconos{
+        margin-top: 1.5rem !important;
+
+      }
+      .iconos img{
+        height: 32px !important;
+      }
+      /* Merchandaising - Comprar */
+      .precio-online{
+        padding-left: 0rem !important;
+        margin-left: -3.5rem;
+        width: 100% !important;
+        align-items: center !important;
+        display: grid !important;
+      }
+      .precio-online h4{
+        margin: auto !important;
+        margin-bottom: 1.5rem !important;
+        margin-left: calc(100% * 3.55/12) !important;
+      }
+      .preciocamisa2{
+        margin-left: calc(100% * 3.75/12) !important;
+      }
+      .politica-compra{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+        margin-bottom: 2rem !important;
+      }
+     
+      .texto-camisetas{
+        display: flex !important;
+        height: fit-content !important;
+        width: calc(100% * 12/12) !important;
+        padding: 25px !important;
+      }
+      .p-caracteristicas{
+        width: calc(100%* 12/12) !important;
+      }
+      .descripcion-camisetas p {
+         width: calc(100% *12/12) !important;
+         font-size: 15px !important;
+      }
+      .descripcion-camisetas{
+        padding-top: 2rem !important;
+        width: calc(100% * 12/12) !important;
+      }
+      .talla{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+      }
+      .tallas{
+        width: calc(100% *6/12) !important;
+    
+      }
+      .imagen-camis{
+        margin-left: calc(100% * 0.75/12) !important;
+      }
+      .añadir-cesta{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+        margin-bottom: 0.85rem !important;
+      }
+      .Agotado{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+        margin-bottom: 0.85rem !important;
+      }
+      .comprar-online{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+      }
+      .opciones-pago{
+        width:calc(100% * 4.2/12)!important;
+        margin: auto !important;
+        margin-top: 1rem !important;
+      }
+      .camisa2{
+ display: block !important;
+      }
+      .camisa2:hover .hover-producto2{
+        opacity: 1 !important;
+       }
+      .lista-productos .hover-producto2{
+        text-align: center !important;
+        position: absolute !important;
+        width: calc(100% *3.4/12);
+        margin-left:auto;
+      z-index: 2;
+     opacity: 0 !important;
+     margin-top: calc(100% * -2.1/12) !important;
+     margin-left: calc(100% * 0.2/12) 1;
+     transition: all .4s ease 0s;
+     color: black;
+    cursor: pointer;
+      }
+      .hover-producto2 h4{
+        font-size: calc(1.275rem + .3vw);
+      }
+      .lista-productos .fila{
+        overflow:hidden !important;
+  }
+  .escaparate-libros .hover-producto2{
+    text-align: center !important;
+    position: absolute !important;
+    width: calc(100% *12/12);
+    margin-left:auto;
+  z-index: 2;
+ opacity: 0 !important;
+ margin-top: calc(100% * -4.1/12) !important;
+margin-left: calc(100% * -0.25/12) !important;
+ transition: all .4s ease 0s;
+ color: black;
+cursor: pointer;
+  }
+  
+  .libro1:hover .hover-producto2{
+    opacity: 1 !important;
+   }
+   .hover-producto2 h4{
+    font-size: 1.33333em !important;
+  }
+  .escaparate-libros .hover-producto2{
+    text-align: center !important;
+    position: absolute !important;
+    width: calc(100% *3.7/12);
+    margin-left:auto;
+  z-index: 2;
+ opacity: 0 !important;
+ margin-top: calc(100% * -1.4/12) !important;
+margin-left: calc(100% * -0.25/12) !important;
+ transition: all .4s ease 0s;
+ color: black;
+cursor: pointer;
+  }
+  /* Merchandaising Carrito - Envio  */
+  .Envios .shopping-cart-image2{
+    width: unset !important;
+    height: 160px !important;
+  }
+  .conjuntotalla{
+        padding-left: 4rem !important;
+padding-top: 2.5rem !important;
+  }
+    }
+    @media screen and (min-width:1000px) {
+/* Merchandaising Envio-Checkout-Pago */
+.divisor{
+  display: flex !important;
+}
+.formulario-compra{
+  padding-right: 3.4vw !important;
+  padding-left: 5vw !important;
+  padding-top: 2rem !important;
+  height: fit-content !important;
+  max-width: 700px;
+  border-right: 1px solid #d6cece;
+}
+.Vista-producto2{
+  display: none !important;
+}
+.Envios{
+  width: calc(100% * 9.5/12) !important;
+  display: none !important;
+}
+.Vista-producto{
+  display: block !important;
+  
+  height: 100% !important;
+  
+  
+}
+
+    }
+    @media screen and (min-width:1024px) {
+        /* Catering */
+        .catering-inicio {
+            margin: 0 3rem !important;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            background-position: center;
+            background-size: cover;
+            width: calc(100% * 10/12) !important;
+            margin-top: 3rem !important;
+            
+        }
+        .catering-inicio2{
+            margin: 0 !important;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            -webkit-box-pack: end;
+            justify-content: flex-end;
+            background-position: center;
+            background-size: cover;
+            width: calc(100% * 12/12) !important;
+           
+            
+        }
+        .contenedorhero{
+            padding-right: 9.5rem !important;
+            padding-bottom: 4rem !important;
+            padding-left: 3.5rem !important;
+            padding-top: 13rem !important;
+            min-height: 400px !important;
+            min-width: initial !important;
+            max-width: 380px !important;
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            z-index: 1;
+            margin-top: 5rem !important;
+            margin-right: -6rem !important;
+            font-family: 'Quicksand', sans-serif;
+        }
+        .contenedordelhero{
+            align-items: flex-end !important;
+        }
+        .contenedorhero2{
+            padding-right: 2.5rem !important;
+            padding-bottom: 11rem !important;
+            padding-left: 2.5rem !important;
+            padding-top: 0rem !important;
+            min-height: 400px !important; 
+            width: initial !important;
+            min-width: initial !important;
+            max-width: 374px !important;
+            min-height: 543px !important;
+            background-color: white;
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: end;
+            z-index: 1;
+            margin-top: 10rem !important;
+            margin-right: 11rem !important;
+            font-family: 'Quicksand', sans-serif;
+          }
+          .contenedorhero2 h2{
+              padding-top: 0rem !important;
+          }
+          .contenedorhero2 h4{
+             font-size: 17px !important;
+        
+        }
+        .contenedorhero2 .menus-reservas{
+            margin-left: 5.5rem !important;
+           margin-bottom: -2rem;
+        }
+        .section-inicio .contenedor-dobleimagen{
+            margin-top: -11rem !important;
+            padding-top: 28rem !important;
+        }
+        /* Planealo  */
+        .comidasgrupos {
+            margin-left: 3rem !important;
+           
+            padding: 5rem !important;
+        }
+        .comidasrestaurante1 {
+            display: flex !important;
+           
+        }
+        .imagen-responsive{
+            width: calc(100% * 6/12) !important;
+            height: calc(29vw - ((1.5rem * 2))) !important;
+        }
+        .texto-comidasgrupos{
+            padding-left: 6rem !important;
+            margin-top: -5rem !important;
+
+        }
+        .texto-comidasgrupos-2{
+            padding-right: 7rem !important;
+
+        }
+        .formulario{
+           
+    background-color: white !important;
+    position: relative !important;
+    display: inline-block !important;
+    padding: 7rem !important;
+    width: 600px !important;
+    margin: 8rem !important;
+        }
+        /* 3 Imagenes final */
+        .tres-imagenes{
+            overflow-x: initial !important;
+        padding-left: 0rem !important;
+            padding-right: 1rem !important;
+          justify-content: flex-start !important;
+           overflow-y: hidden;
+        }
+        .imagentresimagenes{
+            width: calc(100% * 12/12) !important;
+            height: calc(39vw - ((1.5rem * 2))) !important;
+        }
+        /* Establecimientos */
+        .Establecimientos-titulo{
+            padding-bottom: 0rem !important;
+        }
+        .grupos-info{
+            padding: 4rem !important;
+        }
+        .establecimientos-restaurantes{
+            margin:4rem !important;
+        }
+        .iniciarComprar{
+            margin-left:auto !important;
+            display: flex !important;
+            margin-right: 2rem !important;
+        }
+        .iniciarsesion{
+            margin-left: 0rem !important;
+        }
+        /* Catering */
+        .item-image {
+            width: calc(100% * 12/12) !important;        
+          height:424px !important;
+
+        }
+        /* Merchandaising -Comprar */
+        .escaparate-libros img{
+          width: calc(100% * 4.5/12) !important;
+       } 
+       .escaparate-libros {
+        display: block !important;
+       }
+       .escaparate-libros .hover-producto2{
+        text-align: center !important;
+        position: absolute !important;
+        width: calc(100% *4.7/12);
+        margin-left:auto;
+      z-index: 2;
+     opacity: 0 !important;
+     margin-top: calc(100% * -1.7/12) !important;
+    margin-left: calc(100% * -0.25/12) !important;
+     transition: all .4s ease 0s;
+     color: black;
+    cursor: pointer;
+      }
+      .contenedor1{
+        width: 64% !important;
+      }
+      .contenedor2{
+        width: 42% !important;
+        background-color: rgb(250, 250, 250);
+      }
+    }
+    @media screen and (min-width:1080px) {
+      /* Merchandaising Envio-Pago-Checkout */
+      .comprar-online2{
+        width: 270px !important;
+      }
+    }
+
+    @media screen and (min-width:1100px) {
+        .logo{
+            margin-left: 31rem !important;
+            margin-right: 7rem !important;
+        }
+        .imagen-menu{
+            width: initial !important;
+        }
+        .descubremas{
+            width: 199vh !important;
+            
+        }
+        #slide{
+            width: 199vh !important;
+        }
+        .start-39{
+            left: 40.5% !important;
+        }
+        .caracteristicas {
+             width: 666px !important;
+             margin-left:0rem;
+        }
+        .google-telefono{
+            width: 300px;
+        }
+        .cena-comida{
+            width: 297px;
+        }
+        .imagen1{
+            margin-right: 3rem !important;
+
+        }
+        .contenedor-dobleimagen{
+            padding-bottom:0rem !important;
+            margin-bottom:0rem !important;
+        }
+        .contenedor-dobleimagen img{
+            width: calc(100% * 12/12) !important;
+            height: inherit !important;
+            
+        }.section-inicio .contenedor-dobleimagen{
+            margin-top: -11rem !important;
+            padding-top: 24rem !important;
+        }
+        /* Catering  */
+        .item-image {
+            width: calc(100% * 12/12) !important;        
+          height:424px !important;
+
+        }
+        /* Merchandaising -comprar */
+        .img-camis{
+          width: calc(100% *11/12) !important;
+        }
+        .imagen-camis{
+          margin-left: 0rem !important;
+        }
+    }
+    @media screen and (min-width:1220px) {
+      /* Merchandaising-responsive */
+      .divisor{
+        justify-content: center;
+       
+      }
+      .contenedor1{
+        width: 670px !important;
+      }
+      .contenedor2{
+        width: 482px !important;
+        background-color: rgb(250, 250, 250);
+      }
+    }
+    @media screen and (min-width:1240px) {
+      .imagen-camis{
+        
+        margin-left: 0rem !important;
+      }
+      
+    }
+    @media screen and (min-width:1270px) {
+        .contenedorhero{
+            max-width: 425px !important;
+            min-height: 485px !important;
+        }
+        .contenedorhero2{
+            max-width: 425px !important;
+            min-height: 543px !important;
+        }
+        /* Tajin-evento */
+        .texto-festivales{
+            padding-top: 2rem !important;
+            padding: 5rem 5.5rem !important;
+            width: calc(100% * 7/12) !important;
+           }
+    }
+    .reverso{
+        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+    }
+    .reverso-horizontal{
+        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+    }
+    .flecha-catering{
+        position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 40px;
+    z-index: 100;
+    cursor: pointer;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 40%, rgb(0, 0, 0) 100%);
+    }
+ .imagen-evento{
+    width: 100%;
+    height: 100%;
+ }
+ .imagen-evento img{
+    width:793px;
+    height: 513px;
+ }
+ .justify-content-center2{
+    justify-content: center !important;
+ }
+.logo:hover{
+ cursor: pointer;
+}
+#menu-listado{
+    top:0;
+    position: sticky;
+    width: 100%;
+    height: 550px;
+    background-color:white;
+    display:none;
+    font-family: cursive;
+    z-index: 999;
+    transform: translateY(0);
+}
+
+#ocultarnav{
+    display: none;
+}
+.Reservas{
+    top:1;
+    position: sticky;
+   display: none;
+    background-color:white;
+    transform: translateY(0);
+  
+    z-index: 999;
+   font-family: 'Josefin Sans', sans-serif;
+    margin-left: 2rem;
+}
+.Reservas h5{
+   padding:20px;
+}
+  #flechaabajo{
+    width: 30px;
+    height: 30px; 
+}
+.reservas .abierto{
+    display:none
+}
+.Reservas-titulo{
+    padding-top:1.5rem ;
+    
+    display: flex;
+    background-color: #b6924f;
+    overflow-y: hidden;
+    color:white;
+    height: 100%;
+    font-family: 'Bebas Neue';
+    width: 200px;
+    margin-left: 2rem;
+
+}
+.Reservas-titulo:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+   
+.palacios{
+    width: 100%;
+   
+    display: block;
+}
+.palacios a{
+    color:black;
+}
+.palacios a:hover{
+    text-decoration: none;
+    color: #95172c;
+}
+.Reservas .palacios:hover{
+    color:#95172c;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color:#f5f4f2;
+}
+.links{
+    color:black;
+    
+}
+.links:hover{
+    color:black;
+    opacity: 0.5;  
+}
+#menu-listado img {
+    margin:2rem;
+}
+.menu-cerrar:hover{
+    cursor:pointer;
+    
+}
+.restaurante-menu{
+    
+    margin-top: 7rem;
+    margin-left: 2rem;
+    margin-right:6rem;
+}
+.restaurante-menu h2{
+   font-size: 17px ;
+   padding-bottom:3rem ;
+}
+.restaurante-menu h3{
+    font-size: 12px ;
+    padding-bottom:1rem;
+}
+.Menu-menu{
+    margin-left: 2rem;
+    margin-right:6rem;
+    
+}
+.Menu-menu h2{
+    margin-top:5rem;
+    font-size: 17px ;
+   padding-bottom:3rem ;
+   
+}
+.Menu-menu h3{
+    font-size: 12px ;
+    padding-bottom:1rem;
+}
+.Menu-nosotros{
+    margin-left: 2rem;
+    margin-right:6rem;
+    
+}
+.Menu-nosotros h2{
+    margin-top:5rem;
+    font-size: 17px ;
+   padding-bottom:3rem ;
+   
+}
+.Menu-nosotros h3{
+    font-size: 12px ;
+    padding-bottom:1rem;
+}
+.Menu-contacto{
+    margin-left: 2rem;
+    margin-right:6rem;
+    
+}
+.Menu-contacto h2{
+    margin-top:5rem;
+    font-size: 17px ;
+   padding-bottom:3rem ;
+   
+}
+.Menu-contacto h3{
+    font-size: 12px ;
+    padding-bottom:1rem;
+}
+.menu{
+    background-color:#f7f6f2;
+    width: 100%;
+    max-height: 75px;
+    position: sticky;
+    top:0;
+    z-index: 999;
+    display: flex;
+    font-family:"Noto Serif",serif;
+   font-style: italic;
+   
+}
+.imagen-menu{
+    padding:5px;
+}
+.logo{
+    padding:5px;
+}
+
+.menu .menu-idioma{
+  display:inline-block;
+  padding: 10px 30px;
+  font-size:16px;
+  top:0;
+  margin: 0 10px;
+  transition: .5s ease all;
+  color:#95172c;
+  text-decoration: none;
+}
+.menu .menu-idioma:hover{
+    transform: translateY(18px);
+    background-color:#ce748c;
+}
+
+.menu .idiomas{
+    transform: none;
+    transition: none;
+    background: white;
+    
+   
+
+}
+.listado-idiomas{
+    position: absolute;
+    z-index: 999;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 14px 0 0 4px;
+    -webkit-box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+    box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+    background-color:#ccc ;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: scroll;
+    top:0;
+}
+ .listado-idiomas .idioma-español{
+    
+    background-color:#ce748c;
+    padding: 10px 40px;
+    
+ }
+ .listado-idiomas .idioma-ingles{
+    margin-bottom:1rem ;
+    
+   
+}
+.listado-idiomas .idioma-frances{
+    margin-bottom:1rem ;
+    
+}
+.listado-idiomas .idioma-italiano{
+    margin-bottom:1rem ;
+}
+.listado-idiomas .idioma-ruso{
+    margin-bottom:1rem ;
+}
+.listado-idiomas .idioma-aleman{
+    margin-bottom:1rem ;
+}
+.listado-idiomas .idioma-chino{
+    margin-bottom:1rem ;
+}
+.listado-idiomas .idioma-coreano{
+    margin-bottom:1rem ;
+    
+}
+.idioma-selector{
+   margin-left: 5rem;
+    
+}
+ #bandera-idioma{
+    margin-top: 0.5rem;
+    padding-left:3rem;
+     top:0;
+       
+ }
+ #bandera-idioma:hover{
+    cursor: pointer;
+    
+ }
+.menu .idiomas-boton{
+     margin-left:1rem; 
+     margin-top: 27px;
+     top:0;
+     height: 35px; 
+     width: 35px;  
+}
+#lenguaje{
+    display:none;
+    top:0;
+}
+#boton-arriba{
+    display:none;
+    margin-left: 12rem;
+    margin-top: -1rem;
+    top:0;
+    width: 20px;
+    height: 20px;
+}
+#boton-abajo{
+    display:inline-block;
+    top:0;
+    width: 20px;
+    height: 20px;
+    margin-left: 1rem;
+    margin-top:1rem;
+    
+}
+.contenedorparallax{
+    width: 100%;
+    height:700px;
+    background-image:url(../img/kao-rodriguez-4hGkef2dSoo-unsplash.jpg);
+    background-position: center;
+   
+}
+
+
+.elecion{
+    padding-top: 1rem;
+}
+.opciones{
+    --bs-gutter-x: 0rem;
+}
+#opciones{
+    width: 25%;
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18rem;
+    padding-top: 2rem; 
+    padding-right:2rem;
+}
+
+.contenedor figure{
+    position: relative;
+    height: 250px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 7px 7px 0px #6C1B0B;
+    cursor: pointer;
+}
+
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #9a8b7f;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    
+}
+.contenedor figure:hover > .capa{
+    opacity: 0.95;
+    visibility: visible;
+}
+.contenedor figure:hover > .capa h2{
+    margin-top: 6rem;
+    
+
+}
+.contenedor figure:hover{
+    transform: scale(1.15);
+    transition: 0.9s ease all;
+}
+.container{
+    background-color: white ;
+    padding-bottom: 4rem;
+    padding-top: 1rem;
+}
+.container-inicio{
+    margin:2rem;
+    margin-top:-3rem;
+    
+    padding-top: 7rem;
+}
+.container-opciones{
+    
+    margin-top: 4rem ;
+}
+
+.fondo-cuadrado{
+   background-image: url(../img/cuadrado2.jpg);
+   padding: 1rem;
+   background-position: center;
+   background-size: cover;
+}
+
+.container-inicio .imagen-especias{
+    width: 350px;
+    height:250px;
+    margin-left:20rem;
+    margin-bottom: 2rem;
+    padding-right: 3rem;
+    cursor: pointer;
+    
+}
+.container-inicio #especial {
+   margin-left: 0rem;
+}
+.container-inicio .imagen-especias:hover{
+    transition: .7s ease all;
+    transform: scale(1.10);
+    opacity: 0.99;
+    
+}
+.ultimas-noticias{
+    margin-left:3rem;
+}
+ .ultimas-reseñas #imagen-reseña:hover{
+    transition: 0.6s ease all;
+    transform: scale(1.15);
+}
+.imagen-noticia{
+    margin-right: 5rem;
+
+}
+ .ultimas-noticias #imagen-noticia:hover{
+    transition: .6s ease all;
+    transform: scale(1.15);
+}
+.container-titulo{
+    margin-top:3rem;
+    justify-content: center;
+}
+.container-doble{
+   width: 100%;
+   height: 100%;
+  
+  display: flex;
+   justify-content: center; 
+   
+}
+
+.noticias{
+    margin-top:5rem;
+    margin-left:10rem;
+    padding-left: 7rem;
+    width: 100%;
+    padding-bottom: 3rem;
+    background-color: white;
+}
+
+.noticias img{
+    height: 300px;
+    width: 200px;
+    padding-top: 2rem; 
+    box-shadow: 0px 3px 0px #b6924f;
+}
+.noticias img:hover{
+   cursor: pointer;
+}
+.noticias2 img:hover{
+   cursor: pointer;
+}
+
+.noticias2{
+    margin-top:5rem;
+    background-color: white;
+    width: 100%; 
+    margin-right: 10rem;
+    padding-left: 7rem;
+}
+.noticias2 img{
+    height: 300px;
+    width: 200px;
+    padding-top: 2rem;
+    margin-left:6rem;
+    box-shadow: 0px 3px 0px #b6924f;
+    
+}
+.container-doble .ultimas-reseñas .reseñas{
+    margin-left: 8rem;
+}
+.container-doble h3{
+    max-width: 130px;
+    margin-top: 40px;
+    color: #b6924f;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+    margin-left: 2.5rem;
+
+}
+.container-doble h3:hover{
+    text-decoration:none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #95172c;
+    color:#95172c;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Evento-festivales{
+  margin:4rem;
+  display: flex;
+  height: 75%;
+  transition:.3s ease all;
+  background-color: white;
+}
+.Evento-festivales:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.texto-festivales{
+    
+    padding-left:5rem;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    padding-right: 3rem;
+   
+}
+.texto-festivales h5{
+     padding-bottom: 2rem;
+     padding-top: 1rem;
+     font-family: 'Aboreto', cursive;
+     font-size: 24px;
+     color: #000;
+}
+
+.texto-festivales h2{
+    color: #b6924f;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 47px;
+    
+}
+.texto-festivales p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    width:300px;
+    padding-top: 2rem;
+}
+
+.texto-festivales h2:hover{
+    opacity: 0.8;
+}
+.texto-festivales h4{
+ 
+    padding-top: 1rem;
+    font-family: 'Aboreto', cursive;
+    font-size: 24px;
+    text-decoration: none;
+    display: inline-block;
+    color: #b6924f;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: .3s ease all;
+    font-weight: 400;
+}
+.texto-festivales h4:hover{
+    text-decoration: none;
+    text-decoration:none;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #95172c;
+    color:#95172c;
+    
+}
+.Palace-inicio{
+    width: 100%;
+    height: 1000px;
+}
+.slider-container{
+    padding: 2rem;
+    padding-top: 7rem;
+    width: 100%;
+    height: 1000px;
+    display:flex;
+    justify-content: space-around;
+ align-items: center;
+}
+.slider{
+    width: 100%;
+height: auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+.titulo-slider{
+    color:white;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+}
+#tit-slider-2{
+    margin-left: -2rem;
+}
+#tit-slider-3{
+    font-size: 3.2rem;
+    margin-left: 3.2rem;
+    letter-spacing: 3px;
+}
+.start-39{
+    left: 39.5%;
+}
+.start-38{
+    left: 41.5%;
+}
+
+.titulo-descubremas{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: white;
+    width: fit-content;
+    margin-left: 2.95rem;
+    margin-top:1.2rem;
+}
+.titulo-descubremas:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.linea-descubremas{
+    height: 50px;
+    width: 1px;
+    background-color: white;
+    margin-top:1.5rem;
+    margin-left: 7.5rem;
+}.descubremas{
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+   width: 1285px;
+   height: 856px;
+}
+.descubremas .activo{
+    transform: translateY(20px);
+    opacity: 0.708824;
+    transition: 0.7s ease all;
+}
+.titulo-slider.activo{
+    opacity: 1;
+    }
+.titulo-descubremas.activo{
+    opacity: 0.708824;
+    transition: 0.7s ease all;
+}
+.descubremas .activo2{
+    transform: translateY(70px);
+    opacity: 0.317647;
+    transition: 0.7s ease all;
+}
+.titulo-slider.activo2{
+opacity: 1;
+}
+.titulo-descubremas.activo2{
+    opacity: 0.317647;
+    transition: 0.7s ease all;
+}
+.linea-descubremas .activo2{
+    transition: 0.7s ease all;
+}
+.linea-descubremas .activo{
+    opacity: 0.708824;
+}
+
+#slide2{
+    width: 100%;
+    height: 100%;
+
+}
+#slide{
+    width: 100%;
+    height: 100%;
+    
+   }
+   #slide3{
+    width: 100%;
+    height: 100%;
+    transition-duration: 600ms;
+   }
+.top-70 {
+    top: 38%;
+}
+.start-40{
+    left: 46%!important;
+}
+.horario{
+    padding:8rem;
+    width: 520px;
+}
+.info-restaurante{
+    width: 550px;
+    font-family: 'Sniglet', cursive;
+    display:flex;
+}
+ .Localización{
+    font-family: 'Raleway', sans-serif;
+ }   
+.titulo-comida{
+    font-family: 'Aboreto', cursive;
+    color: #6C1B0B;
+    font-size: 18px;
+}
+.GoogleMaps{
+    color: black;
+}
+.GoogleMaps:hover{
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+    
+}
+.GoogleMaps p{
+ border-bottom: 1px solid black;
+ width: 100px;
+ letter-spacing: 1px;
+}
+.telefono-restaurante:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+.telefono-restaurante{
+    border-bottom: 1px solid black;
+    width: 90px;
+    letter-spacing: 1px;
+}
+.info-total{
+    display:flex;
+}
+.restaurante-caracteristicas{
+    font-family: 'Quicksand', sans-serif;
+}
+.caracteristicas{
+    padding-top: 8rem;
+    padding-bottom:8rem;
+    padding-right: 8rem;
+    padding-left:6rem;
+}
+.texto-caracteristicas{
+    padding-bottom: 2rem;
+}
+.menus-reservas{
+    margin-top:2.5rem;
+    display: flex;
+}
+
+.menu-cenas{
+   display: flex;
+   background-image:none;
+   height:30px;
+   cursor: pointer;
+   transition: 0.4s ease all;
+
+  
+   letter-spacing: 1px;
+   margin-top:1.5rem ;
+}
+
+.menu-cenas-boton:hover{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #6C1B0B;
+    
+}
+.menu-cenas h6:hover{
+    color:#95172c;
+}
+.menu-comidas h6:hover{
+  color:#95172c;
+}
+.moverbarra{
+    background-color:black;
+    height: 1px; 
+}
+.menu-cenas h6{
+    color:black
+}
+.menu-dia-boton{
+   height:30px;
+   cursor: pointer;
+   transition: 0.4s ease all;
+   margin-right:2rem;
+   border-top: 1px solid black;
+   letter-spacing: 1px;
+    padding-bottom:0.5rem;
+     color: black;
+}
+.menu-cenas-boton{
+    cursor: pointer;
+    transition: 0.4s ease all;
+    margin-right:4rem;
+    border-top: 1px solid black;
+    letter-spacing: 1px;
+}
+.circulo-sinfondo2{
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(..//img/iconos/circulo-sinfondo.png);
+    border-color:transparent ;
+    margin-right: 1rem;
+    
+}
+.menu-comidas{
+    display: flex;
+    cursor: pointer;
+    transition: .5s ease all;
+    color:black;
+    background-image:none;
+   background-size: cover;
+   background-position: center;
+   letter-spacing: 1px;
+   margin-top:1.5rem ;
+   margin-right: 3rem;
+   height:30px;
+}
+.menu-dia-boton:hover{
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid #6C1B0B;
+}
+.reservas-info{
+    height: 70px;
+    width: 150px;
+    background-color:black;
+    color:white;
+    font-family:  'Abril Fatface', cursive;
+    border-color:black;
+    letter-spacing: 1px; 
+}
+.reservas-info:hover{
+   opacity: 0.8;
+}
+.contenedor-dobleimagen{
+
+ height:fit-content !important;
+ background-color: white;
+ margin:3rem;
+}
+.contenedor-dobleimagen p{
+    color:black;
+}
+.dobleimagen{
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+   
+}
+.imagen1{
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+.imagen1 img{
+    cursor: pointer;
+}
+.evento{
+  font-size:xx-large;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-size: 42px;
+  margin-bottom: 2rem;
+}
+.evento:hover{
+    opacity: 0.7;
+ }
+.eventos-horario{
+    font-family:'Aboreto', cursive;;
+    font-size: 19px;
+    padding-top: 1rem;
+    
+}
+.imagen2 img{
+   cursor: pointer; 
+}
+
+.reserva-evento-link{
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    color: #6C1B0B;
+}
+.reserva-evento-link:hover{
+    color: #b6924f;
+}
+.reserva-evento{
+    max-width: 220px;
+    border-bottom: 1px solid #6C1B0B;
+   margin: 10rem;
+   margin-top:0rem;
+   padding-bottom: 0.2rem;
+}
+.reserva-evento:hover{
+    transition: 0.3s ease all;
+    letter-spacing: 3px;
+    color:#b6924f;
+    border-color:#b6924f ;
+    margin: 8rem;
+   margin-top:0rem;
+}
+
+.info-eventos{
+    width: 100%;
+    height: 700px;
+}
+.evento-Jorge p{
+    color: #6C1B0B;
+}
+.evento-Jorge h6:hover{
+    color:white;
+    opacity: 1;
+}
+
+ .evento-horafeliz h6{
+    color:white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+ }
+.evento-horafeliz button{
+   margin-left: 19.2rem;
+   margin-top:3rem;
+}
+.evento-horafeliz button:hover{
+   background-color: #b6924f;
+    color: black;
+    border: none;
+
+ }
+.evento-horafeliz p{
+    color:#b6924f;
+}
+.evento-Jorge button{
+ margin-left: 19.5rem;
+ margin-top:3rem;
+}
+.evento-Jorge button:hover{
+    background-color: #95172c;
+    color: white;
+    border: none;
+}
+.boton-eventos{
+    width: 100%;
+    height: 100%;
+}
+.texto-Jorge{
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+.wave{
+    width: 6000px;
+    height: 70%;
+    background-position:bottom;
+    background-image: url(..//img/sliderBuckinghampalace/wd1.svg);
+}
+.w1{
+    animation: w1 7s linear infinite;
+    
+}
+@keyframes w1 {
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -1600px;
+    }
+}
+.eventos{
+    padding:6rem;
+    background-color: #b6924f;
+    overflow: hidden;
+}
+.end{
+    transform: translateX(1000px);
+}
+.color-fondo{
+    width: 100%;
+    height:500px;
+    background-color: #6C1B0B;
+    overflow: hidden;
+}
+.eventosegundo{
+   width: 100%;
+   height: 100%;
+    background-color: #6C1B0B;
+    padding: 6rem;
+}
+
+.end2{
+   
+    margin-bottom:3rem;
+}
+.end3{
+    transform: translateX(800px);
+}
+.abudabipalace .eventos{
+    background-image: url(../img/sliderabudabi/t1.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.abudabipalace p{
+    color:#c4c4ce;
+}
+.abudabipalace .wave{
+    background-image: url(../img/sliderBuckinghampalace/wave2.svg);
+}
+.abudabipalace h6{
+    color:white;
+}
+.abudabipalace .color-fondo{
+    background-color: #4c3b2b;
+}
+.abudabipalace button:hover{
+    background-color: #435b38;
+}
+
+.abudabipalace .end-0{
+   padding-left:5rem;
+   padding-right: 3rem;
+   padding-top: 2rem;
+}
+.abudabipalace .top-0{
+    padding-left:5rem;
+   padding-right: 3rem;
+   padding-bottom: 2rem;
+}
+.abudabipalace .left-0{
+    position: absolute;
+    transform: translateX(-715px);
+}
+.abudabipalace .right-0{
+    position: absolute;
+}
+.abudabipalace2 {
+    margin-top:6rem;
+}
+.abudabipalace2 .eventosegundo{
+    background-color: #a47b5a;
+}
+.pacman0{
+opacity: 0;
+}
+.galleta0{
+    opacity: 0;
+}
+.total-tresimagenes{
+    height:100%;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+.tres-imagenes{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    
+}
+.tres-imagenes-2{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.imagentresimagenes{
+    width: 410px;
+    height: 480px;
+    display: block;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.texto-tresimagenes{
+    padding:2rem;
+    
+    font-family: 'Josefin Sans', cursive;
+    font-size: 28px;
+}
+.texto-tresimagenes a{
+    color: black;
+}
+.texto-tresimagenes a:hover{
+    opacity: 0.6;
+}
+.imagenes-menu{
+ margin-left: 1rem;
+    width:410px;
+    height: 100%;
+}
+.link-zoom{
+    display: block;
+}
+.img-zoom{
+    overflow:hidden;
+    display: block;
+}
+.imagentresimagenes:hover{
+  transform: scale(1.20);
+  transition: 1 ease all;
+  display: block;
+  overflow: hidden;
+}
+.grupos-total{
+    width: 100%;
+    height:1400px;
+}
+.comidasgrupos{
+    
+    margin-left:6rem;
+    height: 100%;
+    padding:5rem;
+    
+}
+
+.comidasrestaurante1{
+ display: flex;
+ padding-top: 8rem;
+ font-family: 'Quicksand', sans-serif;
+ font-size: 17px;
+}
+.comidasrestaurante1 img{
+    width: 518px;
+    height: 345px;
+   
+   }
+   
+
+.texto-comidasgrupos{
+    padding-left: 7rem;
+  
+}
+.texto-comidasgrupos-2{
+    padding-right: 7rem;
+}
+.texto-comidasgrupos-2 h3{
+    padding-top: 0.25rem;
+    padding-bottom: 2rem;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 30px;
+}
+.texto-comidasgrupos h3{
+    padding-top:0.25rem;
+    padding-bottom: 2rem;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 30px;
+}
+.reservas-grupos{
+    
+ width: 100%;
+ background-image: url(../img/rsz_johnathan-macedo-4nqevxw2_4w-unsplash.jpg);
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+
+}
+
+.reservas-grupos2 {
+   
+    width: 100%;
+    background-image: url(../img/rsz_johnathan-macedo-4nqevxw2_4w-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.formulario-grupos{
+    margin-top: 3rem;
+}
+.formulario-grupos input{
+    position: relative;
+}
+.formulario{
+ height: 1480px;
+ background-color: white;
+ position: relative;
+ display: inline-block;
+ padding: 7rem;
+    width: 600px;
+    margin: 8rem;
+    
+}
+.contenedor_archivo{
+    position: relative;
+    width: 150px;
+    height: 68px;
+   margin-left: 2rem;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    
+}
+.Archivo{
+text-align: center;
+padding-left: 0.5rem;
+padding-top: 0.5rem;
+
+}
+.input_enviar{
+position: absolute;
+padding: 0px;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+height: 100%;
+width: 100%;
+opacity: 0;
+}
+.imagen-archivo{
+    width: 12px;
+     height: 12px;
+     margin: 0.5rem;
+     margin-top: 0.9rem;
+     margin-left: 0.8rem;
+
+}
+.formulario h3{
+    padding-bottom: 2rem;
+    font-family: 'Josefin Sans', cursive;
+}
+.formulario p{
+    font-family: 'Quicksand', sans-serif;
+}
+.formulario h5{
+    font-family: 'Josefin Sans', cursive;
+}
+.formulario_grupos_input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    padding-left: 0.25rem;
+    outline: 0px;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+}
+
+.formulario_grupos_invalido{
+    border-bottom: 1px solid red;
+    color:red;
+    
+}
+.formulario_grupos_invalido2{
+    border: 1px solid red;
+    
+    
+}
+.formulario_grupos_invalido2::placeholder{
+    color:red;
+}
+.formulario_grupos_invalido::placeholder{
+    color:red;
+}
+.formulario input:focus{
+  color:#6C1B0B;
+  border-bottom: 1px solid #6C1B0B;
+}
+
+.formulario-especial{ 
+    display: flex;
+}
+.formulario h5{
+ width: 40%;
+ display: flex;
+}
+.formulario .input-especial{
+    width: 60%;
+    display: flex;
+}
+#comentario-grupo{
+ border-radius: 1px solid rgb(82, 82, 82);
+}
+.restaurante-seleccion{
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(82, 82, 82);
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+    margin-bottom: 3rem;
+    padding-left: 0.25rem;
+    outline: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+.formulario input[type="submit"]{
+    width: 150px;
+    height: 70px;
+    background-color: black;
+    color: white; 
+    margin-top: 3rem;  
+}
+.boton-periodico{
+    margin-bottom: 2rem;
+}
+.comentario-grupo{
+    font-family:'Quicksand', sans-serif;
+}
+
+.final-texto{
+    display: flex;
+    
+}
+.final-info{
+    padding: 0.75rem;
+    padding-top: 5rem;
+    
+}.final-info2{
+    padding: 0.75rem;
+    
+    
+}
+.final-info2  h6{
+    padding-left:1rem;
+    padding-right:2rem;
+    padding-top: 0.75rem;
+    color:black;
+    font-family: 'Josefin Sans', cursive;
+    font-size: 20px;
+   }
+.final-info  h6{
+ padding-left:1rem;
+ padding-right:2rem;
+ padding-top: 0.75rem;
+ color:black;
+ font-family: 'Josefin Sans', cursive;
+ font-size: 20px;
+}
+.btn-planeaevento{
+height: 70px;
+    width: 170px;
+    background-color:#b6924f;
+   
+    font-family:  'Abril Fatface', cursive;
+    border-color:transparent;
+    letter-spacing: 1px;
+    margin-top: 2.5rem;
+    display: flex;
+    padding: 1.25rem;
+}
+.btn-planeaevento a{
+    color:black;
+}
+.btn-planeaevento img{
+   margin-left: 1.2rem;
+    height: 22px;
+    width: 22px;
+    
+    margin-top: 0.18rem;
+
+}
+.planeaevento{
+ background-image: url(../img/planea-tuevento\ formulario.jpg);
+ background-position: center;
+ background-size: cover;
+ background-attachment: fixed;
+ margin-top: 9rem;
+}
+
+
+.catering-inicio{
+    margin: 0 3rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    background-position: center;
+    background-size:cover ;
+    height: calc(55vw - ((1.5rem * 2)));
+    margin-top:3rem ;
+    width: 1071px;
+   
+   
+}
+.catering-inicio2{
+  
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    background-position: center;
+    background-size:cover ;
+    height: calc(55vw - ((1.5rem * 2)));
+
+
+   
+   
+}
+.contenedorhero{
+    padding-right: 9.5rem;
+    padding-bottom: 4rem;
+    padding-left: 3.5rem;
+    padding-top: 13rem;
+    min-height: 485px;
+    max-width: 425px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    z-index: 1;
+    margin-top:3rem ;
+    margin-right:-8rem;
+    font-family: 'Quicksand', sans-serif;
+   
+
+}
+
+.contenedorhero h2{
+    padding-top: 1rem;
+    font-family: 'Josefin Sans';
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.contenedordelhero{
+        position: relative;
+        width: 100%;
+        z-index: 1; 
+         display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical; 
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: -265px;
+}
+.contenedorhero2{
+    padding-right: 9.5rem;
+    padding-bottom: 4rem;
+    padding-left: 3.5rem;
+    padding-top: 13rem;
+    min-height: 485px;
+    max-width: 425px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    z-index: 1;
+    margin-top:3rem ;
+    margin-right:-8rem;
+    font-family: 'Quicksand', sans-serif !important;
+   text-align: center;
+background-color:#fbbd95;
+margin-left: auto;
+}
+.contenedorhero2 h6{
+    font-size: 20px;
+}
+.contenedorhero2 h2{
+    padding-top: 1rem;
+    font-family: 'Josefin Sans';
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+.end-0 {
+    right: 55!important;
+}
+.top-50 {
+    top: 13%!important;
+}
+.Catering{
+  width: 100%;
+   margin-top: 10rem;
+
+}
+.catering-info a{
+    color: black;
+    font-size:18px;
+    border-bottom: 1px solid black;
+    font-style: 700; 
+}
+.catering-info{
+    padding-left:25rem;
+    padding-right: 23rem;
+    font-family: 'Josefin Sans', cursive;
+}
+.catering-info h6{
+    padding-bottom: 0.35rem;
+    padding-top: 2rem;
+    font-size: 17px;
+    font-family: 'Sniglet', cursive;
+}
+.catering-info p{
+    padding-top: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+.recomendacion{
+    border-top: 0;
+    font-style: italic;
+}
+
+.imagenes-catering{
+  width: 100%;
+  padding-left:17rem;
+  padding-right: 23rem; 
+}
+.imagen-catering1{
+    align-items: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.imagen-catering1 img{
+ height: 545px;
+ width: 847px;
+ 
+}
+.festivaltajin{
+    padding-top: 1rem;
+}
+.especial-texto{
+    margin-top: 2rem;
+}
+.grupos-total{
+    margin-bottom: 3rem;
+}
+.comidasgrupos {
+  
+    padding-top: 1rem;
+}
+
+
+.comidasgrupos2 {
+    margin-left: 7rem;
+    height: 100%;
+    margin-right: 7rem;
+    padding:2rem;
+    
+}
+.comidasgrupos3 {
+    margin-left: 7rem;
+   
+    margin-right: 7rem;
+    padding:2rem;
+    
+}
+.ceo{
+    margin: 0 4rem;
+}
+.divceo{
+  width: 100%;
+ align-content: center;
+
+}
+.textoceo{
+    margin-top: 5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: calc(100% * 6/12);
+}
+.textoceo h3{
+    margin-bottom:3rem;
+    font-family: 'Josefin Sans';
+}
+.textoceo  h5{
+    font-size: 17px;
+    line-height: 2rem;
+    
+    margin-bottom: 4rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.trabajos{
+    width: 100%;
+    background-image: url(../img/parralaxfondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.periodico{
+    width: 100%;
+    background-image: url(../img/Noticias\ Background.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top:8rem;
+}
+.formulario-periodico{
+    height: auto;
+    padding-top: 5rem;
+    padding-right: 7rem;
+    padding-bottom: 0rem;
+    padding-left: 7rem;
+    width:628px;
+    font-family: 'Quicksand', sans-serif;
+}
+.formulario-especial2{
+    display: flex;
+    
+}
+.espacio{
+    margin-right: 1rem;
+}
+.formulario-especial2 #nombre{
+  width: 55%;
+  margin-right: 0.5rem;
+}
+
+  .formulario-especial3 h5{
+    width: 100%;
+  }
+  .contenedorheroGrupos{
+    padding: 6rem ;
+    padding-top: 2rem ;
+    height: 385px;
+    width: 875px;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+   
+    margin-top:3rem ;
+    
+    
+}
+.contenedorheroGrupos h4{
+    margin-bottom: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    line-height: 2.3rem;
+    letter-spacing: 1px;
+}
+
+.Grupos-inicio{
+   
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    background-position: center;
+    background-size:cover ;
+    height: 838px;
+    margin:2.5rem ;
+    width: 1286px;
+   
+}
+
+.contenedorheroGrupos h2{
+    padding-top: 1rem;
+    font-family: 'Josefin Sans';
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+.texto-move{
+    color:white;
+   padding-top:18rem;
+}
+.linea{
+    width: 1px;
+    height: 70px;
+    background-color: white;
+   margin-left:40.5rem;
+   margin-right:40.5rem;
+   margin-top: 2rem;
+
+}
+.texto-move h2{
+    color:white;
+   font-size: 54px;
+}
+.Grupos-inicio h4{
+ margin-left:0.5rem;
+ margin-top:1.5rem;
+}
+.link-grupos{
+    color: white;
+    border-bottom: 1px solid white;
+    font-family: 'Quicksand', sans-serif;
+}
+.link-grupos:hover{
+    color: white;
+    border-bottom: 1px solid white;
+   opacity: 0.7;
+   cursor: pointer;
+}
+.reservas-grupo{
+height: 70px;
+    width: 160px;
+    background-color: black;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    border-color: black;
+    letter-spacing: 1px;
+}
+.reservas-grupo h5{
+    font-size: 22px;
+}
+
+
+.restaurantes-total{
+    display:flex;
+}
+.restaurante1{
+    text-align: center;
+}
+.establecimientos-restaurantes{
+    margin:4rem;
+}
+.grupos-info{
+    padding: 4rem;
+     
+   }
+.grupos-info img{
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+}
+   
+.Localización2{
+    padding-left: 1rem;
+    padding-right:1rem;
+    
+}
+.grupos-info p{
+    font-family: 'Sniglet', cursive;
+    margin-bottom:2px;
+    letter-spacing: 1px;
+    width: fit-content;
+    
+}
+.grupos-info a{
+    margin-left: 1rem;
+    margin-right:1rem;
+   
+}
+.texto-establecimientos{
+    padding-left:1rem;
+    padding-right:1rem;
+    color:black;
+}
+.titulo-establecimientos{
+    font-family: 'Aboreto', cursive;
+
+
+}
+.Establecimientos-titulo{
+    padding-top: 4rem;
+    font-family: 'Josefin Sans';
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+#titulo1{
+    color:#fda269;
+}
+#titulo2{
+    color:#95172c;
+}
+#titulo3{
+    color:#9c9;
+}
+.restaurantes-total a{
+   color:black;
+    }
+.restaurantes-total a:hover{
+cursor: pointer;
+opacity: 0.7;
+
+}
+.restaurante1 a {
+ border-bottom: 1px solid #fda269;
+}
+.restaurante1 a:hover {
+    color: #fda269;
+   }
+.restaurante2 a{
+    border-bottom: 1px solid #95172c;
+}
+.restaurante2 a:hover{
+    color: #95172c;
+}
+.restaurante3 a{
+    border-bottom: 1px solid #9c9;
+}
+.restaurante3 a:hover{
+    color:#9c9;
+}
+.enlaces-total{
+    margin:4rem;
+}
+.enlaces-establecimientos{
+ 
+    display: flex;
+}
+.enlaces-establecimientos a{
+    color:black;
+}
+
+.enlace1{
+    padding: 6rem;
+}
+
+.enlaces-establecimientos .titulo-establecimientos{
+    font-family: 'Aboreto', cursive;
+margin-bottom: 0;
+}
+.titulo-colorido{
+    font-family: 'Sniglet', cursive;
+    border-bottom: 1px solid black;
+}
+.titulo-colorido:hover{
+    opacity: 0.7;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+.formulario input[type="radio"]{
+    width: fit-content;
+    display: block;
+    margin-top:0.4rem;
+}
+.formulario a{
+   display: flex; 
+}
+.formulario-especial3 p {
+margin-left:1rem;
+}
+.formulario-especial3 h5{
+    margin-bottom:2rem;
+}
+.formulario-especial3 a{
+   width: fit-content;
+   height: 40px;
+}
+.formulario-especial3 input{
+    width: fit-content;
+    height: 14px;
+    transform: scale();
+ }
+.js-virtual-scroll{
+    overflow:initial;
+}
+
+.imagen-catering-inicio{
+    background-image: url(../img/pizzas/pizza1.11.png);
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    
+}
+.Catering-titulo{
+    padding: 3rem;
+    padding-top: 10rem;
+    font-family: 'Josefin Sans';
+    font-size: 48px;
+    
+}
+.texto-catering{
+    padding: 3rem;
+    padding-top: 0.2rem;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.item-titulo{
+    font-size: 21px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.item-descripcion{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+    font-size:14px
+
+}
+.item-descripcion2{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 10px;
+    font-size:14px
+}
+.tajin1 h6{
+   font-size: 19px;
+}
+.tajin2 h6{
+    font-size: 19px;
+ }
+ .sirve-titulo{
+    margin-top:2rem;
+    font-size: 17px;
+    font-family: 'Josefin Sans';
+ }
+ .elegir-producto h2{
+ margin-top:4rem;
+ }
+ .arriba{
+    position: fixed;
+    top:75;
+ }
+.menu2{
+    background-color: black;
+    width: 100%;
+    position: sticky;
+    top:0;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+   color: white;
+    margin-bottom: 20px;
+}
+.menu2 a {
+  display:inline-block;
+  padding: 10px 30px;
+  font-size:16px;
+  background-color:black ;
+  
+  transition: .5s ease all;
+  color: var(--gray-light);
+  text-decoration: none;
+}
+.menu2 a:hover{
+    transform: translateY(18px);
+    background-color: rgb(54, 49, 49);
+}
+.elegir-producto{
+    margin:2rem;
+}
+.tajins{
+    display:flex;
+    margin:1rem;
+    margin-top:2rem; 
+   
+}
+.ensaladas{
+    display: flex;
+    margin: 1rem;
+    margin-top: 1.5rem;
+}
+.item-image{
+    width: 637px;
+     height: 424px;
+     border-top: 2px;
+ }
+
+ .final-texto-catering{
+    display:flex;
+    font-family: 'Quicksand', sans-serif;
+ }
+ .final-info-catering h6{
+    font-family: 'Josefin Sans';
+    padding: 0 10px;
+    font-size: 16px;
+ }
+ .final-info-catering h5{
+    font-family: 'Josefin Sans';
+    font-size: 20px;
+    
+ }
+ .copywriting h6{
+    font-size: 15px;
+ }
+ .copywriting {
+   margin-top: 1.5rem;
+   margin-bottom: 1.3rem;
+ }
+
+ .homwebs h6{
+    font-size: 14px;
+    padding-top: 2rem;
+ }
+.titulo-siguenos img{
+    margin-left:0.5rem;
+ margin-right: 0.5rem;
+ margin-top: 0.5rem;
+}
+.titulo-siguenos img:hover{
+    cursor: pointer;
+}
+
+.link-inicio{
+    padding-top:2rem;
+    padding-left:0.5rem ;
+    font-size:15px;
+    font-style: normal;
+    font-family: 'Josefin Sans';
+}
+.iniciarsesion{
+    display: flex;
+    margin-left: 18rem;
+    margin-bottom: 0.5rem;
+}
+.imagen-carrito:hover{
+    cursor: pointer;
+}
+.imagen-usuario:hover{
+    cursor: pointer;
+}
+.link-inicio:hover{
+     cursor: pointer;
+}
+.imagen-usuario{
+    margin-top:1.8rem;
+    margin-left:0.5rem ;
+}
+.imagen-carrito{
+    margin-top:1.8rem;
+    margin-left:1.2rem ;
+}
+
+.carritopedidos{
+  display: none;
+ 
+}
+.sombracarrito{
+    opacity: 0.3;
+  background-color:#000;
+    width: 700px;
+    height:1300px;
+}
+.Micarrito{
+    width: 700px;
+  height: 584px;
+  padding: 1.2rem;
+ background-color: white;
+ 
+}
+.Micarrito h2{
+    font-size: 1.4em;
+    padding-bottom: 0.2rem;
+    margin-bottom: .66em;
+    padding-right: 30px;
+    border-bottom: 1px solid black;
+    width: fit-content;
+    height: fit-content;
+    
+}
+
+.titulo2{
+    font-family: 'Josefin Sans';
+        font-size: 1.5em;
+        padding-bottom: 0.2rem;
+        margin-bottom: .42em;
+        padding-right: 30px;
+
+        height: fit-content;
+        margin-top: 3rem;
+}
+.titulo3{
+    font-family: 'Josefin Sans';
+        font-size: 0.8em;
+        padding-bottom: 0.2rem;
+        margin-bottom: .66em;
+        padding-right: 30px;
+        width: fit-content;
+        height: fit-content;
+}
+.carrito-texto{
+    display:flex;
+}
+
+.esc{
+    position: absolute;
+    right: 0;
+    font-family: 'Josefin Sans';
+    margin-right:1.2rem;
+    margin-top:-0.4rem;
+}
+.esc:hover{
+    cursor: pointer;
+
+}
+.esc h6{
+ font-size: 10px;
+ padding-left:0.3rem;
+}
+
+.input-cupon ::placeholder{
+   color:rgb(204, 204, 204);
+   font-family: 'Josefin Sans';
+}
+.input-cupon input[type="text"]{
+    width: 71%;
+    height: 40px;
+    background-color: white;
+    color: black; 
+    border-radius: 4px 0px 0px 4px;
+    border: 1px solid rgb(204, 204, 204);
+    font-size: 16px;
+    padding: 10px;
+    padding-bottom:8px;
+    font-family: 'Josefin Sans';
+}
+.input-cupon input[type="submit"]{
+   width: 28%;
+    height: 39px;
+    background-color: black;
+    color:#dfceb3;
+    text-shadow: 1px 1px 5px #dfceb3;
+    flex: 1 1 0%;
+    font-family: 'Josefin Sans';
+    font-size: 13px;
+    border-radius: 0px 4px 4px 0px;
+}
+.input-cupon input[type="submit"]:hover{
+   
+     color:  rgb(230, 227, 227);
+     text-shadow: 1px 1px 5px rgb(230, 227, 227);
+     
+ }
+.carritopedidos2{
+  z-index: 1029;
+  display: none;
+}
+.carritopedidos3{
+    display: none; 
+    z-index: 1029;
+}
+.carritopedidos4{
+   z-index: 1030;
+    display: none; 
+    transition: 1s;
+}
+
+.necesitamos{
+    font-family: 'Josefin Sans';
+    font-size: 1.1em;
+    padding-bottom: 0.2rem;
+    margin-bottom: .66em;
+    padding-right: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.verificación{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    padding-bottom: 0.2rem;
+    margin-bottom: .66em;
+    margin-top: 0.5rem;
+    padding-right: 30px;
+    width: fit-content;
+    height: fit-content;
+}
+.Politica{
+    font-family: 'Josefin Sans';
+    font-size: 0.9em;
+    padding-bottom: 0.2rem;
+    margin-bottom: .66em;
+    padding-right: 30px;
+    width: 75%;
+   margin-top:1.5rem ; 
+   display: none;
+}
+.input-telefono ::placeholder{
+    color:rgb(204, 204, 204);
+    font-family: 'Josefin Sans';
+    padding: 10px;
+    
+ }
+ .input-telefono{
+     width: 50%;
+     height: 48px;
+     background-color: white;
+     color: black; 
+     border-radius: 4px ;
+     border: 1px solid rgb(204, 204, 204);
+     font-size: 18px;
+     margin-top: 0.7rem;
+     margin-bottom:0.6rem;
+     display: flex;
+     
+ }
+ .input-telefono input[type="text"]{
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 5px;
+    font-family: 'Josefin Sans';
+}
+.formulario__input::placeholder{
+    
+    font-family: 'Josefin Sans';
+    color:rgb(204, 204, 204);
+    
+ }
+ .formulario__input{
+     width: 50%;
+     height: 48px;
+     background-color: white;
+     color: black; 
+     border-radius: 4px ;
+     border: 1px solid rgb(204, 204, 204);
+     margin-top: 0.7rem;
+     margin-bottom:0.6rem;
+     display: flex;
+     font-family: 'Josefin Sans'; 
+     font-size: 18px;
+     padding: 10px;
+ }
+ 
+.input-telefono-incorrecto2{
+    border: 1px solid red;
+}
+.input-telefono-correcto2{
+    border: 1px solid rgb(204, 204, 204);
+}
+.input-telefono-incorrecto .formulario__input{
+    border: 1px solid red;
+}
+.input-telefono-correcto .formulario__input{
+    border: 1px solid rgb(204, 204, 204);
+}
+.formulario__input-error{
+    font-size:0.9em;
+    color: red;
+    font-family: 'Josefin Sans';
+    display: none;
+    width: 65%;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+    font-family: 'Josefin Sans';
+}
+.formulario__mensaje2 {
+    
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+    font-family: 'Josefin Sans';
+}
+.formulario__mensaje3 {
+        line-height: 45px;
+        background: #F66060;
+        padding: 0 15px;
+        border-radius: 3px;
+        display: none;
+        font-family: 'Josefin Sans';
+        width: 238px;
+        margin-left: 1rem;
+        height: 100px;
+}
+.formulario__mensaje4 {
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+    font-family: 'Josefin Sans';
+    
+    
+    height: 52px;
+}
+.formulario__mensaje-activo{
+ display: block;
+ margin-top: 1rem;
+
+}
+.formulario__mensaje-activo2{
+    display: block;
+    margin-top: 2rem;
+   
+   }
+   .formulario__mensaje-activo3{
+    display: block;
+    margin-top:2px;
+   
+   }
+.resultado{
+    display: flex;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+    padding: 12px;
+    padding-right: 22px;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+}
+.formulario__mensaje-exito2{
+	font-size: 16px;
+	color: #119200;
+	display: none;
+    padding: 7px;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    margin-top: 3rem;
+}
+.formulario__mensaje-exito3{
+	font-size: 16px;
+	color: #119200;
+	display: none;
+    padding: 7px;
+    text-align: center;
+    font-family: 'Josefin Sans';
+    
+}
+.formulario__mensaje-exito2-activo {
+	display: block;
+}
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+.numero-españa{
+    display: flex;
+    padding: 13px;
+    padding-right: 0;
+    height: fit-content;
+    width: fit-content;
+}
+.input-telefono img{
+    margin-left: 6px;
+    margin-top: 2px;
+}
+.numero-es{
+    margin: 0;
+    font-weight:800;
+  font-size: 16px;
+  font-family: 'Quicksand',sans-serif;
+  
+}
+.numero-34{
+padding:12px;
+padding-right: 8px;
+font-size: 19px;
+font-family: 'Josefin Sans';
+}
+.aviso-rgt{
+    width: 100%;
+    height: auto;
+    border-left: 2px solid rgb(4, 65, 23);
+    padding-left: 15px;
+    margin-top: 2.5rem;
+}
+.rgt{
+    
+    font-size: 0.9em;
+    font-family: 'Josefin Sans'; 
+}
+.continuar{
+    
+    padding-right: 10px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+ right: 0;
+}
+.btn-continuar{
+    width: 180px;
+    height: 44px;
+    background-color: rgb(229, 231, 235);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 5px #dfceb3;
+    right:0;
+    border-radius:4px;
+    border-color:transparent;
+    margin-bottom: 0.6rem;
+}
+.btn-continuar:hover{
+
+color:  rgb(230, 227, 227);
+text-shadow: 1px 1px 5px rgb(230, 227, 227);
+}
+.btnvalido{
+    background-color: #000;
+}
+.btnvalido:hover{
+    opacity: 0.8;
+}
+.input-tit-nombre{
+    margin-top:0.5rem;
+    font-size: 15px;
+    font-family:'Quicksand',sans-serif;
+    font-weight:1000;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__grupo-incorrecto .input-tit-nombre{
+	color: #bb2929;
+}
+
+
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+.carrito-grande{
+    color: #c5c5c5;
+    font-family: 'Josefin Sans';
+    display: block;
+    
+}
+.titulo2{
+    display: none;
+}
+.productoelegidocarrito{
+    margin:12px;
+    margin-top:1.3rem;
+  display:none;
+}
+
+.titulo-editar{
+  padding-left:0.8rem ;
+}
+.producto-descrp{
+    margin-bottom: 0;
+    font-size: 19px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.editarproducto{
+    border-radius: 5px;
+    width: 55px;
+    height: 18px;
+    background-color: black;  
+   margin-left: 1.5rem;
+   font-family: 'Josefin Sans';
+   
+}
+.editarproducto h6{
+    color: #dfceb3;
+    font-size: 11px;
+    padding-right:1px;
+    text-shadow: 1px 1px 5px #dfceb3;
+   font-weight: 700;
+   margin-top: 0.1rem;
+   padding-top: 0.2rem;
+   
+}
+.editarproducto h6:hover{
+    color:rgb(230, 227, 227);
+    transition: 0.37s ease all;
+    cursor: pointer;
+    text-shadow: 1px 0 2px rgb(230, 227, 227) ;
+}
+.precioproducto{
+        padding: 13px; 
+        display: flex;    
+}
+.cantidadproducto{
+ padding: 22px; 
+ padding-right: 0px;  
+ display: flex;  
+}
+.cantidadproducto input{
+    width: 83px;
+    height: 35px;
+    text-align: center;
+   margin-left: 0.5rem;
+}
+.precioproducto h6{
+    font-size: 1.2em;
+    font-family: 'Josefin Sans';
+    padding-left: 3rem;
+}
+tr{
+    display: table-row;
+    
+}
+.productoelegido{
+    padding: 13px;
+    display: flex;
+}
+.eliminarproducto{
+ margin-right:0.5rem;
+}
+th{
+    font-family: 'Josefin Sans';
+
+    
+    border-bottom: 1px solid rgb(226, 226, 226);
+    padding-bottom: 10px;
+}
+
+.precio{
+    padding-right:4rem;
+}
+.cantidadcarrito{
+    padding-right: 4rem;
+}
+
+.carrito-grande h3{
+    font-size: 1.618em;
+   
+}
+.producto-total{
+    display: flex;
+    
+}
+.productototal{
+    padding-bottom: 150px;
+}
+.carrito-imagen{
+ margin-bottom:1rem
+}
+.descripcion-producto{
+    margin-right: 1.2rem;
+    margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(94, 91, 91);
+    font-size: 14.5px;
+}
+.input-alergias ::placeholder{
+    color:rgb(204, 204, 204);
+    font-family: 'Josefin Sans';
+ }
+ .input-alergias input[type="text"]{
+     width: 96%;
+     height: 35px;
+     background-color: white;
+     color: black; 
+     border-radius: 4px ;
+     border: 1px solid rgb(204, 204, 204);
+     font-size: 16px;
+     padding: 10px;
+     padding-bottom:12px;
+     margin-top: 0.7rem;
+     margin-bottom:8.5rem;
+ }
+ .producto2{
+    
+    padding-right: 16rem;
+ }
+ .producto{
+    padding-top:1rem;
+ }
+ .Notas{
+    font-size:21px;
+    font-family: 'Josefin Sans';
+    margin-bottom: 0.75rem;
+ }
+ .btn-actualizar{
+    width: 190px;
+    height: 40px;
+    background-color: black;
+    color:#dfceb3;
+    text-shadow: 1px 1px 5px #dfceb3;
+    font-size: 0.9em;
+    border-radius:5px;
+    font-family: 'Josefin Sans';
+ }
+ .btn-actualizar:hover{
+    background-color: black;
+    color:  rgb(230, 227, 227);
+    text-shadow: 1px 1px 5px rgb(230, 227, 227);
+}
+ .comprar {
+    display:flex ;
+    padding: 12.5px 0px;
+    padding-right:10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    max-width: 660px;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 100;
+
+    align-items: center;
+ }
+.cantidad{
+    font-family: 'Josefin Sans';
+    font-size: 15px;
+    margin-right: 12px;
+    margin-top:7px;
+    color: gray;
+}
+.cantidadproductos{
+    position: absolute;
+    display: none;
+    margin-left: 11.75rem;
+    margin-top: 1.3rem;
+    width: 16px;
+    height: 16px;
+    background-color: #bba465;
+    color: white;
+    border-radius: 10px;
+}
+
+.numero{
+font-size: small;
+font-style: normal;
+font-family: 'Josefin Sans';
+text-align: center;
+margin-top: -1.4px;
+
+}
+ .comprar input[type="number"]{
+    width: 85px;
+    height: 35px;
+    padding: 10px;
+    margin-right: 12px;
+    border-radius: 6px;
+    border: 1px solid rgb(204, 204, 204);
+ 
+ }
+ .añadircesta{
+    background-color: black;
+    color:#ded6c8;
+    font-size: 14px;
+    font-family: 'Josefin Sans';
+    border-radius: 6px;
+    width: 200px;
+    height: 35px;
+    font-weight: 500;
+ }
+ 
+ .añadiritem{
+    display: flex;
+ }
+ .volver{
+    font-family: 'Josefin Sans';
+    font-size: 0.8em;
+     padding-top: 0.85rem;
+      color: gray;
+   line-height: 0.7;
+    border-bottom: 1px solid gray;
+   
+        height: fit-content;
+}
+.volver:hover{
+border: none;
+color: black;
+cursor: pointer;
+}
+.editvolver{
+    font-family: 'Josefin Sans';
+    font-size: 0.8em;
+     padding-top: 0.85rem;
+      color: gray;
+   line-height: 0.7;
+    border-bottom: 1px solid gray;
+   
+        height: fit-content;
+}
+.editvolver:hover{
+border: none;
+color: black;
+cursor: pointer;
+}
+.Limpiarcarrito{
+    font-family: 'Josefin Sans';
+    font-size: 0.8em;
+     padding-top: 0.85rem;
+     margin-left: 20rem;
+    margin-right: 1.5rem;
+      color: gray;
+   line-height: 0.7;
+    border-bottom: 1px solid gray;
+        height: fit-content;
+        
+}
+.Limpiarcarrito:hover{
+border: none;
+color: black;
+cursor: pointer;
+}
+.estasSeguro{
+    font-family: 'Josefin Sans';
+    font-size: 0.8em;
+     padding-top: 0.9rem;
+     margin-left: 9rem;
+    
+      color: gray;
+   line-height: 0.7;
+        height: fit-content;
+        
+}
+.container{
+    max-width: 1440px;
+    background-color: #f7f6f2;
+  }
+  .col-md-6{
+    width: 48.7%;
+    margin-right: 0.35rem;
+  }
+  .item {
+    width: 637px;
+    height: fit-content;
+   
+  }.col{
+    display: flex;
+  }
+  .row{
+    
+    margin: 6px;
+  }
+  .item-title {
+    font-size: 21px;
+   padding: 12px;
+    text-align: center;
+  }
+  .Salsas-titulo{
+    margin-top:1.8rem;
+    margin-bottom:20px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+  
+  .item-image {
+      width: 637px;
+       height: 424px;
+       border-top: 2px;
+  }
+  
+  .item-details {
+    font-family: 'Quicksand',sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+  .item p{
+    margin-bottom: 0.5rem;
+  }
+  .item-price{
+    padding-bottom:16px ;
+  }
+  .item-descripcion{
+    font-family: 'Quicksand',sans-serif;
+    padding: 0 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+  .item-details > .item-price {
+    margin: 0;
+    
+  }
+  .Titulo-catering{
+    margin-top: 20px;
+    text-align: center;
+  }   
+  .Tajins-titulo{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  /* ? SHOPPING CART */
+  
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .shopping-cart-image {
+    width: 100px;
+    height: 66.66px;
+    
+  }
+  .buttonDelete{
+    margin-right: 0.3rem;
+    width: 20px;
+    height: 20px;
+    margin-top: -0.2rem; 
+  }
+  .buttonDelete:hover{
+    cursor: pointer;
+  }
+  .shopping-cart-item-title{
+    margin-left:0.6rem;
+    display:inline-block;
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Josefin Sans';
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .shopping-cart-quantity-input {
+    max-width: 45px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #eee;
+    padding: 5px;
+  }
+  .shopping-cart-price{
+    font-family:'Quicksand',sans-serif ;
+  }
+  .shopping-cart-total {
+    min-height: 96px;
+  }
+  .total-dinero{
+    position: absolute;
+    display: none;
+  }
+ 
+  .elegir-producto{
+    margin:2rem;
+  }
+  .tajins{
+    display:flex;
+    margin:1rem;
+    margin-top:1rem; 
+   
+  }
+  .ensaladas{
+    display: flex;
+    margin: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .tajin1{  
+  
+    border-radius: 2px;
+    background-color:#4c4b91;
+    color:#72a7d4;
+  }
+  .tajin2{  
+    color: #ebc9ba;
+    background-color:#9f1b15;
+    margin-right: 0;
+  }
+  .ensalada1{
+   
+    border-radius: 2px;
+    background-color: #eecb98;
+    color:#272a23;
+  }
+  .ensalada2{
+    color: #d3e5e1;
+    background-color: #323932;
+  }
+  .ensalada3{
+   
+    border-radius: 2px;
+    background-color: #dc3e1a;
+   color: #e0c8af;
+  }
+  .ensalada4{
+    background-color: #f1e1ce;
+   color: #778273;
+  }
+  .ensalada5{
+   
+    border-radius: 2px;
+    background-color: #40b6bf;
+    color:#19314b ;
+  }
+  .ensalada6{
+  
+    background-color: #909082;
+    color:#c8b48c;
+  }
+  .salsa1{
+   
+    border-radius: 2px;
+    color: #6b777e;
+    background-color: #e2d0a0;
+  }
+  .salsa2{
+    color: #989086;
+    background-color: #ece9e9;
+  }
+  .salsa3{
+   
+    border-radius: 2px;
+    color:#24381c;
+   background-color:#b68f43;
+  }
+  .salsa4{
+    color:#cadbe0;
+    background-color: #953204;
+  }
+  .doner1{
+   
+    border-radius: 2px;
+    background-color: #6d7556;
+   color: #daaa7d;
+  }
+  .durum2{
+    background-color:#45585c ;
+    color:#daaa7d;
+  }
+  .rkhama1{
+   
+    border-radius: 2px;
+    background-color:#303054;
+    color:#e0cfb2;
+  }
+  .baklava2{
+    background-color:#e1c190;
+    color:#637504;
+    
+  }
+  .tajin1:hover{
+   cursor: pointer;
+   box-shadow:#4c4b91 0px 1px 4px 1px;
+  }
+  .tajin2:hover{
+    cursor: pointer;
+    box-shadow: #cf4b35 0px 1px 4px 1px;
+  }
+  .ensalada1:hover{
+    cursor: pointer;
+    box-shadow:#ead1ba 0px 1px 100px 1px;
+  }
+  .ensalada2:hover{
+    cursor: pointer;
+    box-shadow:#b3afa9 0px 1px 100px 1px;
+  }
+  .ensalada3:hover{
+    cursor: pointer;
+    box-shadow:#524436 0px 1px 100px 1px;
+  }
+  .ensalada4:hover{
+    cursor: pointer;
+    box-shadow:#778273 0px 1px 100px 1px;
+  }
+  .ensalada5:hover{
+    cursor: pointer;
+    box-shadow:#19314b 0px 1px 100px 1px;
+  }
+  .ensalada6:hover{
+    cursor: pointer;
+    box-shadow:#c2b3a7 0px 1px 100px 1px;
+  }
+  .salsa1:hover{
+    cursor: pointer;
+    box-shadow:#333e45 0px 1px 100px 1px;
+  }
+  .salsa2:hover{
+    cursor: pointer;
+    box-shadow: #989086 0px 1px 100px 1px;
+  }
+  .salsa3:hover{
+    cursor: pointer;
+    box-shadow:#d2cfb7 0px 1px 100px 1px;
+  }
+  .salsa4:hover{
+    cursor: pointer;
+    box-shadow:#6d4025 0px 1px 100px 1px;
+  }
+  .doner1:hover{
+    cursor: pointer;
+    box-shadow: 0px 1px 100px 1px;
+  }
+  .durum2:hover{
+    cursor: pointer;
+    box-shadow:  0px 1px 100px 1px;
+  }
+  .rkhama1:hover{
+    cursor: pointer;
+    box-shadow:  0px 1px 100px 1px;
+  }
+  
+  .baklava2:hover{
+    cursor: pointer;
+    box-shadow: #c9be4d 0px 1px 100px 1px;
+  }
+  .total-dinero{
+    box-shadow: 0 1px 7px -2px #0000008f;
+    border-top: 1px solid #e2e2e2;
+    border-color: #0000001a;
+    width: 100%;
+    padding: 12px;
+    background-color: white;
+    position: fixed;
+    top:515;
+    margin-left: -1rem;
+  }
+  .total-precio{
+    border-top: 1px solid rgb(226, 226, 226);
+    width: 100%;
+    margin-left: -0.1rem;
+    padding-top:1rem ;
+    
+  }
+  .shopping-cart-total{
+    justify-content: space-between;
+    font-family: 'Josefin Sans';
+   color: #525252;
+  }
+.shoppingCartTotal{
+    text-align: end;
+   padding-left: 34rem;
+   padding-top:0.8rem;
+   padding-bottom:1.3rem;
+   
+
+}
+.Total{
+    text-align: start;
+    padding-top: 0.8rem;
+    padding-bottom: 1.3rem;
+   
+}
+.btn-comprar{
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color:#dfceb3;
+    text-shadow: 1px 1px 5px #dfceb3;
+    flex: 1 1 0%;
+    border-radius:4px;
+    border-color: transparent;
+   
+}
+.btn-comprar:hover{
+    background-color: black;
+    color:  rgb(230, 227, 227);
+    text-shadow: 1px 1px 5px rgb(230, 227, 227);
+}
+.Eliminar{
+    display: none;
+}
+.btn-si{
+    width: 190px;
+    height: 40px;
+    background-color: black;
+    color:#dfceb3;
+    text-shadow: 1px 1px 5px #dfceb3;
+   margin-left: 1rem;
+    border-radius:4px;
+}
+.btn-si:hover{
+    opacity: 0.85;
+}
+.btn-no{
+    width: 190px;
+    height: 40px;
+    background-color:white;
+    color:black;
+    text-shadow: 1px 1px 5px #dfceb3;
+    border: 1px solid black;
+    border-radius:4px;
+}
+.btn-no:hover{
+    background-color: black;
+    color:  rgb(230, 227, 227);
+   
+}
+
+/* Scroll espia */
+
+    .menu2 a.active:hover,
+    .menu2 a.active{
+        color :rgb(138, 181, 194);
+        border-bottom: 1px solid rgb(138, 181, 194);
+    }
+    .menu2.activo{
+        position:fixed;
+        top: 75;
+        margin-bottom:200px;
+    }
+    .section .activo{
+   margin-top:7rem;
+    }
+
+    /* Merchandaising */
+    .menu-Merch{
+        position: absolute;
+        margin:3rem;
+        display:block;
+       
+        z-index: 1;
+    }
+    .menu-Merch2{
+      margin: 3rem;
+        display:block;
+        height:fit-content;
+        z-index: 1;
+    }
+    .menu-Merch a{
+        color:black;
+        cursor:pointer;
+    }
+    
+    .menu-Merch2 a{
+        color: black;
+        cursor:pointer;
+      }
+    .menu-opciones{
+        position:absolute;
+        background-color:#0009;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display:none;
+    }
+    .fondo-opciones{
+        width: 24%;
+        height: 100%;
+        background-color: white;
+        position: relative;
+        display: none;
+    }
+    .cancelarmenu{
+        cursor: pointer;
+    }
+    .fondo-opciones div{
+        padding-top: 1.3rem;
+        font-family: 'Grape Nuts', cursive;
+        padding-left: 2rem;
+        cursor: pointer;
+       
+    }
+    .fondo-opciones .opcion:hover{
+        opacity: 0.7;
+    }
+    .opcion2{
+        font-family: 'Raleway', sans-serif;
+    }
+    .fondo-opciones h4{
+       font-size: 27px;
+       color: black;
+    }
+    .fondo-opciones p{
+        font-size: 15px;
+        color: black;
+    }
+    .icono-facebook:hover{
+  opacity: 0.7;
+    }
+    .icono-insta:hover{
+        opacity: 0.7;
+    }
+    .cancelarmenu{
+       padding: 1rem;
+       padding-bottom: 0;
+    }
+    .carrito-compra{
+        width: 22%;
+        height: 100%;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        display: none;
+        overflow: hidden;
+    }
+
+    .vacia{
+        padding: 0rem;
+        font-family: 'Raleway', sans-serif;
+            
+    }
+    .cancelarcarro{
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+       margin: 1rem;
+        margin-bottom: 0;
+        margin-left: 16.5rem;
+    }
+    .menu-icon{
+       cursor: pointer; 
+       margin-right: 50rem;
+    }
+    .menu-Merch2 .menu-icon{
+        margin-right: 30rem;
+    }
+    .menu-Merch2 .search-icon{
+      
+        margin-left:24rem;
+    }
+    .Palace-merch{
+        font-family: 'Rubik Spray Paint', cursive;
+        font-size: 35px;
+    }
+    .introducción{
+        width: 100%;
+        text-align: center;
+        
+    }
+    .tit-intro{
+        font-family: 'Rubik Spray Paint', cursive;
+        font-size: 26px;
+        padding: 1.5rem;
+    }
+    .texto-intro{
+        font-family: 'Raleway', sans-serif; 
+        padding: 0.5rem;
+        color: #666;
+    }
+    .search-icon{
+margin-left:13rem;
+cursor: pointer;
+    }
+    .bag-icon{
+margin-left: 2rem;
+cursor: pointer;
+    }
+    .fondo-merch{
+        width: 100%;
+        height: 100%;
+        
+        justify-content: center;
+    }
+
+.container{
+    width:100%;
+
+
+}
+
+.slider__container{
+    display: grid;
+   
+ }
+ .slider__body{
+    grid-column: 1/3;
+    grid-row:1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+ }
+ .slider__body--show{
+    opacity: 1;
+    pointer-events: none;
+ }
+ .slider__img{
+    width: 100%;
+    height: 649px;
+    object-fit: cover;
+    display: block;
+ }
+.botones-flecha{
+    width:calc(100% * 12/12);
+    padding-right: 2rem;
+    padding-left: 1.9rem ;
+    margin-top: -6.1rem ;
+    margin-bottom: 6rem;
+    display: flex;
+   
+   }
+   .boton1{
+    cursor: pointer;
+     margin-right:auto;
+     height: 44px;
+     width: 44px;
+     align-items: center;
+     display: flex;
+     justify-content: center;
+   }
+   .boton2{
+    height: 44px;
+    width: 44px;
+ margin-left: auto;
+ align-items: center;
+  display: flex;
+    justify-content: center;
+    cursor: pointer;
+   }
+   .mover{
+     position: relative !important;
+     cursor: pointer;
+   }
+   .mover2{
+     position: relative !important;
+     cursor: pointer;
+   }
+   .seleción-dirección .col{
+
+ display: block;
+   }
+   .interior-seleccion{
+    width: calc(100% * 12/12);
+    height: calc(100% * 12/12);
+   }
+   .seleción-dirección  img{
+    width: 410px;
+    height: 480px;
+    cursor: pointer;
+   }
+   .seleción-dirección  h4{
+    font-size: 27px;
+       color: black;
+       font-family:'Rubik Spray Paint', cursive ;
+       padding: 1.5rem;
+       cursor: pointer;
+   }
+   /* Lista de productos */
+   .escaparate{
+    margin-top: 2rem;
+    color: #666;
+   }
+   .selector-productos{
+    border: none;
+    width: 190px;
+    height: 48px;
+    appearance: none;
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    color: #666;   
+     background-color: #e5e3e3;
+     cursor: pointer;
+     margin-right: 1.5rem;
+     padding: 11px;
+     background-image: url(https://cdn.shopify.com/s/files/1/0507/2302/9146/t/2/assets/ico-select.svg?v=12595063896653130835);
+     background-repeat: no-repeat;
+     background-position: right 10px center;
+   }
+   
+   .selector-productos option{
+    background-color: white;
+   }
+   .lista-productos{
+    width: 100%;
+   margin-top: 3rem;
+   
+   }
+   .fila{
+    display: flex;
+    margin-left:2rem;
+   }
+   .lista-productos img{
+    width: 410px;
+    height: 480px;
+    margin-left:1rem;
+    margin-top:2rem;
+    cursor: pointer;
+    z-index: 1;
+   }
+
+  /* Camiseta efecto */
+   .camisa:hover .camisa1{
+    opacity: 0.05;
+    cursor: pointer;
+   }
+   .camisa:hover .hover-producto{
+    opacity: 1;
+   }
+   .camisa:hover .hover-producto .interior-producto{
+    transition: all .4s ease 0s;
+    transform: translateY(-20px);
+   }
+   .camisa2:hover .hover-producto2 .interior-producto{
+    transition: all .4s ease 0s;
+    transform: translateY(-20px);
+   }
+   .camisa2:hover .camis2{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis2{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis3{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis4{
+    opacity: 0.1;
+    cursor: pointer;
+   } 
+   .camisa:hover .camis5{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis6{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis7{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis8{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .camisa:hover .camis9{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   
+   .libro1:hover img{
+    opacity: 0.1;
+    cursor: pointer;
+   }
+   .libro1:hover .hover-producto2 {
+    opacity: 1;
+   }
+   .libro1:hover .hover-producto2 .interior-producto{
+    transition: all .4s ease 0s;
+    transform: translateY(-20px);
+   }
+
+   .lista-productos .hover-producto{
+    text-align: center;
+    position: absolute;
+    margin-top: -18rem;
+    margin-left: 8rem;
+    z-index: 2;
+    opacity: 0;
+    padding: 2rem;
+    transition: all .4s ease 0s;
+    color:black;
+    cursor: pointer;
+   }
+   .lista-productos .hover-producto2{
+    text-align: center;
+    position: absolute;
+    margin-top: -18rem;
+    z-index: 2;
+    opacity: 0;
+    padding: 7.5rem;
+    padding-left: 5.6rem;
+    padding-right: 0;
+    transition: all .4s ease 0s;
+    color:black;
+    cursor: pointer;
+   }
+   .preciocamisa{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    margin-top: -0.5rem;
+    margin-bottom:0.25rem;
+   }
+   .Camisas{
+    font-family: 'Rubik Spray Paint', cursive;
+   }
+   /* Footer */
+   .footer-merch{
+    margin-top: 2rem;
+    width: 100%;
+    padding:  20px;
+    padding-bottom: 60px;
+    background-color:  #f5f4ed;
+    
+   }
+   .footer-merch a{
+    color: #5c5c5c;
+   }
+   .footer-merch a:hover{
+    opacity: 0.6;
+   }
+   .footer-merch .icono-facebook3:hover{
+    opacity: 0.6;
+   }
+   .footer-merch img{
+   cursor: pointer;
+   margin-right: 1rem;
+   }
+   .no-vender{
+    font-family: 'Rubik Spray Paint', cursive;
+    font-size: 18px;
+    color: #5c5c5c;
+   
+   }
+   .copyright{
+    color: #5c5c5c;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 4px;
+   }
+   .fila-penultima{
+    text-align: center;
+
+   }
+   .filafinal{
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+   }
+   .filafinal .col{
+    display: flex;
+    
+   }
+   .iconos{
+    margin-left: 8rem;
+   }
+  
+   /* Camisetas info y compra */
+   .img-camisetas{
+    width: 100%;
+overflow: hidden;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    background-color: white;
+   }
+   
+   .imagen-camis{
+    
+  
+    margin-left:6.1rem;
+   }
+       /* Precio */
+       .texto-camisetas{
+        width: 100%;
+        height: 100%;
+     display: flex;
+     padding: 40px;
+     padding-top: 10px;
+       }
+       .precio-online{
+        width:45%;
+        padding-top: 4rem;
+        padding-left: 12rem;
+       }
+       .precio-online h4{
+        margin-bottom: 1.5rem;
+       }
+      
+       .talla{
+        text-align: start;
+        display: inline-block;
+        height: 48px;
+        width: 250px;
+        border: 1px solid #e9e8e8;
+        background-color:white;
+        border-radius: 1px;
+       
+        padding:7px;
+        padding-left: 14px;
+        
+       }
+       .talla label{
+        font-family: 'Raleway', sans-serif;
+        cursor: pointer;
+        color: #1a1a1a;
+       }
+       .talla select{
+        appearance: none;
+        background-image: url(https://cdn.shopify.com/s/files/1/0507/2302/9146/t/2/assets/ico-select.svg?v=12595063896653130835);
+        background-repeat: no-repeat;
+        background-position: right  center;
+        cursor: pointer;
+        border: none;
+        width: 170px;
+        padding: 3px 6px;
+       }
+       
+       
+       .precio-online h4{
+        font-family: 'Rubik Spray Paint', cursive;
+        font-size:25px;
+       }
+       .preciocamisa2{
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        margin-top: 0.5rem;
+        margin-left: -0.3rem;
+       }
+       .politica-compra{
+        font-family: 'Nunito';
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-bottom: 2rem;
+       }
+       .politica-compra a{
+        border-bottom: 1px solid #5c5c5c;
+        color: #5c5c5c;
+       }
+       .politica-compra a:hover{
+        opacity: 0.8;
+       }
+       .añadir-cesta{
+        border: 2px solid black;
+        border-radius: 2px;
+        padding: 9px;
+        width: 250px;
+        text-align: center;
+        font-family: 'Rubik Spray Paint', cursive; 
+    background-color: white;
+    height: 48px;
+    margin-bottom: 0.85rem;
+    cursor: pointer;
+       }
+       .Agotado{
+        background-color: black;
+        border: 2px solid black;
+        opacity: 0.5;
+        border-radius: 2px;
+        padding: 9px;
+        width: 250px;
+        text-align: center;
+        font-family: 'Rubik Spray Paint', cursive; 
+    height: 48px;
+    margin-bottom: 0.85rem;
+    margin-top: 0.85rem;
+     }
+     .Agotado p{
+        background-color: #000;
+        color: white;
+        cursor:default;
+     }
+       .añadir-cesta:hover{
+        opacity: 0.75;
+       }
+       .añadir-cesta button{
+        border: none;
+        background-color: white;
+        font-size: 17px;
+       }
+       .comprar-online{
+        text-align: center;
+           height: 48px;
+            border-radius: 2px;
+            width: 250px;
+           color: white;
+        background-color:#5a31f4;
+        font-family:Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;;
+        
+       }
+       .comprar-online:hover{
+        background-color:#4d1cfc;
+       }
+       .comprar-online a{
+        color: white;
+        font-size: 14px;
+       }
+       .icono-master{
+        margin-left: 3px;
+       }
+       .opciones-pago{
+        text-align: center;
+           height: 48px;
+            width: 250px;
+           margin-top: 1rem;
+        font-family:Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;;
+       }
+       .opciones-pago a{
+        text-decoration-line:underline;
+        text-decoration-color:black;
+       }
+       .opciones-pago a:hover{
+       opacity: 0.6;
+       }
+       .opciones-pago p{
+        color: black;
+        font-size:14px;
+       }
+       
+       /* Descripción */
+       .descripcion-camisetas{
+        width: 60%;
+        padding-top: 3.3rem;
+        
+        color:#5c5c5c;
+        font-family: Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;
+       }
+       .descripcion-camisetas h4{
+        font-size: 17px;
+        font-weight: bold;
+        
+       }
+       .descripcion-camisetas p{
+        width: 650px;
+        font-size: 15px;
+       margin-top: 2rem;
+       }
+       .p-caracteristicas {
+        margin-top: 2rem;
+        width: 450px;
+       }
+       .p-caracteristicas p{
+        margin-top: 0;
+        margin-bottom: 0.2rem;
+       }
+       .p-caracteristicas2 p{
+        margin-bottom: 1rem;
+       }
+
+       .opinion-redes{
+        margin-top: 1.5rem;
+        display: flex;
+    
+       }
+       .opinion-container{
+     cursor: pointer;
+        width: 110px;
+        height: 48px;
+        padding: 14px;
+        padding-left:11px;
+        border: 1px solid #e9e8e8;
+        background-color:white;
+        display: flex;
+        margin-right: 1rem;
+       }
+       .opinion-container h6{
+        font-size: 14px;
+        text-align: center;
+       }
+     .icono-descripccion{
+        width: 15px;
+        height: 15px;
+        margin-right: 0.5rem;
+     }
+
+
+     /* Camisetas recomendaciones / quizas */
+     .quiza-camis{
+        width: 100%;
+        text-align: center;
+     }
+     .quiza-camis h4{
+        font-family: 'Rubik Spray Paint', cursive;
+        margin-bottom: 1rem; 
+     }
+     .conjunto-camis{
+       background-color: white;
+        width: 100%;    
+     }
+     .conjunto-camis img{
+        width: 277px;
+        height: 277px;
+        margin-left: 1rem;
+        margin-right: 2rem;
+     }
+     .boton-camisetas{
+        width: 100%;
+        background-color: white;
+        padding-top: 3rem;
+        padding-bottom: 1.5rem; 
+        text-align: center;
+     }
+     .boton-camisetas button{
+    padding: 2px;
+        border-radius:3px ;
+        width: 180px;
+        height: 48px;
+        background-color: rgb(22, 22, 22);
+     }
+     .boton-camisetas button:hover{
+       background-color: #000;
+         }
+     .boton-camisetas img{
+        width: 20px;
+        height: 20px;
+        margin-right: 0.4rem;
+     }
+     .boton-camisetas h4{
+        font-size: 16px;
+        font-family: 'Rubik Spray Paint', cursive;
+        color: white;
+        display: inline;
+     }
+      
+     
+     /* Libros */
+     .escaparate-libros{
+        width: 100%;
+ padding: 2rem;
+ background-color: white;
+ display: flex;
+     }
+     .escaparate-libros a{
+        color: #000;
+     }
+     .escaparate-libros img{
+        width:390px;
+        cursor: pointer;
+    z-index: 1;
+     }
+     .escaparate-libros .hover-producto2{ 
+        text-align: center;
+     position: absolute;
+     margin-top: -11rem;
+     margin-left: 8rem;
+     z-index: 2;
+     opacity: 0;
+     padding: 2rem;
+     transition: all .4s ease 0s;
+     color:black;
+     cursor: pointer;
+    }
+    .Agotado-p{
+        font-size: 14px;
+        font-family: 'Raleway', sans-serif;
+        margin-right: 0.3rem;
+    }
+    .img-libros{
+        width: 675px;
+        height: 450px;
+    }
+    
+    .imagenes-libro{
+       width: 100%; 
+       margin-bottom: 3rem;
+       background-color: white;
+       margin-top: 4rem;
+    }
+    .recetas{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .recetas img{
+   width: 320px;
+    }
+    .receta1{
+        display: flex;
+        padding: 1rem;
+    }
+
+
+    /* Carrito-productos */
+    .shoppingCartItem{
+      max-width: 440px;
+    }
+    .shoppingCartItemsContainer{
+      overflow: scroll;
+      height: 100%;
+    }
+    .shoppingCartItemsContainer::-webkit-scrollbar{
+      width: 0px;
+    }
+    .shopping-cart-price2{
+      margin-left: auto;
+    }
+    .img-producto{
+        width: 100px;
+    height: 66.66px;
+    }
+    .titulo-detalles{
+       margin-left: 1rem;
+       padding: 0.5rem;
+        padding-right: 0;;
+    }
+    .shopping-cart-item-title2{
+        font-family: 'Rubik Spray Paint', cursive;
+        display:inline-block;
+        width: fit-content;
+        height: fit-content;
+       
+        font-size: 18px;
+     
+      }
+      .shopping-cart-image2{
+      
+        height: 83px;
+      }
+      .fondo-envio{
+        width:calc(100% * 12/12);
+        background-color: white;
+      }
+      .shopping-cart-quantity-input2{
+        height: 30px;
+        width: 64px;
+        border: none;
+        background: white;
+        padding: 5px;
+        text-align: center;
+        font-family: Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;
+      }
+      .shopping-cart-price{
+        font-family: 'Raleway', sans-serif;
+      }
+      .item-price2{
+        font-size: 16px;
+        height: 30px;
+        margin-top:-0.2rem;
+      }
+      .shopping-cart-total2{
+        min-height: 96px;
+        justify-content: space-between;
+        font-family: 'Josefin Sans';
+       color: #525252;
+       margin-left:0.5rem;
+       padding:1rem; 
+       padding-bottom: 
+       1.3rem; 
+       position: absolute; 
+       bottom: 0;
+       background-color: white;
+      }
+      .total-dinero{
+        position: absolute;
+        display: none;
+      }
+      .Talla-carrito{
+        font-size: 14px;
+        margin-top: 0.5rem;
+      }
+      .menos{
+        height: 30px;
+        background-color: #ffffff;
+        width: 24px;
+        border: none;
+        opacity: 0.9;
+      }
+      .menos:hover{
+        background-color: #d6cece;
+        border-radius: 1px;
+      }
+
+      .mas{
+        height: 30px;
+        background-color: #ffffff;
+        width: 24px;
+        border: none;
+        opacity: 0.9;
+      }
+      .mas:hover{
+        background-color: #d6cece;
+        border-radius: 1px;
+      }
+      .btn-comprar2{
+        width: 250px;
+        height: 50px;
+        background-color: black;
+        color:white;
+        border-color: transparent;
+        
+        opacity: 0.9;
+        border-radius:4px;
+      }
+      .btn-comprar2:hover{
+opacity: 1;
+      }
+      .Carrito-Envios .btn-comprar2{
+        width: 140px !important;
+      }
+      .impuestos-shiping{
+        font-family:Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-ser;
+        font-size: 12px;
+        margin-bottom:2.5rem;
+      }
+      .padding-left1{
+        padding-left:9rem;
+      }
+    
+      .desaparecer{
+        transition: all .35s cubic-bezier(.29,.63,.44,1);
+      }
+      .shopping-cart-total{
+display: none;
+      }
+
+      /* Elementos del carrito/envio */
+      
+      .política-envio-texto{
+        width: 100%;
+       
+        
+      }
+      .política-envio-texto h3{
+        font-family: 'Rubik Spray Paint', cursive;
+        
+      }
+      .política-envio{
+        max-width: 65ch;
+        margin: auto;
+        padding: 0rem 1rem;
+        justify-content: center;
+      }
+      .política-envio h4{
+        font-family: 'Rubik Spray Paint', cursive;
+        text-align: center;
+        margin-bottom: 1.2rem;
+        
+      }
+      .política-envio p{
+       font-family:'Raleway', sans-serif;
+       font-size: 15px;
+      }
+      .política-compra-texto{
+        width: 100%;
+    
+        padding:0rem 20rem;
+      }
+      .política-compra-texto h3{
+        font-family: 'Rubik Spray Paint', cursive;
+        margin-bottom: 5rem;
+      }
+      .política-compra{
+       
+        text-align: start;
+        justify-content: center;
+      }
+      .política-compra h4{
+        font-family: 'Rubik Spray Paint', cursive;
+        margin-bottom: 1.2rem;
+      }
+      .política-compra p{
+       font-family:'Raleway', sans-serif;
+       font-size: 15px;
+       letter-spacing: 0.25px;
+      }
+      .política-compra a:hover{
+        opacity: 0.7;
+      }
+      /* Carrito/Envio */
+      .divisor{
+        width: 100%;
+        display: flex;
+        height: fit-content;
+       
+      }
+      .formulario-compra{
+        width: 55%;
+        background-color:white;
+        padding-left: 8rem;
+        padding-right: 5rem;
+        padding-top: 3rem;
+        text-align: center;
+        height: 1053px;
+      }
+      .Vista-producto{
+        border-left: 1px solid  #d6cece;
+        width: calc(100% * 12/12);
+        background-color:rgb(250,250,250) ;
+        height: 1053px;
+      }
+      .Vista-producto2{
+        
+      border-top: 1px solid  #d6cece;
+        background-color:rgb(250,250,250) ;
+        
+      }
+      .Vista-producto2.prendida{
+        
+        border-bottom: 1px solid  #d6cece;
+         
+          
+        }
+      .tbody5{
+        
+        display:flex;
+        padding:1rem 0.9rem;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        max-width: 58.8rem;
+        
+      }
+      .boton-MostrarOcultar{
+        width: 100%;
+        height: 100%;
+        border: transparent;
+        display: flex;
+        background-color: rgb(250,250,250);
+      }
+      
+      .tbody3{
+        max-height: 0px;
+        overflow: hidden;
+        transition: 0.3s;
+        transition-timing-function:cubic-bezier(0.3,0.5,0.5,1);;
+        max-width: 590px;
+        margin: auto !important;
+        padding: 0 16px !important;
+        margin-top: 0rem !important;
+        
+      }
+      .Vista-producto .tbody3{
+        margin: auto !important;
+        padding: 3rem  !important;
+        margin-top: 0rem !important;
+       
+       max-height: 100%;
+       
+      }
+      .tbody3linea{
+        width: 100%;
+        
+      }
+      
+     .lineatbody5{
+      border-bottom: 1px solid #d6cece;
+     }
+      .tbody3.prendido{
+        max-height: 391.16px !important;
+        margin-top: 0.95rem !important;
+      }
+      .tbody5 h4{
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+      }
+      
+      .flecha-tbody5{
+      width: 10px;
+      height: 10px;
+      transform: rotate(90deg);
+      margin-left:0.35rem;
+      margin-top: 0.48rem;
+      }
+    
+      .carrito-comprar{
+        width: 18px;
+        height: 18px;
+        margin-top:0.15rem;
+      }
+      .tabla-producto .Envios{
+        display:table-row-group!important;
+      }
+      .Mostar-pedido{
+        margin:0.15rem;
+        margin-left: 0.65rem;
+        margin-right: 0rem;
+      }
+      .Ocultar-pedido{
+        margin:0.15rem;
+        display: none;
+        margin-right: 0rem;
+        margin-left: 0.65rem;
+      }
+      .palace-carrito{
+       margin-bottom: 1rem;
+      
+      }
+      .seguimiento-linea{
+        display: flex;
+        width:100%;
+        height: 18px;
+       margin-bottom: 1.3rem;
+       margin-top: 1.3rem;
+      }
+      .proceso{
+        margin-bottom: 2rem;
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif;
+      }
+      .flecha-proceso{
+        opacity: 0.7;
+        width: 10px;
+        height: 10px;
+        margin: 1.5px 8px 0px 8px;
+      }
+      .Pago-express{
+        width:100% ;
+        display:flex;
+        justify-content: center;
+      
+      }
+      .linea-pago{
+     margin-top: 11px;
+        height: 1px;
+        background-color: #d6cece;
+       
+        width:inherit;
+      }
+      .pago-tit{
+        font-weight: 600;
+        font-family: 'Raleway', sans-serif;
+        font-size: 15px;
+        width: 341px;
+      }
+     .comprar-online2{
+        text-align: center;
+        height: 42px;
+         border-radius: 2px;
+         width: 270px;
+        color: white;
+     background-color:#5a31f4;
+     font-family:Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;;
+     
+     }
+     .contacto-info{
+        margin-bottom: 1.5rem;
+     }
+     .contenedor-formulario-carrito{
+      margin-top: 0rem !important;
+     }
+     .contacto-tit{
+        text-align: start;
+        font-family: 'Raleway', sans-serif;
+        font-size: 19px;
+        margin-bottom: 1rem;
+     }
+     
+     .contacto-input{
+        width: 100%;
+        display: block;
+        height:45px ;
+        border: 1px solid#d6cece;
+        padding: 0.5rem;
+        padding-left:0.75rem;
+        border-radius: 5px;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 15px;
+        margin-bottom:0.9rem;
+     }
+     .contacto-input .borde{
+        border: 1px solid red;
+     }
+     .contacto-check{
+        text-align: start;
+       border-color: black;
+       display: none;
+     }
+    
+     .contacto-check:checked + label::before{
+        content: "\f00c";
+        font-family:FontAwesome;
+        background-color: #000;
+        color: white;
+        background-position: center;
+        transition: 0.3s all;
+     }
+     .contorno-check label{
+        position: relative;
+        padding-left: 1.9em;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 1px;
+     }
+     .contorno-check label:before{
+        content: '';
+        border: 1px solid #d6cece;
+        border-radius: 3px;
+        width: 1.1rem;
+        height: 1.1rem;
+        position: absolute;
+        left: 0px;
+        margin-top:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.5px;
+        font-size: 12px;
+        cursor: pointer;
+        
+       
+     }
+     .envio-info input{
+        margin-bottom: 1rem;
+       
+        height:45px ;
+        border: 1px solid#d6cece;
+        padding: 0.5rem;
+        padding-left:0.75rem;
+        border-radius: 5px;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14.5px;
+        margin-bottom:0.9rem;
+     }
+    .formulario_grupos_input .activo{
+        padding: 0.5rem;
+    padding-top: 1.1rem;
+     }
+      .país-elegir{
+        width: 100%;
+      }
+      .país-elegir input{
+        width: 100%;
+      }
+      .nombre-apellido{
+        width: 100%;
+        display: flex;
+      }
+      .nombre-apellido input{
+        width: 100%;
+        
+      }
+      .nombre{
+        width: 50%;
+      }
+      .apellido{
+        width: 50%;
+        margin-left: 1rem;
+      }
+      .compañia{
+        width: 100%;
+      }
+      .compañia input{
+        width: 100%;
+      }
+      .Adress{
+        width: 100%;
+      }
+      .Adress input{
+        width:100%
+      }
+      .ciudad-estado{
+        display: flex;
+      }
+      .estado3{
+        width: 33.33%;
+      }
+      .estado3 input{
+        width: 100%;
+      }
+      
+      .estado{
+        width: 33.33%;
+        margin-left: 1rem;
+      }
+      .estado2{
+        width:100%;
+        
+      }
+      
+      .form_label{
+        position: absolute;
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif ;
+        padding-left: 0.7rem;
+        color:  #757575;
+         visibility: hidden;
+        transition: ease-in-out 0.3s;
+      }
+      .form_label_especial{
+        position: absolute;
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif ;
+        padding-left: 0.7rem;
+        color:  #757575;
+         visibility: visible;
+         transform: translateY(4px);
+        transition: ease-in-out 0.3s;
+      }
+      .form_label.activo{
+        visibility: visible;
+        transform: translateY(4px);
+      }
+      .formulario_grupos_input.activo{
+        padding-top: 1.2rem;
+        transition: ease-in-out 0.3s;
+      }
+      .estado select{
+        width: 100%;
+        margin-bottom: 1rem;
+        border: 1px solid #d6cece;
+        height:45px ;
+        border: 1px solid#d6cece;
+        padding: 0.5rem;
+        padding-top: 1.1rem;
+        
+        border-radius: 5px;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        margin-bottom:0.9rem;
+      }
+      .numpostal{
+        width: 33.33%;
+        margin-left: 1rem;
+      }
+      .numpostal input{
+        width: 100%;
+      }
+      .telefono{
+        width: 100%;
+      }
+      .telefono input{
+        width: 100%;
+      }
+      .volver-continuar{
+        width: 100%;
+        height: 56px;
+        display: flex;
+      }
+      .volver-carrito{
+        width:50%;
+        text-align: start;
+        height: 56px;
+        padding:14px;
+        padding-left: 0px;
+            
+      }
+      .volver-carrito a{
+        color:#000;
+        
+      }
+      .volver-carrito img{
+        width: 14px;
+        height: 14px;
+        transform: rotate(180deg);
+        
+      }
+      
+      .volver-carrito label{
+        font-family: 'Raleway', sans-serif ;
+        font-size: 15px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+      .continuar-carrito{
+        width: 50%;
+        text-align: end;
+      }
+      .continuar-button{
+            height:56px;
+            color: white;
+            background-color: black;
+            font-family:'Raleway', sans-serif;
+            font-weight: 600;
+            font-size: 14;
+           opacity: 0.9;
+        border-radius: 5px;
+        border-color: transparent;
+            width: 200px;
+      }
+      .continuar-button:hover{
+        opacity: 1;
+              }
+      .política-carrito{
+        width: 100%;
+        border-top:1px solid #d6cece ;
+        margin-top: 3rem;
+      }
+      .enlaces{
+        display: flex;
+      }
+      .enlaces a{
+        color: #000;
+
+      }
+      .enlaces h4{
+        font-family:'Raleway', sans-serif;
+        font-size: 12px;
+        margin-right: 1rem;
+        margin-top: 1rem;
+      }
+      .Vista-producto{
+        padding: 3rem;
+        padding-right: 7.5rem;
+      }
+
+      .circulo-pequeño{
+        width:21px;
+        height: 21px;
+        border-radius:10px;
+        text-align: center;
+        background-color:hsla(0,0%,45%,90%);
+        position: absolute;
+        color: white;
+        font-family:'Raleway', sans-serif;
+        margin-left:3.7rem;
+        margin-top:-0.5rem;
+      }
+      .cant-pedido{
+ font-size: 14px;
+ padding-top: 1px;
+      }
+      .cupón-descuento{
+        width: fit-content;
+        display: flex;
+        margin-top: 0.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #d6cece;
+        border-top: 1px solid #d6cece;
+      }
+      .cupón-descuento input{
+        width: 334.73;
+        height: 45px;
+        border: 1px solid #d6cece;
+        height:45px ;
+        border: 1px solid#d6cece;
+        padding: 0.5rem;
+        padding-left:0.75rem;
+        border-radius: 5px;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14.5px;
+        margin-bottom:1.5rem;
+        margin-top:1.5rem;
+        margin-right: 1rem;
+      }
+      .cupón-descuento button{
+        text-align: center;
+        height: 45px;
+        padding: 0px 17px;
+        width: 84px;
+        margin-top:1.5rem;
+        background-color: #929090;
+        color: white;
+        border: 1px solid #929090;
+        border-radius: 5px ;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .subtotal{
+        display: flex;
+      }
+      .envio{
+        display: flex;
+        margin-bottom: 0.5rem;
+      }
+    .subtotal-envio h4{
+      font-family:'Raleway', sans-serif;  
+      font-size: 15px;
+      font-weight: lighter;
+      margin-right: 21rem;
+      margin-bottom: 1rem;
+    }
+    .subtotal-envio h6{
+        font-family:'Raleway', sans-serif;  
+        font-size: 15px;
+        font-weight: 600;
+      }
+      .envio-precio{
+        margin-left: 2rem;
+      }
+      .total{
+        display: flex;
+        border-top: 1px solid #d6cece;
+      }
+      .total h4{
+        font-family:'Raleway', sans-serif;  
+        font-size: 16px;
+        font-weight:bolder;
+      
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+      .euros{
+        display: flex;
+        font-size: 13px;
+        font-family:'Raleway', sans-serif;
+        margin-top: 1.2rem;
+        opacity: 0.8;
+      }
+      .total h6{
+          font-family:'Raleway', sans-serif;  
+          font-size: 30px;
+          font-weight: 600;
+          margin-top:0.3rem;
+          margin-left: 1rem;
+        }
+        .especial10{
+          width: 70px;
+          height: 70px;
+          border: 1px solid #d6cece;
+          border-radius: 10px;
+        }
+        .especial20{
+            font-family:'Raleway', sans-serif ;
+            padding-top: 1rem;
+        }
+        .especial30{
+            margin-left: 7rem;
+            position: absolute;
+        }
+      /* Carrito-envio */
+      .tabla-producto{
+        margin: 3rem;
+        margin-left:8rem;
+        border-bottom: 1px solid #d6cece;
+
+      }
+      .tabla-producto th{
+        font-family:'Rubik Spray Paint', cursive;
+        font-size:.93333em;
+        font-weight: lighter;
+      }
+     
+      .Actualizar{
+        text-align: center;
+        color: #000;
+        border-bottom: 1px solid black;
+        width: fit-content;
+        font-size: 14px;
+        justify-content: center;
+      margin-top: 2rem;
+      }
+      .producto-envio{
+        padding-right:32rem;
+      }
+      .cantidad-envio{
+        padding-right: 14rem;
+        padding-left: 8rem;
+      }
+      
+      
+      
+      .especial1{
+        width: 150px;
+        height: 150px;
+      }
+      .especial2{
+        padding-top: 1.5rem;
+      }
+      .especial2 h6{
+        padding-top: 0.5rem;
+      }
+      .especial2 .Talla-carrito{
+        opacity: 0.7;
+      }
+      .Remover{
+        font-size: smaller;
+        opacity: 1;
+        font-size: 14px;
+    font-family: 'Josefin Sans';
+      }
+      .Remover:hover{
+    opacity: 0.7;
+     cursor: pointer;
+     
+      }
+      .especial3{
+        padding-left: 15.5rem;
+        position: absolute;
+      }
+      .especial4{
+        position: absolute;
+        padding-left: 26rem;
+      }
+      .especial5{
+        padding-left: 44.5rem;
+        position: absolute;
+      }
+      /* Envio-Envio */
+      .contenido-envio{
+        border: 1px solid#d6cece;
+        border-radius: 5px;
+      }
+      .contenido-correo{
+        display: flex;
+        width: fit-content;
+        
+        height: 45px;
+        margin-left: 0.75rem;
+        margin-right:1rem;
+        
+        
+        text-align: start;
+      }
+  .contenido-correo h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    padding: 0.75rem;
+    padding-left: 0.5rem;
+    padding-top: 0.9rem;
+    margin-right:1rem;
+    
+  }
+  .Cambiar{
+    padding-left: 1rem;
+    font-size: 13px;
+    color: #000;
+  }
+  .envio-container{
+    border: 1px solid#d6cece;
+    border-radius: 5px;
+    text-align: start;
+  }
+      .envio-container2{
+        border: 1px solid#d6cece;
+        border-radius: 5px;
+        text-align: start;
+      }
+      .opcion-envio{
+        width: 100%;
+        display: flex;
+        height:56px ;
+        border-bottom: 1px solid #d6cece;
+        padding: 1rem;
+        padding-left:0.75rem;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+
+      }
+      .opcion-envio2{
+        width: 100%;
+        display: flex;
+        height:56px ;
+        border-bottom: 1px solid #d6cece;
+        padding: 1rem;
+        padding-left:0.75rem;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+
+      }
+      .elegido{
+        text-align: start;
+       border-color: black;
+       display: none;
+     }
+     .elegido2{
+        text-align: start;
+       border-color: black;
+       display: none;
+     }
+    
+     .elegido:checked + label::before{
+        content: "\f111";
+        font-family:FontAwesome;
+        background-color: #000;
+        color: white;
+        background-position: center;
+        transition: 0.3s all;
+     }
+     .elegido2:checked + label::before{
+        content: "\f00c";
+        font-family:FontAwesome;
+        background-color: #000;
+        color: white;
+        background-position: center;
+        transition: 0.3s all;
+     }
+     .opcion-envio label{
+        position: relative;
+        padding-left: 1.9em;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 1px;
+     }
+     .opcion-envio h4{
+       
+       display: flex;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        cursor: pointer;
+        color: #4d4c4c;
+     }
+     .opcion-envio label:before{
+        content: '';
+        border: 1px solid #d6cece;
+     border-radius: 30px;
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        left: 0px;
+        margin-top:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.25px;
+        font-size: 6px;
+        cursor: pointer;
+     }
+     .opcion-envio2 label{
+        position: relative;
+        padding-left: 1.9em;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        cursor: pointer;
+        margin-top: 1px;
+     }
+     .opcion-envio2 h4{
+       
+        display: flex;
+         font-family: 'Raleway', sans-serif ;
+         font-size: 14px;
+         cursor: pointer;
+         color: #4d4c4c;
+      }
+     .opcion-envio2 label:before{
+        content: '';
+        border: 1px solid #d6cece;
+    border-radius: 4px;
+        width: 1.25rem;
+        height: 1.25rem;
+        position: absolute;
+        left: 0px;
+        margin-top:1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.25px;
+        font-size:11px;
+        cursor: pointer;
+     }
+     .envio-container label::before{
+padding-top: 0px;
+     }
+     .envio-container2 label::before{
+        padding-top: 1px;
+             }
+        
+     .precio-envio{
+        font-family: 'Raleway', sans-serif ;
+        font-size: 15.5px;
+        font-weight: 600;
+        padding-left: 18rem;
+     }
+     .precio-envio2{
+        font-family: 'Raleway', sans-serif ;
+        font-size: 15.5px;
+        font-weight: 600;
+        padding-left: 11.2rem;
+        padding-top: 0.75rem;
+        position: absolute;
+     }
+     .texto-pago{
+    color: #4d4c4c;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 14px;
+        cursor: pointer;
+      text-align: start;
+        margin-bottom:1rem;
+     }
+    .Presionado{
+       overflow: hidden;
+      
+       max-height: 0px;
+       transition: 0.4s;
+       transition-timing-function:cubic-bezier(0.3,0.5,0.5,1);;
+    }
+    .Presionado.prendido{
+      display: block;
+      max-height: 271px;
+     }
+     .Presionado2.prendido{
+      display: block;
+      max-height: 271px;
+  }
+    .Presionado2{
+      overflow: hidden;
+        max-height: 0px;
+        transition: 0.4s;
+        transition-timing-function:cubic-bezier(0.3,0.5,0.5,1);;
+    }
+    .Presionado3.prendido{
+      display: block;
+      max-height: 155.17px;
+  }
+    .Presionado3{
+      overflow: hidden;
+        max-height: 0px;
+        transition: 0.4s;
+        transition-timing-function:cubic-bezier(0.3,0.5,0.5,1);;
+    }
+     
+    
+     .icono-hover{
+        position: absolute;
+        margin-left: -2rem;
+        margin-top: 0.85rem;
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+
+     }
+     /* Pago envio */
+     .telefono-pago{
+background-color: rgb(250, 250, 250);
+     }
+     .input-telefono-pago{
+      width: calc(100% * 12/12);
+      border: 1px solid #d6cece;
+      background-color: white;
+      border-radius: 5px;
+      margin-bottom:1rem;
+      height: 47px;
+    display: flex;
+    
+    }
+    
+    .input-telefono-pago-imagen{
+      padding: 0.75rem;
+    }
+   
+    .input-telefono-pago-bandera{
+     margin-left: auto;
+    }
+     .telefono-pago input{
+        margin-bottom: 0rem;
+       /* width: 270px; */
+      border: none;
+        height: inherit;
+        
+        padding: 0rem;
+        padding-left:1rem;
+        border-radius: 5px;
+        font-family: 'Raleway', sans-serif ;
+        font-size: 15px;
+        appearance: none;
+     }
+     .telefono-pago label{
+        
+        font-size: 12px;
+        font-family: 'Raleway', sans-serif ;
+        
+        padding-left: 1rem;
+        color:  #757575;
+     }
+     .telefono-img{
+       
+        width: 19px;
+        height: 19px;
+       
+      
+     }
+     .bandera-telefono{     
+      margin-right: 1rem;
+      margin-top: 0.45rem;
+    
+  }
+
+     .telefono-texto{
+        margin-top: 0.15rem;
+        font-size: 14px;
+        font-family:'Raleway', sans-serif;
+        color:#504d4d;
+     }
+     .texto-presionado-debajo{
+        font-size: 12px;
+        font-family:'Raleway', sans-serif;
+        color:#757575;
+        margin-top: 0.5rem;
+        text-align: start;
+        display: none;
+     }
+     .Politica-pago{
+        text-decoration: underline;
+        color:#757575;
+        cursor: pointer;
+     }
+     .Politica-pago:hover{
+        color:#757575;
+     }
+     .Terminos-servicio{
+        text-decoration: underline;
+        color:#757575;
+        cursor: pointer;
+     }
+     .Terminos-servicio:hover{
+        color: #757575;
+     }
+     .imagenes-tarjeta{
+        text-align: center;
+  
+        margin-left: 9rem;
+        display: flex;
+     }
+    
+     .borde{
+        border: 1px solid #f1eded;
+        width: 38px;
+        height: 24px;
+        border-radius:3px;
+        background-size:cover;
+        background-image: url(../img/mercandaisin/amex.png);
+        background-position: center;
+margin-left: 0.25rem;
+     }
+     .borde1{
+        background-size:cover;
+        background-image: url(../img/mercandaisin/visa.png);
+        background-position: center;
+     }
+     .borde2{
+        background-size:cover;
+        background-image: url(../img/mercandaisin/master_card_icon_133071.png);
+        background-position: center;
+     }
+     .borde3{
+        background-size:cover;
+        background-image: url(../img/mercandaisin/discover.png);
+        background-position: center;
+     }
+     
+     .imagenes-tarjeta h6{
+        font-size: 12px;
+        color: #757575;
+        padding-top: 0.25rem;
+        padding-left: 0.25rem;
+     }

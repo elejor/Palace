@@ -1,0 +1,6 @@
+  const volvereditproduct=document.querySelector(".volver2");
+
+volvereditproduct.addEventListener('click',()=>{
+  carritopedidos2.style.display="none";
+  body.style.overflow="visible";
+ })

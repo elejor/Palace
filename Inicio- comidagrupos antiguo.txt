@@ -1,0 +1,22 @@
+<section class="Grupos-inicio">
+        <div class="grupos-texto">
+        <div class="texto-move "  >
+            <h2 class="d-flex justify-content-center ">Comidas grupos</h2>
+            <div class="linea "></div>
+            <a class="link-grupos"><h4  class="d-flex justify-content-center ">Leer mas</h4></a>
+           </div>
+           </div>
+        <div class="inicio-grupos d-flex justify-content-center ">
+           
+          <div class="contenedorheroGrupos text-center | js-box-text "  >
+              <h4>¿Reservar un grupo de 9 o más? Ya sea que esté organizando una fiesta de cumpleaños, una despedida de soltera o una cena de trabajo con sus colegas, nuestros menús de precio fijo de estilo familiar tienen una amplia gama de opciones para todas las ocasiones.</h4>
+              <button class="reservas-grupo">
+                <a href="Establecimientos.html" style="color:white">
+                   <h5 class=" text-center">
+                    Reservas
+                   </h5> 
+                </a>
+               </button>
+          </div>
+        </div>
+        </section>

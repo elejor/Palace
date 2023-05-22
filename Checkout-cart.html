@@ -1,0 +1,300 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="img/mercandaisin/Palace-icon.png" >
+	<title>Caja - Palace Merch</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta&family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/estilos.css">
+    
+    </head>
+    <body >
+      
+  <div class="divisor">
+<div class="formulario-compra">
+   <img src="img/imagenes-menu/Palace-formulario.png" alt="" class="palace-carrito">
+   <div class="Vista-producto2">
+    <div class="tbody5">
+      <button class="boton-MostrarOcultar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="img/iconos/carrito-de-compras.png" alt="" class="carrito-comprar">
+      <h4 class="Mostar-pedido">Mostrar el pedido</h4>
+      <h4 class="Ocultar-pedido">Ocultar el pedido</h4>
+      <img src="img/iconos/flecha-correcta.png" alt="" class="flecha-tbody5">
+      <img src="" alt="" style="display: none;" class="flecha2-tbody5">
+      
+    </button>
+    
+    <h6 class="shoppingCartTotal shoppingCartTotal2 shoppingCartTotal3 shoppingCartTotal4 " style="padding:0; margin-bottom: 0rem;margin-top:0.1rem; font-family: 'Raleway', sans-serif;
+      font-size: 22px;
+      font-weight: 600;"></h6>
+    </div>
+    <div class="lineatbody5"></div>
+    <div class="tbody3linea">
+    <div class="tbody3">
+      <div class="tbody4">
+ 
+      </div>
+    <div class="cupón-descuento">
+     <input type="text" id="cupón" placeholder="Codigo Descuento">
+     <button>Aplicar</button>
+    </div>
+    <div class="subtotal-envio">
+     <div class="subtotal">
+      <h4>Subtotal</h4>
+      <h6 class="subtotal-precio shoppingCartTotal shoppingCartTotal2 shoppingCartTotal7" style="padding:0;"></h6>
+     </div>
+     <div class="envio">
+     <h4>Envio </h4>
+     <img src="img/mercandaisin/pregunta.png" alt="" class="icono-hover">
+     <h6 class="envio-precio shoppingCartTotal6">10€</h6>
+     </div>
+     <div class="total">
+      <h4>Total</h4>
+      <div style="margin-left: auto; display: flex;">
+      <h5 class="euros">Euros</h5>
+      <h6 class="shoppingCartTotal shoppingCartTotal2 shoppingCartTotal3 shoppingCartTotal4" id="Precio-Cambiar" style="padding:0;"></h6>
+    </div>
+      <div class="shopping-cart-total2" style="display:none;background-color:rgb(250,250,250); visibility: hidden;"></div>
+      <div class="vacia"style="display:none ;"></div>
+     </div>
+    </div>
+    </div>
+  </div>
+      </div>
+      
+   <div class="contenedor-formulario-carrito">
+   <div class="seguimiento-linea">
+    <a href="Carrito-envio.html" style="color: black;"><h2 class="proceso">Carrito</h2></a>
+    <img src="img/iconos/flecha-correcta.png" alt="" class="flecha-proceso">
+    <h2 class="proceso" style="font-weight: 600;">Información</h2>
+    <img src="img/iconos/flecha-correcta.png" alt="" class="flecha-proceso" style="opacity: 0.5;">
+    <h2 class="proceso" style="opacity: 0.8;">Envio</h2>
+    <img src="img/iconos/flecha-correcta.png" alt="" class="flecha-proceso" style="opacity: 0.5;">
+    <h2 class="proceso"style="opacity: 0.8;">Pago</h2>
+   </div>
+   <div class="Pago-express">
+    <div class="linea-pago"></div>
+     <h4 class="pago-tit">Pago express</h4>
+     <div class="linea-pago"></div>
+   </div>
+   <div style="text-align:-webkit-center;">
+    <a href=""> <div class="comprar-online2" style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
+    <img src="img/mercandaisin/Master cardd.png"style="width: 44px;" class="icono-master" style="text-align: center;">
+  </div>
+</a>
+   </div>
+   <div class="Pago-express" style="margin-bottom: 0.5rem;">
+  <div class="linea-pago"></div>
+   <h4 class="pago-tit" style="width: 100px;">O</h4>
+   <div class="linea-pago"></div>
+ </div>
+ <form id="formulario">
+ <div class="contacto-info" >
+ <h4 class="contacto-tit">Información de contacto</h4>
+ <div class="estado2">
+ <label for="grupo__correo" class="form_label" id="form_label_correo" style="display:flex !important;">Correo</label>
+ <input type="email"class="contacto-input formulario_grupos_input"placeholder="Correo" name="correo" id="grupo__correo" data="0">
+</div>
+  <div style="text-align:start;">
+    <div class="contorno-check">
+    <input type="checkbox" class="contacto-check" id="activo">
+    <label for="activo">Mandame correos con noticias y ofertas</label>
+  </div>
+  </div>
+ </div>
+ <div class="envio-info">
+  <h4 class="contacto-tit">Dirección de envío</h4>
+  <div class="estado" style="margin-left: 0;width: 100%;">
+    <label for="País2"  class="form_label_especial">Continente/Región</label>
+    <select name="pais" id="País2" >
+      <option value="España y Latam">España y Latam</option>
+    </select>
+  </div>
+  <div class="nombre-apellido">
+ <div class="estado2" >
+  <label for="grupo__nombre" class="form_label" id="form_label_nombre" >Nombre</label>
+  <input type="text" placeholder="Nombre" name="nombre" class="formulario_grupos_input prueba" id="grupo__nombre"data="0">
+ </div> 
+ <div class="estado2">
+  <label for="grupo__apellido" class="form_label" id="form_label_apellido">Apellido</label>
+  <input type="text" placeholder="Apellido" name="apellido"class="formulario_grupos_input"id="grupo__apellido"data="0">
+ </div>
+  </div>
+  <div class="estado2">
+    <label for="grupo__compañia" class="form_label" id="form_label_compañia">Compañia</label>
+    <input type="text" placeholder="Compañia (opcional)" name="compañia"class="formulario_grupos_input"id="grupo__compañia"data="0">
+  </div>
+  <div class="estado2">
+    <label for="grupo__direccion" class="form_label" id="form_label_direccion">Dirección</label>
+    <input type="text" placeholder="Dirección" name="direccion"class="formulario_grupos_input"id="grupo__direccion"data="0">
+  </div>
+  <div class="estado2" >
+    <label for="grupo__direccion2" class="form_label" id="form_label_direccion2">Apartamento</label>
+    <input type="text" placeholder="Apartamento, suite, ect.(opcional)" name="direccion2"class="formulario_grupos_input"id="grupo__direccion2"data="0">
+  </div>
+
+<div class="ciudad-estado">
+  <div class="estado3">
+    <label for="grupo__ciudad" class="form_label" id="form_label_ciudad">Ciudad</label>
+    <input type="text"placeholder="Ciudad" name="ciudad" class="formulario_grupos_input"id="grupo__ciudad" data="0">
+  </div>
+  <div class="estado">
+    <label for="País" class="form_label_especial">País</label>
+    <select name="pais" id="País" >
+      <option value="Argentina">Argentina</option>
+      <option value="Bolivia">Bolivia</option>
+      <option value="Chile">Chile</option>
+      <option value="Colombia">Colombia</option>
+      <option value="Costa Rica">Costa Rica</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Ecuador">Ecuador</option>
+      <option value="El Salvador">El Salvador</option>
+      <option value="España">España</option>
+      <option value="Guatemala">Guatemala</option>
+      <option value="Guinea Ecuatioral">Guinea Ecuatioral</option>
+      <option value="Honduras">Honduras</option>
+      <option value="México">México</option>
+      <option value="Nicaragua">Nicaragua</option>
+      <option value="Panamá">Panamá</option>
+      <option value="Paraguay">Paraguay</option>
+      <option value="Perú">Perú</option>
+      <option value="República Dominicana">República Dominicana</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Venezuela">Venezuela</option>
+      
+    </select>
+  </div>
+  <div class="estado3 numpostal">
+    <label for="grupo__codigopostal" class="form_label" id="form_label_codigo" >Codigo postal</label>
+    <input type="text"placeholder="Codigo Postal" name="codigo"class="formulario_grupos_input" id="grupo__codigo" data="0">
+  </div>
+</div>
+
+<div class="telefono">
+  <input type="text"placeholder="Telefono (opcional)">
+  <img src="img/mercandaisin/pregunta.png" alt="" class="icono-hover">
+</div>
+ </div>
+ <div class="volver-continuar">
+  <div class="volver-carrito">
+    <a href="Carrito-envio.html">
+    <img src="img/iconos/flecha-correcta.png" alt="" class="volver-button" id="volver-button"> <label for="volver-button">Volver al Carrito</label></a>
+  </div>
+  <div class="resultado">
+    <p class="formulario__mensaje-exito3" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+</div>
+    <div class="formulario__mensaje4" id="formulario__mensaje">
+        <p style="display: flex;"><i class="fas fa-exclamation-triangle" style="    margin-top: 1rem;
+          margin-right: 0.5rem;"></i><b style="margin-top: 4px;"> Error</b></p>
+    </div>
+  <div class="continuar-carrito">
+    <button class="continuar-button"  id="continuar-form" >Continuar comprando</button>   
+  </div>
+  
+ </div>
+</form>
+ <div class="política-carrito">
+  <div class="enlaces">
+ <a href=""> <h4>Política Reembolso</h4></a>
+ <a href=""> <h4>Política Envío</h4></a>
+ <a href=""> <h4>Política Privacidad</h4></a>
+ <a href=""> <h4>Terminos del servicio</h4></a>
+</div>
+ </div>
+</div>
+</div>
+<div class="Vista-producto">
+  <div class="tbody3">
+    <div class="tbody6">
+     
+    </div>
+  <div class="cupón-descuento">
+   <input type="text" id="cupón" placeholder="Codigo Descuento">
+   <button>Aplicar</button>
+  </div>
+  <div class="subtotal-envio">
+   <div class="subtotal">
+    <h4>Subtotal</h4>
+    <h6 class="subtotal-precio shoppingCartTotal shoppingCartTotal2 shoppingCartTotal3 shoppingCartTotal7" style="padding:0;">200€</h6>
+   </div>
+   <div class="envio">
+   <h4>Envio</h4>
+   <h6 class="envio-precio shoppingCartTotal6">10€</h6>
+   </div>
+   <div class="total">
+    <h4>Total</h4>
+    <h5 class="euros">Euros</h5>
+    <h6 class="shoppingCartTotal shoppingCartTotal2 shoppingCartTotal3 shoppingCartTotal6"  style="padding:0;" id="Precio-Cambiar2"></h6>
+    <div class="shopping-cart-total2" style="display: none; background-color: rgb(250,250,250);"></div>
+    <div class="vacia"></div>
+   </div>
+  </div> 
+  </div>
+</div>
+
+   <div class="Envios Click-envio  Click-envio2 " id="correo-envio" style="display: none; opacity: 0;"></div>
+   <div class="shoppingCartItemsContainer  shoppingCartTotal5 " style="display: none;"></div>
+   
+
+     
+      
+     
+      
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     
+      AOS.init({
+            duration: 1500 
+        });
+  </script>
+  <script>
+   
+    ScrollReveal().reveal('.logo', { 
+        duration:1500,
+        rotate: {
+        x: 1,
+        y: 180,
+        
+    }
+     })
+     ScrollReveal().reveal('.menu', { 
+        duration:2000,
+        origin:"bottom",
+     }) 
+</script>
+
+<script src="js/Formulario Envio.js"></script>
+<script src="js/Carrito-merch.js"></script>
+<script src="js/Cambiar Precio.js"></script>
+    
+     </body>
+    </html>
+
+
+
+    
+  

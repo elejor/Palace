@@ -1,0 +1,587 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Palace Catering</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta&family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+    
+    </head>
+    <body>
+    
+    <div class="fixed-top">
+       
+        <nav class="menu" id="menu" > 
+                  <span class="boton-menu">
+                    <a href="Catering-restaurante.html" style="color:black">
+                    <h3 class="link-inicio">INICIO</h3>
+                    </a>
+                  </span>
+                  <a href="Palace.html" id="logo">
+                <img src="img/imagenes-menu/Palace.png" alt=""class="logo">
+                </a>
+               <div class="iniciarComprar">
+          <div class="iniciarsesion">
+            <img src="img/iconos/usuario.png" alt="" height="24"width="24" class="imagen-usuario">
+            <h3 class="link-inicio">INICIA SESIÓN</h3>
+                
+                <div class="cantidadproductos"><div class="numero" value="1"></div></div>
+            </div>
+            <img src="img/iconos/Carrito.png" alt="" height="24"width="24" class="imagen-carrito">
+            </div>
+
+         </nav>
+         <div class="carritopedidos" >
+            <div class="sombracarrito"></div>
+            <div class="Micarrito">
+                <div class="carrito-texto ">
+                <h2 class="titulo">
+                 Mi carrito
+                </h2>
+                <div class="esc | float-end">
+                    
+                <img src="img/iconos/cancelar.png" alt="" height="32" width="32" class="imagen-cerrar" >
+                <h6 >ESC</h6>
+           
+            </div>
+            </div>
+                 <div class="input-cupon">
+                    <input type="text" placeholder="Escriba el código promocional"><input type="submit" id="btn-enviar2"required="">
+                 </div>
+                 <table class="productoelegidocarrito">
+                  <thead>
+                    <tr>
+                        <th class="producto2">Producto</th>
+                        <th class="precio">Precio</th>
+                        <th class="cantidadcarrito">Cantidad</th>
+                        <th class="">Total</th>
+                    </tr>
+                  </thead>
+                 </table>
+                 <div class="productototal">
+                    <div class="shopping-cart-items shoppingCartItemsContainer">  
+                            
+                    </div>              
+                 </div>
+                 <div class="carrito-grande text-center">
+                    <img src="img/iconos/Carrito grande1.png" width="80"height="80" class="carrito-imagen">
+                     <h3>Su carrito está vacío</h3>
+                 </div> 
+                 <div class="total-dinero ">
+                    <div class="col-12">
+                    
+                        <div class="shopping-cart-total align-items-center" >
+                            <div class="d-flex">
+                            <p class="mb-0 " style="padding-top: 1rem;">Total</p>
+                            <p class="ml-4 mb-0 shoppingCartTotal"></p>
+                        </div>
+                            <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                                data-delay="2000">
+                                <div class="toast-header">
+                                    <span>✅</span>
+                                    <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="toast-body text-white">
+                                    Se aumentó correctamente la cantidad
+                                </div>
+                            </div>
+                            <div class="d-flex total-precio">
+                                    <div>
+                                    <h3  class="volver">Volver</h3>
+                                </div>
+                                <div class="limpiarContainerComprar">
+                                    <h3  class="Limpiarcarrito">Limpiar carrito</h3>
+                                
+                                    <div class="Eliminar">
+                                    <h3  class="estasSeguro">Estas seguro?</h3>
+                                    <button class="btn-si ml-auto comprarButton2" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Si </button>
+                                <button class="btn-no ml-auto comprarButton" type="button"
+                                >No </button>
+                            </div>
+                            
+                            <button class="btn-comprar ml-auto comprarButton1" type="button" data-toggle="modal"
+                                data-target="#comprarModal">Comprar ya</button>
+                            </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                
+            </div>
+            
+         </div>
+         <div class="carritopedidos2" >
+            <div class="sombracarrito"></div>
+            <div class="Micarrito ">
+                <div class="carrito-texto ">
+                <h2 class="titulo" id="titulo">
+                Peticiones Especiales
+                </h2>
+                <div class="esc | float-end">
+                    
+                <img src="img/iconos/cancelar.png" alt="" height="32" width="32" class="imagen-cerrar" >
+                <h6 >ESC</h6>
+           
+            </div>
+            </div>
+                <div  class="producto">
+                    
+                    
+                    <h3 class="titulo2">Peticiones especiales</h3>
+                    <h3 class="Notas">
+                        Notas del pedido
+                        </h3>
+                    <h5 class="titulo3">Los cambios en esta sección que requieren ajustes de precios no se pueden cumplir</h5>
+                    <div class="input-alergias">
+                        <input type="text" placeholder="Notas productos (alergias,peticiones especiales...,etc)">
+                     </div>
+                     <div class="comprar">
+                        
+                        <h3  class="editvolver">Volver</h3>
+                        <button class="btn-actualizar" type="button" data-toggle="modal"
+                              >Actualizar</button>
+                       
+                     </div>
+                </div>
+                 
+            </div>
+         </div>
+         <div class="carritopedidos3" >
+            <div class="sombracarrito"></div>
+            <div class="Micarrito ">
+                <div class="carrito-texto">
+                <h2 class="titulo" id="titulo">
+                    Inicia sesión o registrate
+                </h2>
+                <div class="esc | float-end"> 
+                <img src="img/iconos/cancelar.png" alt="" height="32" width="32" class="imagen-cerrar" >
+                <h6 >ESC</h6>
+            </div>
+            </div>
+                <div  class="producto">
+                    <h3 class="necesitamos">
+                        Nosotros necesitamos tu telefono 
+                        para enviarte un codigo de verificación
+                        </h3>
+                    
+                    <div class="input-telefono">
+                        <div class="numero-españa">
+                        <h4 class="numero-es">ES</h4>
+                        <img src="img/Banderas/Spain_flags_flag_8858.png" alt="" height="15"width="15">
+                    </div>
+                        <h5 class="numero-34">+34</h5>
+                        
+                        <input type="text" placeholder="Phone number" class="input-numero" name="numero">
+                     </div>
+                     <p class="formulario__input-error">Parece que este número de teléfono no puede aceptar mensajes de texto. Por favor, proporcione un número diferente.</p>
+                     <div class="aviso-rgt">
+                        <h5 class="rgt">Si no está registrado, le ayudaremos a registrarse rápidamente.</h5>
+                        <h5 class="rgt">Si ya está registrado, le enviaremos un código de confirmación de inicio de sesión.</h5>
+                    </div>
+                    
+                     <div class="continuar">
+                        
+                       
+                        <button class="btn-continuar" type="submit" data-toggle="modal" name="continuar"
+                              >Continuar</button>
+                       
+                     </div>
+                </div>
+                 
+            </div>
+         </div>
+         <div class="carritopedidos4">
+            <div class="sombracarrito"></div>
+            <div class="Micarrito ">
+                <div class="carrito-texto ">
+                <h2 class="titulo" id="titulo">
+                    Registrarse
+                </h2>
+                <div class="esc | float-end"> 
+                <img src="img/iconos/cancelar.png" alt="" height="32" width="32" class="imagen-cerrar" >
+                <h6 >ESC</h6>
+            </div>
+            </div>
+            <div id="titulo-verificacion">
+
+            </div>
+            <form id="formulario">   
+            <div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="input-tit-nombre">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Tu Nombre">
+					
+				</div>
+				<p class="formulario__input-error">El nombre no es valido , porfavor escriba otro</p>
+			</div>
+            <div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="input-tit-nombre">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="Tu email">
+					
+				</div>
+				<p class="formulario__input-error">El email no es valido, porfavor escriba otro</p>
+			</div>
+            <div class="formulario__grupo" id="grupo__terminos">
+				<label class="verificación">
+					<input class="" type="checkbox" name="terminos" id="terminos">
+					Acepto los <a href=""> <b style="border-bottom: 1px solid black; color:black ">Terminos Politicos</b></a> y la <a href=""><b style="border-bottom: 1px solid black;  color:black">Politica de Privacidad.</b></a>
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i><b> Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+                <div class="continuar">
+                    <p class="formulario__mensaje-exito"  style="margin-top: 0rem;"
+                    id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+				<button type="submit" class="btn-continuar btnvalido">Enviar</button>
+            </div>
+				
+			</div>
+            </form>
+            </div>
+         </div>
+            </div>
+            <section >
+            <div class="imagen-catering-inicio">
+                <div class="imagen-catering ">
+                <h3 class="Catering-titulo">Palace Catering</h3>
+                <p class="texto-catering">Por favor, haga pedidos de catering con dos días de antelación.</p>
+            </div>
+            </div>
+        </section>
+            <div class="header">
+            <nav class="menu2">
+                <div class="flecha-catering"><img src="img/iconos/proximo.png" alt=""></div>
+                <a href="#seccion1"data-scroll-spy id="tajin-zona">Tajins</a>
+                <a href="#seccion2"data-scroll-spy> Ensaladas</a>
+                <a href="#seccion3"data-scroll-spy>Salsas</a>
+                <a href="#seccion4"data-scroll-spy>Racciones</a>
+                <div class="flecha-catering"><img src="img/iconos/atras.png" alt=""></div>
+                
+               </nav>
+            </div>
+               <section id="seccion1" class="section" data-scroll-spy>
+                <div class="container">
+                    <div class="items">
+                        <h2 class="Tajins-titulo">Tajins</h2>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="tajin1">
+                                        <img src="img/Tajins/Tajin pollo.jpg" alt="" class="item-image">
+                                      
+                                        <h5 class="item-title">Tajine de  Pollo</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">10.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="tajin2">
+                                        <img src="img/Tajins/Tajin ternera.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Tajine de  Ternera</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">12.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                    </section>
+                        <section id="seccion2" class="section" data-scroll-spy>
+                        <h2 class="Titulo-catering">Ensaladas</h2>
+                    <h5 class="Salsas-titulo text-center">Sirve para 6 a 8 personas</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada1">
+                                        <img src="img/ensaladas/Ensalada1.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Española</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">8.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada2">
+                                        <img src="img/ensaladas/Ensalada2.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Fitness</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">7.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <section id="seccion2" class="section" data-scroll-spy>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada3">
+                                        <img src="img/ensaladas/Ensalada3.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Oriental</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">9.50€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada4">
+                                        <img src="img/ensaladas/rsz_1ensalada4.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Caprichosa</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">10.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </section>
+                        <section id="seccion2" class="section" data-scroll-spy>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada5">
+                                        <img src="img/ensaladas/Ensalada5.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Ligera</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">6.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="ensalada6">
+                                        <img src="img/ensaladas/Ensalda6.jpg" alt="" class="item-image">
+                                <h5 class="item-title">Nuestra</h5>
+                                <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                <h6 class="item-price text-center">8.00€</h6>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <section id="seccion3" class="section" data-scroll-spy>
+                        <h2 class="Titulo-catering">Salsas</h2>
+                        <h5 class="Salsas-titulo text-center">Todas acompañadas con pan de pita</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="salsa1">
+                                        <img src="img/salsas/rsz_salsa_tahini.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Salsa tahini</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">6.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="salsa2">
+                                        <img src="img/salsas/rsz_salsa_yogurt.jpg" alt="" class="item-image">
+                                <h5 class="item-title">Salsa Yogurt</h5>
+                                <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                <h6 class="item-price text-center">8.00€</h6>
+                                  </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                        <section id="seccion3" class="section" data-scroll-spy>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="salsa3">
+                                        <img src="img/salsas/Salsa chermoula.jpg" alt="" class="item-image">
+                                        <h5 class="item-title">Salsa Chermoula</h5>
+                                        <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                        <h6 class="item-price text-center">8.00€</h6>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="salsa4">
+                                        <img src="img/salsas/rsz_salsa_roja.jpg" alt="" class="item-image">
+                                <h5 class="item-title">Salsa roja</h5>
+                                <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                <h6 class="item-price text-center">8.00€</h6>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                <section id="seccion4" class="section" data-scroll-spy>
+                        <h2 class="Titulo-catering">Bandos</h2>
+                        <h5 class="Salsas-titulo text-center">De que bando estas?</h5>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="doner1">
+                                        <img src="img/bandos/Doner.jpg" alt="" class="item-image">
+                                <h5 class="item-title">Doner</h5>
+                                <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                <h6 class="item-price text-center">8.00€</h6>
+                            </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                <div class="item shadow mb-4">
+                                    <div class="item-producto addToCart">
+                                        <div class="durum2">
+                                        <img src="img/bandos/Durum.jpg" alt="" class="item-image">
+                                <h5 class="item-title">Durum</h5>
+                                <p class="item-descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem quod porro tempora saepe ut iusto ratione voluptatem! Repudiandae blanditiis</p>
+                                <h6 class="item-price text-center">8.00€</h6>
+                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                                </div>
+                            </section>
+                    </div>
+                </div>
+            
+           
+                    <!-- ? START SHOPPING CART ITEMS -->
+                   
+                    <!-- ? END SHOPPING CART ITEMS -->
+        
+                    <!-- START TOTAL -->
+                    
+        
+                    <!-- END TOTAL -->
+        
+                    <!-- START MODAL COMPRA -->
+                    <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                        aria-hidden="true" class="active">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Pronto recibirá su pedido</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END MODAL COMPRA -->
+        
+        
+                </div>
+        
+            </section>
+            <div class="info-catering-total">
+            <div class="final-info-catering">
+                <div class="final-texto-catering justify-content-center">
+                  <h6>| Palace Catering | </h6>
+                   <h6>|  Av. Zaragoza, 7, 50100 La Almunia de Doña Godina, Zaragoza  | </h6>
+                   <h6>|  876037100  |</h6>
+                   <h6> | catering@palace.com |</h6>
+                </div>
+                <div class="copywriting ">
+                   <h6 class="text-center"> Copyright © 2022 Palace Catering.</h6>
+                   <h6 class="text-center"> All rights reserved.</h6>
+                </div>
+                <div class="titulo-siguenos text-center">
+                    <h5 class="text-center">SÍGUENOS EN LAS REDES SOCIALES</h5>
+                    <img src="img/iconos/Instagram-catering.png"  class="Instagram">
+                    <img src="img/iconos/facebook-catering.png" class="Facebook">
+                </div>
+                <div class="homwebs">
+                 <h6 class="text-center">Creado por homwebs.es</h6>
+                </div>
+                </div>
+      <br>
+            </div>
+        </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/Catering.js" ></script>
+    <script>
+     
+      AOS.init({
+            duration: 1500 
+        });
+  </script>
+  <script>
+   
+    ScrollReveal().reveal('.logo', { 
+        duration:1500,
+        rotate: {
+        x: 1,
+        y: 180,
+        
+    }
+     })
+     ScrollReveal().reveal('.menu', { 
+        duration:2000,
+        origin:"bottom",
+     }) 
+</script>
+
+     </body>
+    
+    </html>

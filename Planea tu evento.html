@@ -1,0 +1,490 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Palace</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Mukta&family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+    
+    </head>
+    <body onload="interval2()" >
+      <div class="nav fixed-top">
+        <nav class="menu" id="menu" > 
+                  <span class="boton-menu">
+                    <a >
+                    <img src="img/iconos/menu.png" alt="" onclick="mostrarmenu();"   class="imagen-menu" >
+                    </a>
+                  </span>
+                  <a href="Palace.html" id="logo">
+                <img src="img/imagenes-menu/Planealo.png" alt=""class="logo">
+                </a>
+                <div class="" id="reservasnav" >
+                    <div class="Reservas-titulo justify-content-center" onclick="mostrarnav();" id="mostrarnav">
+                       <h3 class="text-center"   >Reservas</h3>
+                        </div>
+                        <div class="Reservas-titulo " onclick="ocultarnav();" id="ocultarnav" >  
+                           <h3 class="text-center">Reservas</h3>
+                            </div>
+                        <div class="Reservas" id="reservas">
+                            <div class="palacios">
+                            
+                            <a  href="Reservas-Palace.html">
+                                <h5>Palace </h5>
+                            </a>
+                            
+                        </div>
+                        <div class="palacios">
+                           
+                            <a >
+                                <h5>Buckingham palace (La Muela)</h5>
+                            </a>
+                            
+                        </div>
+                        <div class="palacios">
+                           
+                            <a href="Reservas-abudabipalace.html">
+                                <h5>Abu dabi palace (Zaragoza)
+                                </h5>
+                            </a>
+                            
+                        </div>
+                        </div>
+                        </div>
+           <div class="idiomas" id="lenguaje">
+            <ul class="listado-idiomas">
+                <li>
+                    <div class="idioma-español">
+                        
+                        <img src="img/Banderas/Spain_flags_flag_8858.png"  id="idioma">
+                        
+                        
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-ingles">
+                        <a href="Ingles.html" class="menu-idioma">
+                        <img src="img/Banderas/gbengenglandflag_111695.png" alt="" id="idioma">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-frances">
+                        <a href="Frances.html" class="menu-idioma">
+                        <img src="img/Banderas/frfranceflag_111874.png" alt="" id="idioma">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-italiano">
+                        <a href="Italiano.html" class="menu-idioma">
+                        <img src="img/Banderas/ititalyflag_111732.png" alt="" id="idioma">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-ruso">
+                        <a href="Ruso.html" class="menu-idioma">
+                        <img src="img/Banderas/rurussiaflag_111751.png" alt="" id="idioma">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-aleman">
+                        <a href="Aleman.html" class="menu-idioma">
+                        <img src="img/Banderas/degermanyflag_111762.png" alt="" id="idioma">
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-chino">
+                        <a href="Chino.html" class="menu-idioma">
+                        <img src="img/Banderas/cnchinaflag_111955.png" alt="" id="idioma">
+                    </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="idioma-coreano">
+                        <a href="Coreano.html" class="menu-idioma">
+                            <img src="img/Banderas/krsouthkoreaflag_111691.png" alt="" id="idioma"
+                        
+                        
+                        >
+                     </a>
+                    </div>
+                </li>
+                
+            </ul>
+           </div>
+            <div class="idiomas-selector ">
+            <img src="img/Banderas/Spain_flags_flag_8858.png" alt=""
+               height="50px"
+               widht="50px"
+               id="bandera-idioma"
+               onclick="mostrarslider();"
+               >
+            
+            <img src="img/iconos/downarrow_abajo_5820.png"onclick="mostrarslider();" id="boton-abajo" ></img>
+        
+          
+            <img src="img/iconos/uparrow_arriba_5809.png" class="idiomas-boton" onclick="ocultarslider();" id="boton-arriba" ></img>
+           </div>
+        
+         </nav>
+         <nav class="menu" id="menu" >
+             
+            <div id="menu-listado">
+                <div class="">
+                <img src="img/iconos/exis.png" alt="" onclick="ocultarmenu();" class="menu-cerrar">
+                </div>
+                <div class="restaurante-menu">
+                    <a >
+                        <h2>Restaurantes</h2>
+                    </a>
+                    <a href="Info-Buckinghampalace.html" class="links">
+                        <h3>Buckingham palace (La Muela)</h3>
+                    </a>
+                    <a href="Info-abudabipalace.html" class="links">
+                        <h3>Abu dabi palace (Zaragoza)</h3>
+                    </a>
+                    <a href="Info-Palace.html" class="links">
+                        <h3>Palace</h3>
+                    </a>
+                </div>
+                <div class="Menu-menu">
+                    
+                        <h2>Menú</h2>
+                    
+                    <a href="Catering-restaurante.html" class="links">
+                        <h3>Catering</h3>
+                    </a>
+                    <a href="Planea tu evento.html" class="links">
+                        <h3>Planea tu evento</h3>
+                    </a>
+                    <a href="Comidas en grupo.html" class="links">
+                        <h3>Comidas en grupo </h3>
+                    </a>
+                </div>
+                <div class="Menu-nosotros">
+                    
+                        <h2>Nosotros</h2>
+                    
+                    <a href="Tajinfestival-specials.html" class="links">
+                        <h3>#Tajin Festival</h3>
+                    </a>
+                    <a href="Sobre los restaurantes.html" class="links">
+                        <h3>Sobre los restaurantes</h3>
+                    </a>
+                    <a href="ConoceAlCeo.html" class="links">
+                        <h3>Jorge Andrés</h3>
+                    </a>
+                </div>
+                <div class="Menu-contacto">
+                    
+                        <h2>Contacto</h2>
+                   
+                    <a href="Establecimientos.html" class="links">
+                        <h3>Establecimientos</h3>
+                    </a>
+                    <a href="Trabajos.html" class="links">
+                        <h3>Trabajos</h3>
+                    </a>
+                    <a href="" class="links | Instagram2">
+                        <h3>Instagram</h3>
+                    </a>
+                    <a href="" class="links | Facebook2">
+                        <h3>Facebook</h3>
+                    </a>
+                    <a href="Noticias.html" class="links">
+                        <h3>Periodico</h3>
+                    </a>
+                </div>
+            </div>
+            
+            </nav>
+            
+        </div>
+      <div class="Palace-inicio">
+      <div class="slider-container">
+      <div class="slider ">
+        <div class="descubremas position-absolute">
+            <div class="position-absolute top-70 start-38">
+          <h2 class="titulo-slider" style="margin-left: -3.5rem;">Planea tu evento</h2>
+          <div class="linea-descubremas"></div>
+          <a href=""><h3 class="titulo-descubremas">Descubre más</h3></a>
+        </div>
+        </div>
+              <img src="./img/sliderabudabi/slider3.jpg" id="slide2" > 
+      </div>
+      </div>
+      </div>
+      <section class="grupos-total">
+      <div >
+      <div class="comidasgrupos">
+            <div class="comidasrestaurante1 ">
+            <img src="img/sliderpalace/rsz_palace_planear.jpg" alt="" class="imagen-responsive">
+        
+        <div class="texto-comidasgrupos">
+            <h3>Palace (La Almunia)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac vehicula arcu.Maecenas id sem sed risus scelerisque dapibus. Vivamus quis magna sed urna efficitur interdum non eget eros.</p>
+            <a href="Info-Palace.html">
+            <button class="btn-planeaevento">
+                
+                   <h5>Ver más</h5>
+                
+                <img src="img/iconos/boton-cabron.png" alt="" >
+              </button>
+            </a>
+            </div>
+            </div>
+        <div class="comidasrestaurante1 reverso" >
+            
+            
+                <img src="img/sliderBuckinghampalace/rsz_buckingham_palace_-planear.jpg" alt="" class="imagen-responsive">
+                
+            <div class="texto-comidasgrupos-2">
+            <h3 >Buckingham Palace (La Muela)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac vehicula arcu.Maecenas id sem sed risus scelerisque dapibus. Vivamus quis magna sed urna efficitur interdum non eget ero.</p>
+            <a href="Info-Buckinghampalace.html">
+            <button class="btn-planeaevento">
+            
+                <h5>Ver más</h5>
+             
+             <img src="img/iconos/boton-cabron.png" alt="" >
+           </button>
+        </a>
+        </div>
+       
+        </div>
+        <div class="comidasrestaurante1">
+            <img src="img/sliderabudabi/rsz_abudabipalace_planear.jpg" alt="" class="imagen-responsive">
+            
+            <div class="texto-comidasgrupos">
+            <h3> Abudabi Palace (Zaragoza)</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac vehicula arcu.Maecenas id sem sed risus scelerisque dapibus. Vivamus quis magna sed urna efficitur interdum non eget eros.</p>
+            <a href="Info-abudabipalace.html">
+                <button class="btn-planeaevento">
+                
+                   <h5 class="text-center">Ver más</h5> 
+                <img src="img/iconos/boton-cabron.png" alt="" >
+              </button>
+              </a>
+              
+              
+              
+              
+        </div>
+        </div>
+      </div>
+      </div>
+      </section>
+      <div class="reservas-grupos">
+        <div class="formulario-grupos planeaevento">
+            
+            <div class="formulario">
+                <h3>Información Requerida
+                </h3>
+                <form id="formulario">
+                    <div  >
+                <input type="name" placeholder="Nombre" id="grupo__nombre" name="nombre" class="formulario_grupos_input">
+                
+                </div>
+                <div >
+                <input type="name" placeholder="Apellido" id="grupo__apellido" name="apellido" class="formulario_grupos_input">
+            </div>
+            <div >
+                <input type="email" placeholder="Email" id="grupo__correo"name="correo" class="formulario_grupos_input">
+            </div>
+            <div >
+                <input type="name" placeholder="Compañia" name="compañia" class="formulario_grupos_input">
+            </div>
+            <div >
+                <input type="text" placeholder="Numero" id="grupo__numero"name="numero" class="formulario_grupos_input">
+            </div>
+            <div id="grupo__restuarante">
+                <div class="formulario-especial" >
+                <h5>Restaurante</h5>
+                <select class="restaurante-seleccion"  id="cbxLenguajes" onchange="seleccionarLenguaje();">
+                    <option selected>Elige uno</option>
+                    <option  value="1">Palace (La Almunia)</option>
+                    <option   value="2">Buckingham palace (La Muela)</option>
+                    <option value="3">Abudabi Palace (Zaragoza)</option>
+                  </select>
+                </div>
+                </div>
+                <div >
+                <div class="formulario-especial">
+                <h5>Fecha</h5>
+                <input type="name" id="grupo__fecha" placeholder="dia/mes/año" class="formulario_grupos_input input-especial" name="fecha">
+                </div>
+                </div>
+                <div id="grupo__horaentrada">
+                <div class="formulario-especial">
+                <h5>Hora entrada</h5>
+                <select class="formulario_grupos_input restaurante-seleccion" name="horaentrada">
+                    <option selected>18 : 00 pm</option>
+                    <option value="12 : 00 am">12 : 00 am</option>
+                    <option value="12 : 30 am">12 : 30 am</option>
+                    <option value="1 : 00 am">1 : 00 am</option>
+                    <option value="1 : 30 am">1 : 30 am</option>
+                    <option value="2 : 00 am">2 : 00 am</option>
+                    <option value="2 : 00 am">2 : 00 am</option>
+                    <option value="3 : 00 am">3 : 00 am</option>
+                    <option value="3 : 30 am">3 : 30 am</option>
+                    <option value="4 : 00 am">4 : 00 am</option>
+                    <option value="4 : 30 am">4 : 30 am</option>
+                    <option value="5 : 00 am">5 : 00 am</option>
+                    <option value="5 : 30 am">5 : 30 am</option>
+                    <option value="6 : 00 am">6 : 00 am</option>
+                    <option value="6 : 30 am">6 : 30 am</option>
+                    <option value="7 : 00 am">7 : 00 am</option>
+                    <option value="7 : 30 am">7 : 30 am</option>
+                    <option value="8 : 00 am">8 : 00 am</option>
+                    <option value="8 : 30 am">8 : 30 am</option>
+                    <option value="9 : 00 am">9 : 00 am</option>
+                    <option value="9 : 30 am">9 : 30 am</option>
+                    <option value="10 : 00 am">10 : 00 am</option>
+                    <option value="10 : 30 am">10 : 30 am</option>
+                    <option value="11 : 00 am">11 : 00 am</option>
+                    <option value="11 : 30 am">11 : 30 am</option>
+                    <option value="12 : 00 pm">12 : 00 pm</option>
+                    <option value="12 : 30 pm">12 : 30 pm</option>
+                    <option value="13 : 00 pm">13 : 00 pm</option>
+                    <option value="13 : 30 pm">13 : 30 pm</option>
+                    <option value="14 : 00 pm">14 : 00 pm</option>
+                    <option value="14 : 30 pm">14 : 30 pm</option>
+                    <option value="15 : 00 pm">15 : 00 pm</option>
+                    <option value="15 : 30 pm">15 : 30 pm</option>
+                    <option value="16 : 00 pm">16 : 00 pm</option>
+                    <option value="16 : 30 pm">16 : 30 pm</option>
+                    <option value="17 : 00 pm">17 : 00 pm</option>
+                    <option value="17 : 30 pm">17 : 30 pm</option>
+                    <option value="18 : 00 pm">18 : 00 pm</option>
+                    <option value="18 : 30 pm">18 : 30 pm</option>
+                    <option value="19 : 00 pm">19 : 00 pm</option>
+                    <option value="19 : 30 pm">19 : 30 pm</option>
+                    <option value="19 : 30 pm">19 : 30 pm</option>
+                    <option value="20 : 30 pm">20 : 30 pm</option>
+                    <option value="21 : 00 pm">21 : 00 pm</option>
+                    <option value="21 : 30 pm">21 : 30 pm</option>
+                    <option value="22 : 00 pm">22 : 00 pm</option>
+                    <option value="22 : 30 pm">22 : 30 pm</option>
+                    <option value="23 : 00 pm">23 : 00 pm</option>
+                    <option value="23 : 30 pm">23 : 30 pm</option>
+                    <option value="0 : 00 pm">0 : 00 pm</option>
+                  </select>
+                </div>
+                </div>
+                <div >
+                <div class="formulario-especial">
+                <h5>Nº personas</h5>
+                <input type="number" placeholder="Comensales"id="grupo__comensales" class="formulario_grupos_input input-especial" name="comensales">
+                </div>
+                </div>
+                <div id="grupo__comentario">
+
+                <h5>Comentario adiccional</h5>
+                
+                <textarea class="formulario_grupos_input_comentario" id="comentario-grupo" cols="45" rows="10" name="comentario"></textarea>
+                </div>
+                <div class="resultado">
+                <input type="submit" id="btn-continuar">
+                <p class="formulario__mensaje-exito2" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+                <div class="formulario__mensaje2" id="formulario__mensaje">
+                    <p><i class="fas fa-exclamation-triangle"></i><b> Error:</b> Por favor rellena el formulario correctamente. </p>
+                </div>
+               
+              
+            </form>
+            </div>
+        </div>
+      </div>
+     <div class="final-info">
+      <div class="final-texto">
+        <a href="" class="Instagram"><h6>Instagram</h6></a>
+        <a href="" class="Facebook"><h6>Facebook</h6></a>
+        <a href=""><h6>Newsletter</h6></a>
+        <a href=""><h6>Politica </h6></a>
+      </div>
+      </div>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+     
+      AOS.init({
+            duration: 1500 
+        });
+  </script>
+  <script>
+   
+    ScrollReveal().reveal('.logo', { 
+        duration:1500,
+        rotate: {
+        x: 1,
+        y: 180,
+        
+    }
+     })
+    
+</script>
+<script>
+    function mostrarslider(params) {
+        document.getElementById("lenguaje").style.display ="block";
+        document.getElementById("boton-abajo").style.display="none";
+        document.getElementById("boton-arriba").style.display="block";
+        
+
+    }
+    function ocultarslider(params) {
+        document.getElementById("lenguaje").style.display ="none";
+        document.getElementById("boton-abajo").style.display="inline-block";
+        document.getElementById("boton-arriba").style.display="none";
+        
+        
+    }
+    function mostrarslide(params) {
+        document.getElementsById("bandera-idioma").style.display="none";
+    } 
+    function mostrarmenu(params) {
+        document.getElementById("menu-listado").style.display="flex";
+        document.getElementsByClassName("imagen-menu").style.display="none";
+    } 
+    function ocultarmenu(params) {
+        document.getElementById("menu-listado").style.display="none";
+        
+    } 
+    function ocultarnav(params){
+       document.getElementById("reservasnav").style.display="block";
+       document.getElementById("reservas").style.display="none";
+       document.getElementById("ocultarnav").style.display="none";
+       document.getElementById("mostrarnav").style.display="block"
+    }
+    function mostrarnav(params){
+        document.getElementById("reservas").style.display="block";
+        document.getElementById("ocultarnav").style.display="block";
+        document.getElementById("mostrarnav").style.display="none"
+    }
+    
+ </script>
+ <script src="js/formulario.js" ></script>
+  <script src="js/Slider.js" ></script>
+  <script src="js/Redessociales.js" ></script>
+     </body>
+    
+    </html>

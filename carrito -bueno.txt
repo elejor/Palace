@@ -1,0 +1,152 @@
+
+const  tbody = document.querySelector('.shoppingCartItemsContainer')
+const addToShoppingCartButtons = document.querySelectorAll('.addToCart');
+ addToShoppingCartButtons.forEach((addToCartButton) => {
+   addToCartButton.addEventListener('click', addToCartClicked,updateShoppingCartTotal);
+ });
+ const shoppingCartItemsContainer = document.querySelector(
+   '.shoppingCartItemsContainer'
+ );
+ 
+ let carrito2 = [
+
+ ]
+   
+ function addToCartClicked() {
+  
+   const itemTitle = document.querySelector('.item-title').textContent;
+   const itemPrice = document.querySelector('#item-price').textContent;
+   const itemImage = document.querySelector('#item-image').src;
+   const itemTalla =document.querySelector('.tallas').value;
+   
+  
+   const newItem = {
+  title: itemTitle,
+  precio: itemPrice,
+  img: itemImage,
+  cantidad :1,
+  talla:itemTalla,
+}
+
+  const vacio = document.querySelector('.vacia');
+  vacio.style.display="none";
+  const paddingprecio = document.querySelector('.shoppingCartTotal')
+  paddingprecio.classList.add('padding-left2')
+  paddingprecio.classList.remove('padding-left1');
+  const ShoppingCartTotal=document.querySelector('.shopping-cart-total');
+  ShoppingCartTotal.style.display="block"
+  
+  updateShoppingCartTotal()
+  addItemCarrito(newItem)
+ }
+ 
+ function addItemCarrito(newItem){
+  const InputElemnto = tbody.getElementsByClassName('shopping-cart-quantity-input2')
+  for(let i =0; i < carrito2.length ; i++){
+    if(carrito2[i].title.trim() === newItem.title.trim()){
+      carrito2[i].cantidad++;
+      const inputValue = InputElemnto[i]
+      inputValue.value++;
+      updateShoppingCartTotal() 
+      return null;
+    }
+  }
+  
+  carrito2.push(newItem)
+  addItemToShoppingCart()
+} 
+
+ function addItemToShoppingCart() {
+  
+  carrito2.map(item => {
+ 
+   const shoppingCartRow = document.createElement('div');
+   const shoppingCartContent = `
+   <div class="row shoppingCartItem">
+                    <div  >
+                      <div class="shopping-cart-item d-flex  h-100  pb-2 pt-3">
+                          <img src="${item.img}" class="shopping-cart-image2">
+                          <div class="d-inline-block titulo-detalles">
+                          <h6 class="shopping-cart-item-title2 shoppingCartItemTitle  ml-3 mb-0">${item.title}</h6>
+                          <h6 class="Talla-carrito">${item.talla}</h6>
+                          <div
+                 class="shopping-cart-quantity d-flex justify-content-between align-items-center ">
+                 <input class="shopping-cart-quantity-input2 shoppingCartItemQuantity" type="number"
+                     value="${item.cantidad}" min="1" max="7">
+                     <div class="shopping-cart-price2 d-flex align-items-center " style="margin-left:1rem">
+                      <p class="item-price2 mb-0 shoppingCartItemPrice">${item.precio}</p>
+                  </div>
+             </div>
+                          </div>
+                      </div>
+                  </div>
+     `;
+    
+   shoppingCartRow.innerHTML = shoppingCartContent;
+   shoppingCartItemsContainer.append(shoppingCartRow);
+   updateShoppingCartTotal();
+  })
+   
+ }
+ 
+ function updateShoppingCartTotal() {
+   let total = 0;
+  
+   const shoppingCartTotal = document.querySelector('.shoppingCartTotal');
+   const numeroproducto=document.querySelector('.numero')
+   const shoppingCartItems = document.querySelectorAll('.shoppingCartItem');
+ 
+   shoppingCartItems.forEach((shoppingCartItem) => {
+     const shoppingCartItemPriceElement = shoppingCartItem.querySelector(
+       '.shoppingCartItemPrice'
+     );
+     const shoppingCartItemPrice = Number(
+       shoppingCartItemPriceElement.textContent.replace('€', '')
+     );
+     const totalproductos=document.querySelectorAll('.shoppingCartItemQuantity');
+     totalproductos.forEach((e)=>{
+      e=totalproductos
+      
+     })
+     const shoppingCartItemQuantityElement = shoppingCartItem.querySelector(
+       '.shoppingCartItemQuantity'
+     );
+     const shoppingCartItemQuantity = Number(
+       shoppingCartItemQuantityElement.value
+     );
+    
+ 
+     total = total + shoppingCartItemPrice * shoppingCartItemQuantity;
+     producto=shoppingCartItemQuantityElement.value
+   shoppingCartTotal.innerHTML = `${total.toFixed(2)}€`;
+   console.log(total)
+   
+  })
+  addLocalStorage()
+ }
+ 
+ function sumaCantidad(e){
+  const item = document.closest('.shoppingCartItem')
+  const sumaInput  = e.target
+  const tr = sumaInput.closest(".ItemCarrito")
+  const title = tr.querySelector('.shoppingCartItemTitle').textContent;
+  carrito.forEach(item => {
+    if(item.title.trim() === title){
+      sumaInput.value < 1 ?  (sumaInput.value = 1) : sumaInput.value;
+      item.cantidad = sumaInput.value;
+     updateShoppingCartTotal()
+    }
+  })
+}
+ function addLocalStorage(){
+  localStorage.setItem('carrito2', JSON.stringify(carrito2))
+}
+
+window.onload = function(){
+  const storage = JSON.parse(localStorage.getItem('carrito2'));
+  if(storage){
+    carrito2 = storage;
+    addItemToShoppingCart()
+  }
+}
+

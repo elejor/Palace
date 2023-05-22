@@ -1,0 +1,25 @@
+<div  class="producto">
+                    <h3 class="verificación">
+                        El codigo de verificación se enviará al ....
+                        </h3>
+                        <h5 class="input-tit-nombre">Nombre y Apellidos</h5>
+                    <div class="input-nombre">
+                        <input type="text" placeholder="Tu nombre" class="input-numero" name="nombre">
+                     </div>
+                     <p class="formulario__input-error">Porfavor escriba su nombre</p>
+                     <h5 class="input-tit-nombre">Email</h5>
+                     <div class="input-nombre">
+                        <input type="text" placeholder="Tu email" class="input-numero" name="email">
+                     </div>
+                     <p class="formulario__input-error">Porfavor escriba su email</p>
+                     <h3 class="Politica">
+                        Presionando el boton de enviar usted accepta los <b style="border-bottom: 1px solid black;">Terminos Politicos</b> y la <b style="border-bottom: 1px solid black;">Politica de Privacidad.</b>
+                        </h3>
+                     <div class="continuar">
+                        
+                       
+                        <button class="btn-continuar" type="button" data-toggle="modal" name="enviar"
+                              >Enviar</button>
+                       
+                     </div>
+                </div>

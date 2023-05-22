@@ -1,0 +1,97 @@
+ <div class="Palace-inicio">
+      <div class="slider-container">
+      <div class="slider ">
+            <h2 class="text-center position-absolute top-70 start-40">Palace</h2>
+            
+                <img src="img/sliderBuckinghampalace/slider0.jpg" id="capa0"> 
+            
+            <div class="capa">
+                <img src="img/sliderBuckinghampalace/slider1.jpg" > 
+            </div>
+            <div class="capa1">
+                <img src="img/sliderBuckinghampalace/slider2.jpg" > 
+            </div>
+            <div class="capa2">
+                <img src="img/sliderBuckinghampalace/slider3.jpg" > 
+            </div>
+            <div class="capa3">
+                <img src="img/sliderBuckinghampalace/slider4.jpg" > 
+            </div>
+            <div class="capa4">
+                <img src="img/sliderBuckinghampalace/slider5.jpg" > 
+            </div>
+            <div class="capa5">
+                <img src="img/sliderBuckinghampalace/slider6.jpg" > 
+            </div>  
+      </div>
+      </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+#capa0{
+    display:block;
+}
+ .slider .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+ }
+ .slider .capa1{
+    opacity: 0;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+ }
+ .slider .capa2{
+    opacity: 0;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+ }
+ .slider .capa3{
+    opacity: 0;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+ }
+ .slider .capa4{
+    opacity: 0;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+ }
+ .slider .capa5{
+    opacity: 0;
+    display: none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    text-align: center;
+ }
+
